@@ -1,159 +1,203 @@
 package botrev3.tlgrm;
 
-import BotEx.statPicture.Drawer;
-import org.json.simple.JSONObject;
-import org.telegram.telegrambots.api.methods.send.SendMessage;
-import org.telegram.telegrambots.api.methods.send.SendPhoto;
-import org.telegram.telegrambots.api.objects.PhotoSize;
+import botrev3.bot.BotFace;
+import botrev3.flow.CustomTask;
 import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
-import org.telegram.telegrambots.exceptions.TelegramApiException;
 
-import java.io.File;
-import java.io.InputStream;
-import java.util.HashMap;
-import java.util.List;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.Year;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class ChatThread implements Runnable{
-    private Update update;
-    private String mode = "sign";
-    private String lang = "rus";
-    private String matchTemplate ="OCR";
-    File outputFile;
-    long chat_id;
-    private TelegramLongPollingBot bot;
-    private HttpExecuter httpExecuter= HttpExecuter.getHttpExecuter();
-    private JsonRecoursiveParser parser= JsonRecoursiveParser.getParser();
-    String hostingImg;
 
-    public static ChatThread getChatThread(Update update, TelegramLongPollingBot bot) {
-        return new ChatThread(update, bot);
+    public static final String TIME_FORMAT = "dd MM HH mm";
+    public static final String TIME_REGEX = "[0-3]?[0-9]\\s{0,3}[0-1]?[0-9]\\s{0,3}[0-2]?[0-9]\\s{0,3}[0-6][0-9]";
+
+    public static  final String START_COMMAND = "new";
+    public static  final String CANCEL_COMMAND = "cancel";
+    public static  final String ENTER_LINK = "enter link of the PRODUCT page";
+    public static  final String ENTER_TIME = String.format("enter time in format %s",TIME_FORMAT);
+    public static  final String ENTER_BUTTON_NAME = "enter text from the BUY button";
+
+    public static  final String ENTER_LINK_SUCCESS = "success";
+    public static  final String ENTER_TIME_SUCCESS = "success, entered time is: %s";
+    public static  final String ENTER_BUTTON_NAME_SUCCESS = "success, button is: %s";
+
+    public static  final String REENTER_LINK = "fail, enter link again";
+    public static  final String REENTER_TIME = String.format("fail, enter time in format %s again",TIME_FORMAT);
+    public static  final String TASK_SUCCESS = "Your task was successfully added";
+    public static  final String TOO_MANY_ENTER_BUTTON_NAME = "too many buttons found please try again";
+
+    public static final String START_COMMAND_SUCCESS = "New task initialization";
+    public static final String CANCEL_COMMAND_SUCCESS = "Task was cancelled, type \"new\" to start new task";
+    public static final String[] COMMANDS = {"new", "cancel"};
+
+    private long chat_id;
+
+    static ExecutorService exec = Executors.newFixedThreadPool(1);
+
+    private TelegramLongPollingBot bot;
+    private Mode mode = Mode.Dead;
+    private CustomTask.ShopTaskBuilder builder;
+    private TasksKeeper tasksKeeper = TasksKeeper.getTasksKeeper();
+    private HttpExecuter httpExecuter = HttpExecuter.getHttpExecuter();
+    private BlockingQueue<Update> queue= new ArrayBlockingQueue<>(10);
+    private SimpleDateFormat format = new SimpleDateFormat("yyyy "+TIME_FORMAT);
+
+
+    static ChatThread getChatThread(Update update, TelegramLongPollingBot bot) {
+        ChatThread thr = new ChatThread(update, bot);
+        return thr;
+    }
+    private ChatThread(Update update, TelegramLongPollingBot bot) {
+        this.bot = bot;
+        this.chat_id = update.getMessage().getChatId();
     }
 
 
     @Override
     public void run() {
-        List<PhotoSize> LPhS= update.getMessage().getPhoto();
-        String file_Id = LPhS.get(LPhS.size()-1).getFileId();
-        String file_path =null;
-        String file_link = null;
-        String getFilePath = String.format(MyBot.API_GET_FILE_PATH_LINK,MyBot.TOKEN,file_Id);
-        file_path =parser.jsonFindByKey(MyBot.API_FILE_PATH, httpExecuter.requestForStream(getFilePath));
-        file_link = String.format(MyBot.API_GET_FILE_LINK,MyBot.TOKEN,file_path);
-
-        // Uploading resized to 400 pixel width photo and getting it's link from json response
-        InputStream jsonStreamFromImgHosting= httpExecuter.requestForStream(String.format(MyBot.API_DOWNLOAD_IMG_LINK, file_link));
-        hostingImg = parser.jsonFindByKey(MyBot.API_IMG_PATH, jsonStreamFromImgHosting);
-
-        doSomeWork(hostingImg);
-
+        if (!queue.isEmpty())
+            try {
+                handleTextMessage(queue.take().getMessage().getText());
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
     }
-// todo make mode enum
-    private void doSomeWork(String link) {
-        System.out.println(link);
-        if ("parse".equals(mode)){
-            doParse(link);
+
+    private void initBuilder() {
+        builder = CustomTask.getBuilder();
+    }
+
+    void addUpdate(Update update){
+        queue.add(update);
+        exec.execute(this);
+    }
+
+    private void handleTextMessage(String msg){
+        boolean isCommand = false;
+        for (String str:COMMANDS) {
+            if (msg.toLowerCase().contains(str)) {
+                isCommand = true;
+                break;
+            }
         }
-        if ("sign".equals(mode)){
-            doSign(link);
-        }
+        if (isCommand) {
+            mode.handleCommand(this, msg.toLowerCase());
+        } else mode.doSomeWork(this, msg);
     }
 
-    private void doSign(String link) {
-        InputStream jsonStreamFromParserAPI = httpExecuter.requestForStream(String.format(MyBot.API_OCR_PARSE_OVERLAY, link,getLang()));
-        int x, y, width, height;
-        try {
-            JSONObject obj = parser.jsonFindByValue(getMatchTemplate(), jsonStreamFromParserAPI);
-            x = (((HashMap<String, Double>)obj).get("Left")).intValue();
-            y = (((HashMap<String, Double>)obj).get("Top")).intValue();
-            width = (((HashMap<String, Double>)obj).get("Width")).intValue();
-            height = (((HashMap<String, Double>)obj).get("Height")).intValue();
-        } catch (NullPointerException e){
-            e.printStackTrace();
-            failTask();
-            return;
-        }
-
-        outputFile = new File(MyBot.STANDART_FILE_NAME+chat_id);
-        Drawer drawer = new Drawer(link, WaterMarkService.getRandomWatermark());
-        drawer.addImageWatermark((x+width+height),y-height, height);
-        drawer.getResultToFile(outputFile);
-        SendPhoto photoMessage = new SendPhoto() // Create a message object object
-                .setChatId(chat_id)
-                .setNewPhoto(outputFile);
-        try {
-            bot.sendPhoto(photoMessage);
-        } catch (TelegramApiException e) {
-            e.printStackTrace();
-        }
-        doInTheEnd();
+    private void sendMessage(String message) {
+        ((BotFace)bot).sendStringMessage(chat_id, message);
     }
 
-    private void doParse(String link) {
-        InputStream jsonStreamFromParserAPI = httpExecuter.requestForStream(String.format(MyBot.API_OCR_PARSE, link,getLang()));
-        String result =parser.jsonFindByKey(MyBot.API_OCR_PATH, jsonStreamFromParserAPI);
-        SendMessage message = new SendMessage() // Create a message object object
-                .setChatId(chat_id)
-                .setText(result);
-        try {
-            bot.sendMessage(message);
-        } catch (TelegramApiException e) {
-            e.printStackTrace();
-        }
-        doInTheEnd();
-    }
-
-    private void failTask(){
-        SendMessage message = new SendMessage() // Create a message object object
-                .setChatId(chat_id)
-                .setText(MyBot.ON_FAIL_MESSAGE);
-        try {
-            bot.sendMessage(message);
-        } catch (TelegramApiException e) {
-            e.printStackTrace();
-        }
-    }
-
-
-    private void doInTheEnd() {
-        System.out.println("end "+chat_id);
-        ((MyBot)bot).deleteFromChatThreads(chat_id);
-        if (outputFile!=null)outputFile.delete();
-    }
-
-    private ChatThread(Update update, TelegramLongPollingBot bot) {
-        this.update = update;
-        this.bot = bot;
-        this.chat_id = update.getMessage().getChatId();
-    }
-
-    public ChatThread setLang(String lang) {
-        this.lang = lang;
-        return this;
-    }
-
-    public String getLang() {
-        return lang;
-    }
-
-    public ChatThread setUpdate(Update update) {
-        this.update = update;
-        return this;
-    }
-
-    public ChatThread setMode(String mode) {
+    void setMode(Mode mode) {
         this.mode = mode;
-        return this;
     }
 
-    public void setMatchTemplate(String matchTemplate) {
-        this.matchTemplate = matchTemplate;
+    enum Mode {
+        Dead{
+            @Override
+            void handleCommand(ChatThread thr, String str){
+                switch (str){
+                    case START_COMMAND: {
+                        thr.initBuilder();
+                        thr.sendMessage(START_COMMAND_SUCCESS);
+                        thr.sendMessage(ENTER_LINK);
+                        thr.setMode(Mode.WaitLink);
+                        break;
+                    }
+                    default: doSomeWork(thr,str);
+                }
+            }
+        },
+        WaitLink{
+            @Override
+            void doSomeWork(ChatThread thr, String str){
+                if (thr.httpExecuter.isLinkValid(str)){
+                    thr.sendMessage(ENTER_LINK_SUCCESS);
+                    thr.builder.setLink(str);
+                    thr.sendMessage(ENTER_TIME);
+                    thr.setMode(Mode.WaitTime);
+                } else thr.sendMessage(REENTER_LINK);
+            }
+
+        },
+        WaitTime{
+            @Override
+            void doSomeWork(ChatThread thr, String str){
+                if (str.trim().matches(TIME_REGEX)){
+                    Date today = new Date(System.currentTimeMillis());
+                    Date target;
+                    try {
+                        target = thr.format.parse(Year.now().getValue()+" "+str);
+                        if (today.after(target)) target = thr.format.parse((Year.now().getValue()+1)+" "+str);
+                    } catch (ParseException e) {
+                        e.printStackTrace();
+                        thr.sendMessage(REENTER_TIME);
+                        return;
+                    }
+                    thr.builder.setTime(target.getTime());
+                    thr.sendMessage(String.format(ENTER_TIME_SUCCESS, target.toString()));
+                    thr.sendMessage(ENTER_BUTTON_NAME);
+                    thr.setMode(Mode.WaitButton);
+                } else thr.sendMessage(REENTER_TIME);
+            }
+        },
+        WaitButton{
+            @Override
+            void doSomeWork(ChatThread thr, String str){
+                String[] buttons = thr.httpExecuter.getButtonsByName(thr.builder.getBuilderLink(), str);
+                switch (buttons.length){
+                    case 0: {
+                        thr.sendMessage(REENTER_TIME);
+                        break;
+                    }
+                    case 1:{
+                        thr.builder.setButton(buttons[0]);
+                        thr.sendMessage(String.format(ENTER_BUTTON_NAME_SUCCESS, str));
+                        thr.tasksKeeper.register(thr.builder.build());
+                        thr.builder=null;
+                        thr.sendMessage(TASK_SUCCESS);
+                        thr.setMode(Mode.Dead);
+                        break;
+                    }
+                    default:{
+                        thr.sendMessage(TOO_MANY_ENTER_BUTTON_NAME);
+                        System.out.println(Arrays.toString(buttons)+Year.now().getValue());
+                    }
+                }
+            }
+        };
+
+
+        void handleCommand(ChatThread thr, String str){
+            switch (str){
+                case CANCEL_COMMAND: {
+                    thr.sendMessage(CANCEL_COMMAND_SUCCESS);
+                    thr.setMode(Mode.Dead);
+                    break;
+                }
+                case START_COMMAND: {
+                    thr.initBuilder();
+                    thr.sendMessage(START_COMMAND_SUCCESS);
+                    thr.sendMessage(ENTER_LINK);
+                    thr.setMode(Mode.WaitLink);
+                    break;
+                }
+            }
+        }
+        void doSomeWork(ChatThread thr, String str){
+            thr.sendMessage("ECHO: "+str);
+        }
     }
-
-    public String getMatchTemplate() {
-        return matchTemplate;
-    }
-
-
-
 }
+
+
