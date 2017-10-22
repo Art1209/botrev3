@@ -1,5 +1,7 @@
-package botrev3.helpBot;
+package botrev3;
 
+import botrev3.AirTableApi;
+import botrev3.domens.Action;
 import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
 import com.google.api.client.http.HttpTransport;
@@ -15,6 +17,13 @@ import java.security.GeneralSecurityException;
  */
 public class tester {
     public static void main(String args[]) throws IOException, GeneralSecurityException {
-
+        Action act = Action.getActionForId(null);
+        act.setImage("dsfgsdg");
+        act.setDescription("dsfgsdg");
+        act.setLink("dsfgsdg");
+        act.setTime("dsfgsdg");
+        act.setPriceX100(12200);
+        AirTableApi airTableApi = new AirTableApi();
+        System.out.println(airTableApi.addAction(act));
     }
 }

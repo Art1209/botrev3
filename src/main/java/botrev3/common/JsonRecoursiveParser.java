@@ -7,7 +7,9 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 import java.util.Set;
 
 public class JsonRecoursiveParser {
@@ -34,6 +36,29 @@ public class JsonRecoursiveParser {
         }
         return result;
     }
+
+    public List<Object> jsonParseArray(String rootName, InputStream is){
+        List<Object> result = new ArrayList<>() ;
+        JSONObject root;
+        JSONArray array = null;
+        try {
+            if (rootName != null) {
+                root = (JSONObject)parser.parse(new InputStreamReader(is));
+                array = (JSONArray)root.get(rootName);
+            }
+            else{
+                array = (JSONArray)parser.parse(new InputStreamReader(is));
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        for (Object obj:array)result.add(obj);
+        return result;
+    }
+
     public String safeJsonFindByKey(String key, InputStream is) throws ParseException {
         String result = null;
         JSONObject jsonObj;

@@ -1,111 +1,78 @@
 package botrev3;
 
+import botrev3.common.HttpEx;
 import botrev3.common.JsonRecoursiveParser;
+import botrev3.domens.Category;
+import botrev3.domens.Shop;
+import botrev3.tlgrm.BlogBot;
 import lombok.extern.log4j.Log4j;
 import org.apache.http.HttpHeaders;
 import org.apache.http.HttpResponse;
-import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpHead;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.entity.StringEntity;
-import org.apache.http.impl.client.HttpClientBuilder;
-import sun.misc.BASE64Encoder;
 import botrev3.common.ApiException;
 
 import javax.ws.rs.core.MediaType;
-import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 
 /**
  * Created by aalbutov on 19.10.2017.
  */
 @Log4j
 public class TextProcessor {
-    private String client_id = "cb281d918a37e346b45e9aea1c6eb7";
-    private String client_secret = "cb281d918a37e346b45e9aea1c6eb7";
-    private String vendor_id = "cb281d918a37e346b45e9aea1c6eb7";
-    private String company_id = "cb281d918a37e346b45e9aea1c6eb7";
-    private String sub_id = "cb281d918a37e346b45e9aea1c6eb7";
 
-
-    private static final String SOME_API ="";
     private static final String GOOGLE_SHRINKER_URL =
             "https://www.googleapis.com/urlshortener/v1/url?key=AIzaSyDlD4Mjt4h4dir-RKQrIFMr2huDcTYgHnI";
+    private static final String GOOGLE_UNSHRINKER_URL =
+            "https://www.googleapis.com/urlshortener/v1/url?shortUrl=%s&key=AIzaSyDlD4Mjt4h4dir-RKQrIFMr2huDcTYgHnI";
     private static final String GOOGLE_SHRINKER_POST_BODY = "{\"longUrl\": \"%s\"}";
-    private static final String TOKEN_REQUEST_ENTITY_STRING =
-            "grant_type=client_credentials&client_id=%s&scope=deeplink_generator";
-    private static final String TOKEN_LINK = "https://api.admitad.com/token/";
-    private static final String DEEPLINK_LINK_URL =
-            "https://api.admitad.com/deeplink/%s/advcampaign/%s/?subid=%s&ulp=%s";
 
-    private BASE64Encoder base64Encoder = new BASE64Encoder();
     private JsonRecoursiveParser parser = JsonRecoursiveParser.getParser();
-    private HttpClient client = HttpClientBuilder.create().build();
+    private AdmitadApi admitadApi = new AdmitadApi();
+    private BlogBot bot;
 
-
-    String token;
-    String tokenType;
-    long expires;
-    String refreshToken;
-
-    String getToken(){
-        while (client_secret==null||
-                client_id==null||
-                vendor_id==null||
-                company_id==null||
-                sub_id==null){
-            retrieveCredentials();
-            if (client_id==null)log.warn("Google sheets API return NULL");
-        }
-        while (token==null){
-            retrieveToken();
-        }
-        if ((System.currentTimeMillis()-expires)>=0)retrieveToken();
-        return token;
-    }
-
-    private void retrieveCredentials() {
-    }
-
-    void retrieveToken() {
-        HttpResponse response;
-        HttpPost post;
-        String data = base64Encoder.encode((client_id + ":" + client_secret).getBytes());
-        post = new HttpPost(TOKEN_LINK);
-        post.addHeader(HttpHeaders.AUTHORIZATION, "Basic " + data);
-        post.addHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_FORM_URLENCODED);
-        StringEntity body = null;
-        try {
-            body = new StringEntity(String.format(TOKEN_REQUEST_ENTITY_STRING,client_id));
-            post.setEntity(body);
-            InputStream in = executer(post);
-            tokenType = parser.jsonFindByKey("token_type", in);
-            if ("bearer".equals(tokenType))throw new UnsupportedOperationException();
-            token = parser.jsonFindByKey("access_token", in);
-            expires = System.currentTimeMillis()+((Long.parseLong(parser.jsonFindByKey("expires_in", in)))*1000);
-            refreshToken = parser.jsonFindByKey("refresh_token", in);
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
-    }
-
-    String changeLink(String dirtyLink){
+    String changeLink(String dirtyLink, int price ){
         int errorCounter =0;
-        String link=null;
-        String preurl;
-        String url=null;
+        String longUrl=null;
+        String cleanUrl=null;
         String admitedUrl=null;
+        String res = null;
 
-        while ((link==null||url==null||admitedUrl==null)&&errorCounter<6){
-            link = clearLink(dirtyLink);
-            preurl = String.format(DEEPLINK_LINK_URL,vendor_id, company_id, sub_id,link);
-            url = admitize(preurl);
-            admitedUrl  = shrink(url);
+        while ((longUrl==null||cleanUrl==null||admitedUrl==null)&&errorCounter<6){
+            longUrl = unShrink(dirtyLink);
+            Shop shop;
+            if ((shop = Shop.getShopForLink(longUrl))==null){
+                bot.sendTextToAdmin("No shop found for link "+longUrl);
+            }
+            cleanUrl = clearLink(dirtyLink, shop);
+            admitedUrl = admitadApi.admitize(cleanUrl, shop.getVendor_id(), shop.getCompany_id(), Category.getCategoryForPrice(price*100).getSub_id());
+            res  = shrink(admitedUrl);
             errorCounter++;
         }
         if (errorCounter==5)throw new ApiException("changeLink failed");
         return admitedUrl;
+    }
+
+    private String unShrink(String url) {
+        HttpResponse response;
+        HttpGet get;
+        get = new HttpGet(String.format(GOOGLE_UNSHRINKER_URL,url));
+        InputStream in = HttpEx.execute(get);
+        String res  = parser.jsonFindByKey("longUrl", in);
+        if (res==null){
+            HttpHead head = new HttpHead(url);
+            response = HttpEx.rawExecute(head);
+            if (response.getStatusLine().getStatusCode()/100==3)
+                res= response.getFirstHeader("Location").getValue();
+        }
+        if (res==null){
+            log.warn("Unshrinker return NULL");
+            return url;}
+        return res;
     }
 
     private String shrink(String url) {
@@ -119,30 +86,35 @@ public class TextProcessor {
             post.setEntity(body);
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();}
-        InputStream in = executer(post);
+        InputStream in = HttpEx.execute(post);
         String res  = parser.jsonFindByKey("id", in);
-        if (res==null)log.warn("Google shrinker API return NULL");
-        return parser.jsonFindByKey("id", in);
+        if (res==null){
+            log.warn("Google shrinker API return NULL");
+            return url;
+        }
+        return res;
     }
 
-    private String admitize(String preurl) {
-        HttpResponse response;
-        HttpPost post;
-    }
 
-    private String clearLink(String dirtyLink) {
-        HttpResponse response;
-        HttpPost post;
-    }
+    private String clearLink(String dirtyLink, Shop shop) {
 
-    private InputStream executer(HttpUriRequest request){
+        if (dirtyLink.contains("http")){
+            dirtyLink = dirtyLink.substring(dirtyLink.lastIndexOf("http"));
+        } else if (dirtyLink.contains(shop.getName())){
+            dirtyLink = dirtyLink.substring(dirtyLink.indexOf("http"));
+        } else {
+            log.warn("ClearLink failed with "+dirtyLink + " and shop " +shop.getName());
+            return null;
+        }
         try {
-            return client.execute(request).getEntity().getContent();
-        } catch (IOException e) {
+            dirtyLink = URLDecoder.decode(dirtyLink, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-        return null;
+        if (dirtyLink.contains("html")){
+            dirtyLink = dirtyLink.substring(0, dirtyLink.lastIndexOf("html")+5);
+        }
+        return dirtyLink;
     }
-
 }
 

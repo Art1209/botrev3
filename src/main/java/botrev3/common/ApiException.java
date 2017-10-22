@@ -1,4 +1,4 @@
-package botrev3.helpBot.common;
+package botrev3.common;
 
 /**
  * Created by aalbutov on 20.10.2017.

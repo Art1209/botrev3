@@ -1,0 +1,72 @@
+2017-10-22 21:59:21 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2017-10-22 21:59:21 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2017-10-22 21:59:21 DEBUG PoolingHttpClientConnectionManager:255 - Connection request: [route: {s}->https://api.airtable.com:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2017-10-22 21:59:21 DEBUG PoolingHttpClientConnectionManager:288 - Connection leased: [id: 0][route: {s}->https://api.airtable.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2017-10-22 21:59:21 DEBUG MainClientExec:235 - Opening connection {s}->https://api.airtable.com:443
+2017-10-22 21:59:21 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to api.airtable.com/54.236.123.150:443
+2017-10-22 21:59:21 DEBUG SSLConnectionSocketFactory:337 - Connecting socket to api.airtable.com/54.236.123.150:443 with timeout 0
+2017-10-22 21:59:22 DEBUG SSLConnectionSocketFactory:390 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2017-10-22 21:59:22 DEBUG SSLConnectionSocketFactory:391 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2017-10-22 21:59:22 DEBUG SSLConnectionSocketFactory:395 - Starting handshake
+2017-10-22 21:59:22 DEBUG SSLConnectionSocketFactory:425 - Secure session established
+2017-10-22 21:59:22 DEBUG SSLConnectionSocketFactory:426 -  negotiated protocol: TLSv1.2
+2017-10-22 21:59:22 DEBUG SSLConnectionSocketFactory:427 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2017-10-22 21:59:22 DEBUG SSLConnectionSocketFactory:435 -  peer principal: CN=api.airtable.com
+2017-10-22 21:59:22 DEBUG SSLConnectionSocketFactory:444 -  peer alternative names: [api.airtable.com]
+2017-10-22 21:59:22 DEBUG SSLConnectionSocketFactory:448 -  issuer principal: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+2017-10-22 21:59:22 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 192.168.31.78:52962<->54.236.123.150:443
+2017-10-22 21:59:22 DEBUG MainClientExec:256 - Executing request POST /v0/keyhnzkreYNlvMRjR/Table1 HTTP/1.1
+2017-10-22 21:59:22 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2017-10-22 21:59:22 DEBUG headers:133 - http-outgoing-0 >> POST /v0/keyhnzkreYNlvMRjR/Table1 HTTP/1.1
+2017-10-22 21:59:22 DEBUG headers:136 - http-outgoing-0 >> Authorization: Bearer Bearer keyhnzkreYNlvMRjR
+2017-10-22 21:59:22 DEBUG headers:136 - http-outgoing-0 >> Content-Type: application/json
+2017-10-22 21:59:22 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 104
+2017-10-22 21:59:22 DEBUG headers:136 - http-outgoing-0 >> Host: api.airtable.com
+2017-10-22 21:59:22 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2017-10-22 21:59:22 DEBUG headers:136 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_121)
+2017-10-22 21:59:22 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2017-10-22 21:59:22 DEBUG wire:73 - http-outgoing-0 >> "POST /v0/keyhnzkreYNlvMRjR/Table1 HTTP/1.1[\r][\n]"
+2017-10-22 21:59:22 DEBUG wire:73 - http-outgoing-0 >> "Authorization: Bearer Bearer keyhnzkreYNlvMRjR[\r][\n]"
+2017-10-22 21:59:22 DEBUG wire:73 - http-outgoing-0 >> "Content-Type: application/json[\r][\n]"
+2017-10-22 21:59:22 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 104[\r][\n]"
+2017-10-22 21:59:22 DEBUG wire:73 - http-outgoing-0 >> "Host: api.airtable.com[\r][\n]"
+2017-10-22 21:59:22 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2017-10-22 21:59:22 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_121)[\r][\n]"
+2017-10-22 21:59:22 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2017-10-22 21:59:22 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2017-10-22 21:59:22 DEBUG wire:87 - http-outgoing-0 >> "{"fields":{"Description":"dsfgsdg","Price":"122.0","Time":"dsfgsdg","Image":"dsfgsdg","Link":"dsfgsdg"}}"
+2017-10-22 21:59:22 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 404 Not Found[\r][\n]"
+2017-10-22 21:59:22 DEBUG wire:73 - http-outgoing-0 << "Date: Sun, 22 Oct 2017 18:59:24 GMT[\r][\n]"
+2017-10-22 21:59:22 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2017-10-22 21:59:22 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 21[\r][\n]"
+2017-10-22 21:59:22 DEBUG wire:73 - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2017-10-22 21:59:22 DEBUG wire:73 - http-outgoing-0 << "Set-Cookie: AWSALB=YdZeC1DzhKoL1WcPDBUYVnHAI11bC4QS+H4tr88hBhslxRkKUKiUMEZSdvPgpZcu1Iz3wp524bPoS30U7b3AGevFxU9peDwoHrWGu/uacPpXulbRvDJL2tB7FfPq; Expires=Sun, 29 Oct 2017 18:59:23 GMT; Path=/[\r][\n]"
+2017-10-22 21:59:22 DEBUG wire:73 - http-outgoing-0 << "Server: Tengine[\r][\n]"
+2017-10-22 21:59:22 DEBUG wire:73 - http-outgoing-0 << "access-control-allow-origin: *[\r][\n]"
+2017-10-22 21:59:22 DEBUG wire:73 - http-outgoing-0 << "access-control-allow-methods: GET,PUT,POST,PATCH,DELETE,OPTIONS[\r][\n]"
+2017-10-22 21:59:22 DEBUG wire:73 - http-outgoing-0 << "access-control-allow-headers: content-type, authorization, content-length, x-requested-with, x-api-version, x-airtable-application-id[\r][\n]"
+2017-10-22 21:59:22 DEBUG wire:73 - http-outgoing-0 << "ETag: W/"15-tcRCab2ZDkTZ4I9Oh2TI8Kt8AAg"[\r][\n]"
+2017-10-22 21:59:22 DEBUG wire:73 - http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2017-10-22 21:59:22 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2017-10-22 21:59:22 DEBUG wire:87 - http-outgoing-0 << "{"error":"NOT_FOUND"}"
+2017-10-22 21:59:22 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 404 Not Found
+2017-10-22 21:59:22 DEBUG headers:125 - http-outgoing-0 << Date: Sun, 22 Oct 2017 18:59:24 GMT
+2017-10-22 21:59:22 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+2017-10-22 21:59:22 DEBUG headers:125 - http-outgoing-0 << Content-Length: 21
+2017-10-22 21:59:22 DEBUG headers:125 - http-outgoing-0 << Connection: keep-alive
+2017-10-22 21:59:22 DEBUG headers:125 - http-outgoing-0 << Set-Cookie: AWSALB=YdZeC1DzhKoL1WcPDBUYVnHAI11bC4QS+H4tr88hBhslxRkKUKiUMEZSdvPgpZcu1Iz3wp524bPoS30U7b3AGevFxU9peDwoHrWGu/uacPpXulbRvDJL2tB7FfPq; Expires=Sun, 29 Oct 2017 18:59:23 GMT; Path=/
+2017-10-22 21:59:22 DEBUG headers:125 - http-outgoing-0 << Server: Tengine
+2017-10-22 21:59:22 DEBUG headers:125 - http-outgoing-0 << access-control-allow-origin: *
+2017-10-22 21:59:22 DEBUG headers:125 - http-outgoing-0 << access-control-allow-methods: GET,PUT,POST,PATCH,DELETE,OPTIONS
+2017-10-22 21:59:22 DEBUG headers:125 - http-outgoing-0 << access-control-allow-headers: content-type, authorization, content-length, x-requested-with, x-api-version, x-airtable-application-id
+2017-10-22 21:59:22 DEBUG headers:125 - http-outgoing-0 << ETag: W/"15-tcRCab2ZDkTZ4I9Oh2TI8Kt8AAg"
+2017-10-22 21:59:22 DEBUG headers:125 - http-outgoing-0 << Vary: Accept-Encoding
+2017-10-22 21:59:22 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2017-10-22 21:59:22 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=YdZeC1DzhKoL1WcPDBUYVnHAI11bC4QS+H4tr88hBhslxRkKUKiUMEZSdvPgpZcu1Iz3wp524bPoS30U7b3AGevFxU9peDwoHrWGu/uacPpXulbRvDJL2tB7FfPq; Expires=Sun, 29 Oct 2017 18:59:23 GMT; Path=/". Invalid 'expires' attribute: Sun, 29 Oct 2017 18:59:23 GMT
+2017-10-22 21:59:22 DEBUG PoolingHttpClientConnectionManager:320 - Connection [id: 0][route: {s}->https://api.airtable.com:443] can be kept alive indefinitely
+2017-10-22 21:59:22 DEBUG PoolingHttpClientConnectionManager:326 - Connection released: [id: 0][route: {s}->https://api.airtable.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2017-10-22 21:59:40 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=JFz/A7T3GMfgkloMoPqrQdji4vPQAEZnqsq4089lmXMVDLZi5pY4rwOkv6O7sG4jmXOH20vYTn4qpuC7xChqX2XVINiDUJxd7bMzC7SMLMWPUf8sG3W9RXFaLbqY; Expires=Sun, 29 Oct 2017 18:59:41 GMT; Path=/". Invalid 'expires' attribute: Sun, 29 Oct 2017 18:59:41 GMT
+2017-10-22 22:02:14 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=JkEAwgMR6FibLps7Zs7sG5lVimRe/BTGNmPr8O3WPaB76A+xu5420nSGAzQjBT1vCGFy3goFxB/y/s160GxKsYCrtDwFzT0AkMb1p9GaUGTJgLU0wqsFAqUubub3; Expires=Sun, 29 Oct 2017 19:02:16 GMT; Path=/". Invalid 'expires' attribute: Sun, 29 Oct 2017 19:02:16 GMT
+2017-10-22 22:03:42 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=wDUAYrk74AEN7efh1zOJE7pXL8MXvxcWt2YehIqydxyBpprTlXmr3MU+MepeDmyVV9rfPG0+E5FfZNB4d33jHqfdS3qXjCyxgHUXH9Oj7veSLUDc/2Za2ABLnh7/; Expires=Sun, 29 Oct 2017 19:03:43 GMT; Path=/". Invalid 'expires' attribute: Sun, 29 Oct 2017 19:03:43 GMT
+2017-10-22 22:05:55 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=x7jqthiuXi4OE/XgBi6z7oeLOTdpAYcPSB79aM20HD0f2jKuiySlfVRH25GZSgVxoxiN+xMAsV1KGuwAKfvd0bk8PMMrYEudm3yC8xDJBZvu0Ypve8S36Iht4UHp; Expires=Sun, 29 Oct 2017 19:05:57 GMT; Path=/". Invalid 'expires' attribute: Sun, 29 Oct 2017 19:05:57 GMT
+2017-10-22 22:13:41 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=PL494FH/N4tAPogWoQplJ49tSxbccepTNS3egfHXiJwuZNZFqLz4+4X+5G9Ouo9Ys7kKzSe3vg3aqMVYQsTYPpAyCrIjCDFUCXdxgOz6VimxwQpP8jC7xSZRi/fp; Expires=Sun, 29 Oct 2017 19:13:42 GMT; Path=/". Invalid 'expires' attribute: Sun, 29 Oct 2017 19:13:42 GMT
