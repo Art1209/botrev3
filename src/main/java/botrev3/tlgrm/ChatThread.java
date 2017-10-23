@@ -1,6 +1,7 @@
 package botrev3.tlgrm;
 
 import botrev3.AirTableApi;
+import botrev3.TextProcessor;
 import botrev3.common.HttpEx;
 import botrev3.common.JsonRecoursiveParser;
 import botrev3.domens.Action;
@@ -147,11 +148,21 @@ public class ChatThread{
                 }
                 text = msg.getText().trim();
                 action.setPriceX100((int)(Double.parseDouble(text)*100));
+                action.setLink(proc.changeLink(action.getLink(), Integer.parseInt(text)));
                 String id = thr.airTableApi.addAction(action);
                 action.setId(id);
                 System.out.println(id);
+                String logs = "Text: "+action.getDescription() + System.lineSeparator()
+                        +"Link: "+action.getLink() + System.lineSeparator()
+                        +"Image: "+action.getImage() + System.lineSeparator()
+                        +"Price: "+action.getPriceAsString() + System.lineSeparator()
+                        +"Time: "+action.getTime() + System.lineSeparator();
+                System.out.println(logs);
+                thr.bot.sendTextToAdmin(logs);
+                logs.info(logs);
             }
         };
+        private static TextProcessor proc = new TextProcessor();
         private static Action action;
         void doSomeWork(ChatThread thr, Message msg){
             thr.bot.sendTextToAdmin("ECHO: "+msg.getText());

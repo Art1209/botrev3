@@ -35,7 +35,7 @@ public class TextProcessor {
     private AdmitadApi admitadApi = new AdmitadApi();
     private BlogBot bot;
 
-    String changeLink(String dirtyLink, int price ){
+    public String changeLink(String dirtyLink, int price ){
         int errorCounter =0;
         String longUrl=null;
         String cleanUrl=null;
