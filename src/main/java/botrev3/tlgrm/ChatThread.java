@@ -38,7 +38,6 @@ public class ChatThread{
     private BlogBot bot;
     private Mode mode = Mode.Dead;
     private BlockingQueue<Update> queue= new ArrayBlockingQueue<>(10);
-    private SimpleDateFormat format = new SimpleDateFormat("yyyy "+TIME_FORMAT);
     private JsonRecoursiveParser parser = JsonRecoursiveParser.getParser();
     private AirTableApi airTableApi = AirTableApi.getApi();
 

@@ -4,7 +4,6 @@ import botrev3.common.HttpEx;
 import botrev3.common.JsonRecoursiveParser;
 import lombok.extern.log4j.Log4j;
 import org.apache.http.HttpHeaders;
-import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
@@ -24,9 +23,12 @@ public class AdmitadApi {
     private String client_id = "1b6b511925fcd9c41a86518d666eea";
     private String client_secret = "a5768067980f95d0a0b7f647c2a5a1";
     // base64 = MWI2YjUxMTkyNWZjZDljNDFhODY1MThkNjY2ZWVhOmE1NzY4MDY3OTgwZjk1ZDBhMGI3ZjY0N2MyYTVhMQ==
-    private String token;
-    private long expires;
-    private String refreshToken;
+    private String token
+            ;
+    private long expires
+            ;
+    private String refreshToken
+            ;
 
     private static final String TOKEN_REQUEST_ENTITY_STRING =
             "grant_type=client_credentials&client_id=%s&scope=deeplink_generator";
@@ -93,6 +95,7 @@ public class AdmitadApi {
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
+        log.debug("Retrieved new token");
     }
 
     public String admitize(String pureUrl, String vendor_id, String company_id, String sub_id) {

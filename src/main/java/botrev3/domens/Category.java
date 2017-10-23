@@ -6,7 +6,7 @@ import lombok.Setter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Category {
+public class Category{
 
 
     public static List<Category> categories = new ArrayList<>();

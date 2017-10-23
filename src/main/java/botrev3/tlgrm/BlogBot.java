@@ -1,8 +1,9 @@
 package botrev3.tlgrm;
 
-import botrev3.tlgrm.ChatThread;
+import botrev3.MyTimer;
 import lombok.extern.log4j.Log4j;
 import org.telegram.telegrambots.api.methods.send.SendMessage;
+import org.telegram.telegrambots.api.methods.send.SendPhoto;
 import org.telegram.telegrambots.api.objects.Message;
 import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
@@ -19,14 +20,8 @@ public class BlogBot extends TelegramLongPollingBot {
     public static final String TOKEN = "344549406:AAHh4oTg-qwNxfJ3FS8Gc1AT0h-okfzGYV8";
     public static final long ADMIN_CHAT_ID = 426631444l;
     public static final long CHANNEL_CHAT_ID = -1001140251814l;
-//    public static final String[] MATCH_TEMPLATE_COMMAND_PREFIX = {"find"};
-//    public static final String[] LANGS = {"rus", "eng"};
-//    public static final String[] MODES = {"parse", "sign"};
 
-    private Map<Long,ChatThread> chatThreads = new HashMap<>();
-    private ExecutorService exec = Executors.newFixedThreadPool(10);
-
-
+    MyTimer timer = MyTimer.getTimer(this);
 
     public void onUpdateReceived(Update update) {
         if (update.hasMessage()){
@@ -67,6 +62,18 @@ public class BlogBot extends TelegramLongPollingBot {
                 .setText(s);
         try {
             sendMessage(sendMessage);
+        } catch (TelegramApiException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void sendPhotoTextToChannel(String s, String imgLink) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(CHANNEL_CHAT_ID)
+                .setCaption(s)
+                .setPhoto(imgLink);
+        try {
+            sendPhoto(sendPhoto);
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }

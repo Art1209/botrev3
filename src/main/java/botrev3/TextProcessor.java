@@ -14,7 +14,6 @@ import org.apache.http.client.methods.HttpHead;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import botrev3.common.ApiException;
-import org.json.simple.JSONObject;
 
 import javax.ws.rs.core.MediaType;
 import java.io.InputStream;
@@ -59,6 +58,7 @@ public class TextProcessor {
             errorCounter++;
         }
         if (errorCounter==5)throw new ApiException("changeLink failed");
+        log.debug(res);
         return res;
     }
 

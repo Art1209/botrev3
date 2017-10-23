@@ -1,13 +1,19 @@
 package botrev3.domens;
 
+import botrev3.tlgrm.ChatThread;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.Year;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
-public class Action {
+public class Action{
 
+    public static SimpleDateFormat format = new SimpleDateFormat("yyyy "+ ChatThread.TIME_FORMAT);
     public static List<Action> actions = new ArrayList<>();
 
     public static Action getActionForId(String givenId){
@@ -46,6 +52,18 @@ public class Action {
 
     public String getPriceAsString(){
         return (getPriceX100()/100)+"."+(getPriceX100()%100);
+    }
+
+    public Date getTimeAsDate(){
+        Date timeToStart = null;
+        Date today = new Date();
+        try {
+            timeToStart = format.parse(Year.now().getValue()+" "+getTime());
+            if (today.after(timeToStart)) {
+                timeToStart = format.parse((Year.now().getValue()+1)+" "+getTime());
+            }
+        } catch (ParseException e) {}
+        return timeToStart;
     }
 
     @Override

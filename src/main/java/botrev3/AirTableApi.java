@@ -9,6 +9,7 @@ import lombok.extern.log4j.Log4j;
 import org.apache.http.HttpHeaders;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpDelete;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpUriRequest;
@@ -21,6 +22,7 @@ import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -47,7 +49,7 @@ public class AirTableApi {
     private static JsonRecoursiveParser parser = JsonRecoursiveParser.getParser();
     private static HttpClient client = HttpClientBuilder.create().build();
 
-    static {
+    public void init() {
         Action.actions = api.getAllActions();
         Category.categories = api.getAllCategories();
         Shop.shops = api.getAllShops();
@@ -71,6 +73,7 @@ public class AirTableApi {
         }
         InputStream in = HttpEx.execute(post);
         String id = parser.jsonFindByKey("id",in);
+        log.debug("Added new action "+id);
         return id;
     }
 
@@ -90,13 +93,19 @@ public class AirTableApi {
             String link = null;
             String time = null;
             String description = null;
+            action.setTime(time = (String)fields.get("Time"));
+            Date parsedDate = action.getTimeAsDate();
+            if (parsedDate==null||(new Date()).after(parsedDate)){
+                deleteAction(action);
+                continue; // check for valid time at every udate
+            }
             action.setImage(image = (String)fields.get("Image"));
             action.setPriceX100(price = 100*(int)(Double.parseDouble((String)fields.get("Price"))));
             action.setLink(link = (String)fields.get("Link"));
-            action.setTime(time = (String)fields.get("Time"));
             action.setDescription(description = (String)fields.get("Description"));
             res.add(action);
         }
+        log.debug("Got actions "+res.size());
         return res;
     }
 
@@ -122,6 +131,7 @@ public class AirTableApi {
             if (priceRanges!=null)category.renewRange();
             res.add(category);
         }
+        log.debug("Got categories "+res.size());
         return res;
     }
 
@@ -145,6 +155,7 @@ public class AirTableApi {
             shop.setDescription(description = (String)fields.get("Description"));
             res.add(shop);
         }
+        log.debug("Got shops "+res.size());
         return res;
     }
     public String[] getCredentials(){
@@ -168,6 +179,15 @@ public class AirTableApi {
         }
         log.warn("Empty credentials returned");
         return res;
+    }
+
+    public void deleteAction(Action action){
+        HttpDelete delete = auth(new HttpDelete(String.format(API_BASE_LINK, ACTION_TABLE_ID)+action.getId()));
+        int status = HttpEx.rawExecute(delete).getStatusLine().getStatusCode();
+        if (status!=200){
+            log.warn("Delete action return "+status);
+        }
+
     }
 
     private <T extends HttpUriRequest> T auth(T request){
