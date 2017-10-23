@@ -27,9 +27,9 @@ public class Category {
     private Category() {
     }
 
-    public static Category getCategoryForPrice(int priceX100){
+    public static Category getCategoryForPrice(int price){
         for (Category cat:categories){
-            if (priceX100>cat.getLowLevelRange()&&priceX100<=cat.getHighLevelRange())return cat;
+            if (price>cat.getLowLevelRange()&&price<=cat.getHighLevelRange())return cat;
         }
         return null;
 

@@ -5,6 +5,7 @@ import botrev3.TextProcessor;
 import botrev3.common.HttpEx;
 import botrev3.common.JsonRecoursiveParser;
 import botrev3.domens.Action;
+import lombok.extern.log4j.Log4j;
 import org.apache.http.client.methods.HttpGet;
 import org.telegram.telegrambots.api.objects.Message;
 import org.telegram.telegrambots.api.objects.PhotoSize;
@@ -16,6 +17,7 @@ import java.util.concurrent.BlockingQueue;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+@Log4j
 public class ChatThread{
 
     public static final String TIME_FORMAT = "dd MM HH mm";
@@ -38,7 +40,7 @@ public class ChatThread{
     private BlockingQueue<Update> queue= new ArrayBlockingQueue<>(10);
     private SimpleDateFormat format = new SimpleDateFormat("yyyy "+TIME_FORMAT);
     private JsonRecoursiveParser parser = JsonRecoursiveParser.getParser();
-    private AirTableApi airTableApi;
+    private AirTableApi airTableApi = AirTableApi.getApi();
 
 
     static ChatThread instance = new ChatThread();
@@ -116,7 +118,7 @@ public class ChatThread{
                     //Pattern pricep = Pattern.compile(PRICE_PATTERN);
                     Pattern linkp = Pattern.compile(LINK_PATTERN);
                     Matcher linkm = linkp.matcher(text);
-                    if (linkm.matches()){
+                    if (linkm.find()){
                         String regexLink = linkm.group();
                         act.setLink(regexLink);
                         act.setDescription(text.replace(regexLink,""));
@@ -159,7 +161,7 @@ public class ChatThread{
                         +"Time: "+action.getTime() + System.lineSeparator();
                 System.out.println(logs);
                 thr.bot.sendTextToAdmin(logs);
-                logs.info(logs);
+                log.info(logs);
             }
         };
         private static TextProcessor proc = new TextProcessor();

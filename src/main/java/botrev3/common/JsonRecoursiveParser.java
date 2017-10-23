@@ -1,6 +1,7 @@
 package botrev3.common;
 
 
+import lombok.extern.log4j.Log4j;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -12,6 +13,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Set;
 
+@Log4j
 public class JsonRecoursiveParser {
     private JsonRecoursiveParser(){}
     private static JsonRecoursiveParser recParser;
@@ -21,6 +23,20 @@ public class JsonRecoursiveParser {
         return recParser==null?new JsonRecoursiveParser():recParser;
     }
 
+
+    public JSONObject jsonGetRoot(InputStream is){
+        JSONObject jsonObj = null;
+        try {
+            jsonObj = (JSONObject) parser.parse(new InputStreamReader(is));
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return jsonObj;
+
+
+    }
     public String jsonFindByKey(String key, InputStream is){
         String result = null;
         JSONObject jsonObj;
@@ -45,8 +61,7 @@ public class JsonRecoursiveParser {
             if (rootName != null) {
                 root = (JSONObject)parser.parse(new InputStreamReader(is));
                 array = (JSONArray)root.get(rootName);
-            }
-            else{
+            } else {
                 array = (JSONArray)parser.parse(new InputStreamReader(is));
             }
 
@@ -55,7 +70,9 @@ public class JsonRecoursiveParser {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        for (Object obj:array)result.add(obj);
+        if (array!=null){
+            for (Object obj:array)result.add(obj);
+        }
         return result;
     }
 
