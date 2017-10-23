@@ -182,7 +182,7 @@ public class AirTableApi {
     }
 
     public void deleteAction(Action action){
-        HttpDelete delete = auth(new HttpDelete(String.format(API_BASE_LINK, ACTION_TABLE_ID)+action.getId()));
+        HttpDelete delete = auth(new HttpDelete(String.format(API_BASE_LINK, ACTION_TABLE_ID)+"/"+action.getId()));
         int status = HttpEx.rawExecute(delete).getStatusLine().getStatusCode();
         if (status!=200){
             log.warn("Delete action return "+status);

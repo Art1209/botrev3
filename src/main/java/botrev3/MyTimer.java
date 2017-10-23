@@ -8,6 +8,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.log4j.Log4j;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -41,6 +42,8 @@ public class MyTimer {
 
     public static void scheduleTask(MyPostWriter myPostWriter){
         if (myPostWriter.getAction()!=null){
+            Date postdate = myPostWriter.getAction().getTimeAsDate();
+            log.info("postdate: "+postdate.toString() +"  now: "+(new Date()).toString());
             tasktimer.schedule(myPostWriter, myPostWriter.getAction().getTimeAsDate());
         }
 
@@ -51,9 +54,17 @@ public class MyTimer {
         private long delay;
 
         public LocalTask(Updater updater, long delay) {
+            this();
             this.updater = updater;
             this.delay = delay;
         }
+
+        public LocalTask(LocalTask oldTask) {
+            this();
+            this.updater = oldTask.updater;
+            this.delay = oldTask.delay;
+        }
+
 
         public LocalTask() {
         }
@@ -61,7 +72,7 @@ public class MyTimer {
         @Override
         public void run() {
             updater.initUpdate();
-            lifeCycleTimer.schedule(this, delay);
+            lifeCycleTimer.schedule(new LocalTask(this), delay);
         }
     }
 

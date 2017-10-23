@@ -59,8 +59,8 @@ public class Action{
         Date today = new Date();
         try {
             timeToStart = format.parse(Year.now().getValue()+" "+getTime());
-            if (today.after(timeToStart)) {
-                timeToStart = format.parse((Year.now().getValue()+1)+" "+getTime());
+            if (today.getTime()-timeToStart.getTime()>3600000) {
+                timeToStart = format.parse((Year.now().getValue())+" "+getTime());
             }
         } catch (ParseException e) {}
         return timeToStart;

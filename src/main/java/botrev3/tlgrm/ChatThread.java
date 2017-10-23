@@ -58,7 +58,7 @@ public class ChatThread{
     public void handle(Message message) {
         if (mode == Mode.Dead && message.hasText()) {
             if (message.getText().trim().equalsIgnoreCase("new")) {
-                bot.sendTextToAdmin("Ну, Настя, давай");
+                bot.sendTextToAdmin("Input post");
                 setMode(Mode.WaitPost);
             } else mode.doSomeWork(this, message);
             return;
