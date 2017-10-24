@@ -153,15 +153,20 @@ public class ChatThread{
                     text = msg.getText().trim();
                 }
                 text = msg.getText().trim();
+                int textInt = 0;
+                int index;
                 if (text.indexOf(',')>-1){
                     text = text.replace(',','.');
+                }
+                if ((index = text.indexOf('.'))>-1){
+                    textInt = Integer.parseInt(text.substring(0, index));
                 }
                 try{
                     action.setPriceAsString(text);
                 } catch (NumberFormatException e){
                     log.warn("Wrong price format at bot add Action task");
                 }
-                action.setLink(proc.changeLink(action.getLink(), Integer.parseInt(text)));
+                action.setLink(proc.changeLink(action.getLink(), textInt));
                 String id = thr.airTableApi.addAction(action);
                 action.setId(id);
                 System.out.println(id);
