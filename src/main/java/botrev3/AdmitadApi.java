@@ -6,6 +6,7 @@ import lombok.extern.log4j.Log4j;
 import org.apache.http.HttpHeaders;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.ContentType;
 import org.apache.http.entity.StringEntity;
 import org.json.simple.JSONObject;
 import java.util.Base64;
@@ -82,18 +83,14 @@ public class AdmitadApi {
 //                "MWI2YjUxMTkyNWZjZDljNDFhODY1MThkNjY2ZWVhOmE1NzY4MDY3OTgwZjk1ZDBhMGI3ZjY0N2MyYTVhMQ==");
         post.addHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_FORM_URLENCODED);
         StringEntity body = null;
-        try {
-            body = new StringEntity(String.format(TOKEN_REQUEST_ENTITY_STRING,client_id));
-            post.setEntity(body);
-            InputStream in = HttpEx.execute(post);
-            JSONObject obj = parser.jsonGetRoot(in);
-            if (obj.containsKey("access_token")){
-                token = (String) obj.get("access_token");
-                expires = System.currentTimeMillis()+(((Long) obj.get("expires_in"))*1000);
-                refreshToken = (String) obj.get("refresh_token");
-            }
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
+        body = new StringEntity(String.format(TOKEN_REQUEST_ENTITY_STRING,client_id), ContentType.APPLICATION_FORM_URLENCODED);
+        post.setEntity(body);
+        InputStream in = HttpEx.execute(post);
+        JSONObject obj = parser.jsonGetRoot(in);
+        if (obj.containsKey("access_token")){
+            token = (String) obj.get("access_token");
+            expires = System.currentTimeMillis()+(((Long) obj.get("expires_in"))*1000);
+            refreshToken = (String) obj.get("refresh_token");
         }
         log.debug("Retrieved new token");
     }

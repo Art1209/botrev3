@@ -13,6 +13,7 @@ import org.apache.http.client.methods.HttpDelete;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpUriRequest;
+import org.apache.http.entity.ContentType;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.json.simple.JSONObject;
@@ -66,11 +67,7 @@ public class AirTableApi {
         fields.put("Image", act.getImage());
         fields.put("Time", act.getTime());
         obj.put("fields", fields);
-        try {
-            post.setEntity(new StringEntity(obj.toJSONString()));
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
+        post.setEntity(new StringEntity(obj.toJSONString(), ContentType.APPLICATION_JSON ));
         InputStream in = HttpEx.execute(post);
         String id = parser.jsonFindByKey("id",in);
         log.debug("Added new action "+id);
