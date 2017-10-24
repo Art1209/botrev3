@@ -19,7 +19,8 @@ import java.util.regex.Pattern;
 
 @Log4j
 public class ChatThread{
-
+    public static final int TIME_ZONE = 2;
+    public static final int TARGET_TIME_ZONE = 4;
     public static final String TIME_FORMAT = "dd HH:mm";
     public static final String TIME_REGEX = "[0-3]?[0-9]\\s{0,3}[0-1]?[0-9]\\s{0,3}[0-2]?[0-9]\\s{0,3}[0-6][0-9]";
 

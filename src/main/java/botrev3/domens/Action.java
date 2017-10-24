@@ -63,7 +63,7 @@ public class Action{
         int year = Year.now().getValue();
         try {
             timeToStart = format.parse(year+" "+monthToString(month) +" " +getTime());
-            if ((long)today.getTime()-timeToStart.getTime()>432000000l) {
+            if ((long)today.getTime()-timeToStart.getTime()>432000000l) { // 5 days in mlsec
                 if (month==12){
                     timeToStart = format.parse((year+1)+" 01 "+getTime());
                 } else {
@@ -71,6 +71,8 @@ public class Action{
                 }
             }
         } catch (ParseException e) {}
+        long changeTimeZoneHours = ChatThread.TARGET_TIME_ZONE-ChatThread.TIME_ZONE;
+        timeToStart = new Date(timeToStart.getTime()-(changeTimeZoneHours*3600000l)); // 1 our in mlsec
         return timeToStart;
     }
 
