@@ -9282,3 +9282,833 @@ Time: 23 10 20 01
 2017-10-24 10:10:30 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=Uv2lD3sbJKDxDI6tnfTRdxgyXNgTZE8U4mPqovxxhTmWrnzikszqk+giNBde9CmY1w0uJu0aioXVHuF7ptBS6EhkJLlnWJBPkGjlKsvjwE6YJ/Iu0V2x99HWckpB; Expires=Tue, 31 Oct 2017 07:10:29 GMT; Path=/". Invalid 'expires' attribute: Tue, 31 Oct 2017 07:10:29 GMT
 2017-10-24 10:10:30 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=XuSkrTSRD+ciJxrcMKuCEqz0Q9f6BIlCz8u1NjFW8UGZzMOB+9EqjquoZPE9/OokjIT58KmukLiM2TwohrqJUbpeRYxrQ/gJ56sdy2lc4bg2FuFM9j1aQzsTuadQ; Expires=Tue, 31 Oct 2017 07:10:30 GMT; Path=/". Invalid 'expires' attribute: Tue, 31 Oct 2017 07:10:30 GMT
 2017-10-24 10:10:41 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=EaVJd7304y1ruvUMYn7I+hmSqtaZ5woKCnC6FNq8L/QcyzATDCjI6Q8c8+ncj5QAhWgB2ktdaMDVf8M2ZZSURxH7Iv8lGCBYk9fMA5TWj/dvhYxR+2Ld+LKUiIJL; Expires=Tue, 31 Oct 2017 07:10:41 GMT; Path=/". Invalid 'expires' attribute: Tue, 31 Oct 2017 07:10:41 GMT
+2017-10-24 17:05:38 INFO  AirTableApi:105 - Got actions 0
+2017-10-24 17:05:41 INFO  AirTableApi:131 - Got categories 4
+2017-10-24 17:05:42 INFO  AirTableApi:155 - Got shops 9
+2017-10-24 17:05:52 INFO  MyTimer:83 - ActionUpdater
+2017-10-24 17:07:39 INFO  AirTableApi:105 - Got actions 0
+2017-10-24 17:07:39 INFO  AirTableApi:131 - Got categories 4
+2017-10-24 17:07:40 INFO  AirTableApi:155 - Got shops 9
+2017-10-24 17:07:50 INFO  MyTimer:83 - ActionUpdater
+2017-10-24 17:07:54 INFO  AirTableApi:105 - Got actions 0
+2017-10-24 17:07:54 INFO  MyTimer:99 - CategoryUpdater
+2017-10-24 17:09:19 INFO  AirTableApi:105 - Got actions 0
+2017-10-24 17:09:21 INFO  AirTableApi:131 - Got categories 4
+2017-10-24 17:09:22 INFO  AirTableApi:155 - Got shops 9
+2017-10-24 17:09:32 INFO  MyTimer:83 - ActionUpdater
+2017-10-24 17:10:57 INFO  AirTableApi:105 - Got actions 1
+2017-10-24 17:10:59 INFO  AirTableApi:131 - Got categories 4
+2017-10-24 17:11:00 INFO  AirTableApi:155 - Got shops 9
+2017-10-24 17:11:10 INFO  MyTimer:83 - ActionUpdater
+2017-10-24 17:11:12 INFO  AirTableApi:105 - Got actions 1
+2017-10-24 17:11:12 INFO  MyTimer:46 - postdate: Tue Oct 24 17:12:00 MSK 2017  now: Tue Oct 24 17:11:12 MSK 2017
+2017-10-24 17:11:12 INFO  MyTimer:99 - CategoryUpdater
+2017-10-24 17:11:13 INFO  AirTableApi:131 - Got categories 4
+2017-10-24 17:11:13 INFO  MyTimer:109 - ShopUpdater
+2017-10-24 17:11:14 INFO  AirTableApi:155 - Got shops 9
+2017-10-24 17:11:20 INFO  MyTimer:83 - ActionUpdater
+2017-10-24 17:12:00 INFO  MyPostWriter:40 - posting right now: \xF0\x9F\x90\xBC nullgearbest.com
+2017-10-24 17:14:28 INFO  AirTableApi:105 - Got actions 0
+2017-10-24 17:14:30 INFO  AirTableApi:131 - Got categories 4
+2017-10-24 17:14:31 INFO  AirTableApi:155 - Got shops 9
+2017-10-24 17:14:41 INFO  MyTimer:83 - ActionUpdater
+2017-10-24 17:19:07 INFO  AirTableApi:105 - Got actions 0
+2017-10-24 17:19:08 INFO  AirTableApi:131 - Got categories 4
+2017-10-24 17:19:09 INFO  AirTableApi:155 - Got shops 9
+2017-10-24 17:19:19 INFO  MyTimer:83 - ActionUpdater
+2017-10-24 17:21:05 INFO  AirTableApi:105 - Got actions 0
+2017-10-24 17:21:12 INFO  MyTimer:99 - CategoryUpdater
+2017-10-24 17:21:15 INFO  AirTableApi:131 - Got categories 4
+2017-10-24 17:21:18 INFO  MyTimer:109 - ShopUpdater
+2017-10-24 17:21:20 INFO  AirTableApi:155 - Got shops 9
+2017-10-24 17:21:32 INFO  MyTimer:83 - ActionUpdater
+2017-10-24 17:23:19 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=7p9AKpA+VaMLeaJzocFh4EN/p+Ljyni/nxBXRlHP/uxO9Dx3HnJUDFTl2F6USsBrs6xcEAvd8ZU6r7/UcVZH7OwN1nU6Wmz9y9ZT4oTx/hhiwoAl7mb0uTC5vU31; Expires=Tue, 31 Oct 2017 14:23:18 GMT; Path=/". Invalid 'expires' attribute: Tue, 31 Oct 2017 14:23:18 GMT
+2017-10-24 17:23:21 INFO  AirTableApi:105 - Got actions 0
+2017-10-24 17:23:22 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=nPLe/+HJKNAsIG0wOSKJ8S8Magc2zl0F2X4VHuGkfWzA3UPoBReKJJX1Xa2I93Mzc49MvdFJ2FH4Tk9GAiCkFLQ5x+2OLdBqqxCPOwl9NXY+TUTooQGfqUtUWUJN; Expires=Tue, 31 Oct 2017 14:23:21 GMT; Path=/". Invalid 'expires' attribute: Tue, 31 Oct 2017 14:23:21 GMT
+2017-10-24 17:23:22 INFO  AirTableApi:131 - Got categories 4
+2017-10-24 17:23:23 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=wLmnA5Jpj8xgL8CC3PsdNEh49CvA8rkZNOUTwXHsZ/j1V8ZPdXkRFsb2F1ffgTdSiQIawVje899KYpZB6LG1kluEPTn/0HKBNPBOdNfY4uTrN/5KjmHMDjPOt9kn; Expires=Tue, 31 Oct 2017 14:23:22 GMT; Path=/". Invalid 'expires' attribute: Tue, 31 Oct 2017 14:23:22 GMT
+2017-10-24 17:23:23 INFO  AirTableApi:155 - Got shops 9
+2017-10-24 17:23:33 INFO  MyTimer:83 - ActionUpdater
+2017-10-24 17:23:48 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=hE1KSR3wDcW1Mup5liU0UrYGuS8T8+r3kmfEahDPkph+v2zyBuvAW6wUgPuPbwJfGnS4eznc4NATDld44bRpXML35GB5kYMQ06HQDnztEXDZ3n/ElIUgHyNGS40D; Expires=Tue, 31 Oct 2017 14:23:48 GMT; Path=/". Invalid 'expires' attribute: Tue, 31 Oct 2017 14:23:48 GMT
+2017-10-24 17:23:58 INFO  AirTableApi:105 - Got actions 0
+2017-10-24 17:24:23 INFO  MyTimer:99 - CategoryUpdater
+2017-10-24 17:24:28 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=A2pqp7GvoWBSps0TU68CEslqqTVyw+2bdQWd2xqLaE+TZeOp3kTFeiLGf97p8qB06h8AGB880qyV/I7n8zWkK0pWHxXZYpQKDjE/cWgn96/fOY80uibzeOJMm2jA; Expires=Tue, 31 Oct 2017 14:24:27 GMT; Path=/". Invalid 'expires' attribute: Tue, 31 Oct 2017 14:24:27 GMT
+2017-10-24 17:24:28 INFO  AirTableApi:131 - Got categories 4
+2017-10-24 17:24:33 INFO  MyTimer:109 - ShopUpdater
+2017-10-24 17:24:37 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=/3lBgvdVqlP3HA4wJzBvVpsWIXzU8eySyk1eezeEJgrD+gAVq+XRk1wVo0wSpYViKyzcbhQh0nfiKA4s/XtEUNxNw8ZAyPuEDToAdpAZkl77yFFBtheG82OkvnW+; Expires=Tue, 31 Oct 2017 14:24:36 GMT; Path=/". Invalid 'expires' attribute: Tue, 31 Oct 2017 14:24:36 GMT
+2017-10-24 17:24:37 INFO  AirTableApi:155 - Got shops 9
+2017-10-24 17:24:38 INFO  MyTimer:83 - ActionUpdater
+2017-10-24 17:28:09 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=8+pl0yQhCyPEXESA6JmEijlQ3RULTu+Da+PYvKW7TM8eYIIREJn63z8u/qXLP4NuDAorvmNtxZHRcZMP7SoDmAV/4F0P2TRww1QvQVxtX7HLBQO59r9dnkIXWoGt; Expires=Tue, 31 Oct 2017 14:28:09 GMT; Path=/". Invalid 'expires' attribute: Tue, 31 Oct 2017 14:28:09 GMT
+2017-10-24 17:28:09 INFO  AirTableApi:105 - Got actions 0
+2017-10-24 17:28:10 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=6quCTU1WzfQwHLhSbGXR13T86LXDQiGcIZY8X81L0Yhun8Is+O+3yJHDjTzNUbbKqvfQPJ6ZHO4Ec7vkzeANEKXfHUTSIdpvY/DSXf1EG9mtIRdHNlnygYOxzSAm; Expires=Tue, 31 Oct 2017 14:28:10 GMT; Path=/". Invalid 'expires' attribute: Tue, 31 Oct 2017 14:28:10 GMT
+2017-10-24 17:28:10 INFO  AirTableApi:131 - Got categories 4
+2017-10-24 17:28:12 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=QL/nXUMAO8JGEZeyVEiGy3USndu+6wEzD6rXVbZH0DxhWkI3CuiVVwyzuAlIO1eAK73vH3sTsna2Cm07LA51cwJbkBMY6sBVVbcdL3yT9fznRJUoR8z+SlF59vYm; Expires=Tue, 31 Oct 2017 14:28:12 GMT; Path=/". Invalid 'expires' attribute: Tue, 31 Oct 2017 14:28:12 GMT
+2017-10-24 17:28:12 INFO  AirTableApi:155 - Got shops 9
+2017-10-24 17:28:22 INFO  MyTimer:83 - ActionUpdater
+2017-10-24 17:28:34 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=uIZgihc1aSBMHJsGfqNRy9UzNn+5R0Ib7MR35dUhExwK1k8RCrg0qoELYD0zCHwWhD4i/WhoNsP0ffT+oCse7SBua2wwq0yTPuw/F3lFo1bQnavO9Z/yoLtkafwK; Expires=Tue, 31 Oct 2017 14:28:33 GMT; Path=/". Invalid 'expires' attribute: Tue, 31 Oct 2017 14:28:33 GMT
+2017-10-24 17:28:34 INFO  AirTableApi:105 - Got actions 0
+2017-10-24 17:36:06 INFO  MyTimer:99 - CategoryUpdater
+2017-10-24 17:36:18 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=lf4X6GtmsOodCL4l905TiDs60uBhKHb+NgkAJs3V0e/4PZ8jTrDIJRQnvl6/EzBqWH3amAWpQUetL7oU7vUIbqH158c2y6XxD82g7Kcjr7wtDC3XjM1kwkHlc0um; Expires=Tue, 31 Oct 2017 14:36:17 GMT; Path=/". Invalid 'expires' attribute: Tue, 31 Oct 2017 14:36:17 GMT
+2017-10-24 17:36:18 INFO  AirTableApi:105 - Got actions 0
+2017-10-24 17:36:19 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=RIUSGJOW4BGKvsSGfbWU1zUDYnI4b+mDUywwIosBiJ010cL8IzFVSSC9fsRBfvmH0DavRk48CYD/AsvuhRQpUlj6d/GlKi66YRi+lp9b4FEfY9JChtLu53uY75ms; Expires=Tue, 31 Oct 2017 14:36:19 GMT; Path=/". Invalid 'expires' attribute: Tue, 31 Oct 2017 14:36:19 GMT
+2017-10-24 17:36:19 INFO  AirTableApi:131 - Got categories 4
+2017-10-24 17:36:21 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=UUbs4cg3uxJZqGwmF3FBEsQSdseIWGivDYLUANncYB61y8jSewlql2yhrXA1J3C3bXl0YEzdIxw18naA1h6CMSBk1jJ3bfmOq8fV2wRGMUqEujhqB08PLmPxdZt2; Expires=Tue, 31 Oct 2017 14:36:21 GMT; Path=/". Invalid 'expires' attribute: Tue, 31 Oct 2017 14:36:21 GMT
+2017-10-24 17:36:21 INFO  AirTableApi:155 - Got shops 9
+2017-10-24 17:36:31 INFO  MyTimer:83 - ActionUpdater
+2017-10-24 17:36:36 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=qm1rQvf3RpC0eDCwBXCD5EO29TwlzGk+c1ugn2FxyuO+p/nY8XJ0oZLAw4CqtQbZCK2dvf2PjejAFhJinVtz5Oi4h/A/36lMeYhFodNbXGilne1Ll+0p168SBzIs; Expires=Tue, 31 Oct 2017 14:36:35 GMT; Path=/". Invalid 'expires' attribute: Tue, 31 Oct 2017 14:36:35 GMT
+2017-10-24 17:36:36 INFO  AirTableApi:105 - Got actions 0
+2017-10-24 17:36:40 INFO  MyTimer:99 - CategoryUpdater
+2017-10-24 17:36:44 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=+nseYsjMJUuSXoMQGgeJpznuTHf9PCgU75M9b072jjJ4TpMjEz4UhwA1o2Qf7TO9czTjj+RXpwGB0hH298VsExP3UXHtnrr925VwYVJptKbiHPGb9dkMX+sPJc50; Expires=Tue, 31 Oct 2017 14:36:43 GMT; Path=/". Invalid 'expires' attribute: Tue, 31 Oct 2017 14:36:43 GMT
+2017-10-24 17:36:44 INFO  AirTableApi:131 - Got categories 4
+2017-10-24 17:36:45 INFO  MyTimer:109 - ShopUpdater
+2017-10-24 17:36:52 WARN  ResponseProcessCookies:130 - Invalid cookie header: "Set-Cookie: AWSALB=LaS8dYCabLMUW0I77MxmD2Ff4xCMs/+VsKXC4Q3ltSr72J/70jQ5g7stpQbgCRRhSmTOBaLhKUL1AHp5vDdni0T6Cqi9OROCGtZbzPtK8DsdVrdcCZPHfv1VV1yW; Expires=Tue, 31 Oct 2017 14:36:51 GMT; Path=/". Invalid 'expires' attribute: Tue, 31 Oct 2017 14:36:51 GMT
+2017-10-24 17:36:52 INFO  AirTableApi:155 - Got shops 9
+2017-10-24 17:36:54 INFO  MyTimer:83 - ActionUpdater
+2017-10-24 17:39:41 INFO  AirTableApi:105 - Got actions 0
+2017-10-24 17:39:42 INFO  AirTableApi:131 - Got categories 4
+2017-10-24 17:39:43 INFO  AirTableApi:155 - Got shops 9
+2017-10-24 17:39:53 INFO  MyTimer:83 - ActionUpdater
+2017-10-24 17:40:32 INFO  AirTableApi:105 - Got actions 0
+2017-10-24 17:40:33 INFO  AirTableApi:131 - Got categories 4
+2017-10-24 17:40:34 INFO  AirTableApi:155 - Got shops 9
+2017-10-24 17:40:44 INFO  MyTimer:83 - ActionUpdater
+2017-10-24 17:40:46 INFO  AirTableApi:105 - Got actions 0
+2017-10-24 17:40:46 INFO  MyTimer:99 - CategoryUpdater
+2017-10-24 17:40:47 INFO  AirTableApi:131 - Got categories 4
+2017-10-24 17:40:47 INFO  MyTimer:109 - ShopUpdater
+2017-10-24 17:40:49 INFO  AirTableApi:155 - Got shops 9
+2017-10-24 17:40:54 INFO  MyTimer:83 - ActionUpdater
+2017-10-24 17:41:13 DEBUG PoolingHttpClientConnectionManager:255 - Connection request: [route: {s}->https://api.airtable.com:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2017-10-24 17:41:13 DEBUG PoolingHttpClientConnectionManager:288 - Connection leased: [id: 0][route: {s}->https://api.airtable.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2017-10-24 17:41:13 DEBUG MainClientExec:235 - Opening connection {s}->https://api.airtable.com:443
+2017-10-24 17:41:14 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to api.airtable.com/52.203.92.226:443
+2017-10-24 17:41:14 DEBUG SSLConnectionSocketFactory:337 - Connecting socket to api.airtable.com/52.203.92.226:443 with timeout 0
+2017-10-24 17:41:14 DEBUG SSLConnectionSocketFactory:390 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2017-10-24 17:41:14 DEBUG SSLConnectionSocketFactory:391 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2017-10-24 17:41:14 DEBUG SSLConnectionSocketFactory:395 - Starting handshake
+2017-10-24 17:41:15 DEBUG SSLConnectionSocketFactory:425 - Secure session established
+2017-10-24 17:41:15 DEBUG SSLConnectionSocketFactory:426 -  negotiated protocol: TLSv1.2
+2017-10-24 17:41:15 DEBUG SSLConnectionSocketFactory:427 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2017-10-24 17:41:15 DEBUG SSLConnectionSocketFactory:435 -  peer principal: CN=api.airtable.com
+2017-10-24 17:41:15 DEBUG SSLConnectionSocketFactory:444 -  peer alternative names: [api.airtable.com]
+2017-10-24 17:41:15 DEBUG SSLConnectionSocketFactory:448 -  issuer principal: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+2017-10-24 17:41:15 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 127.0.0.1:61321<->52.203.92.226:443
+2017-10-24 17:41:15 DEBUG MainClientExec:256 - Executing request GET /v0/appuZ1lbjCDuFTboP/Table1?filterByFormula= HTTP/1.1
+2017-10-24 17:41:15 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2017-10-24 17:41:15 DEBUG headers:133 - http-outgoing-0 >> GET /v0/appuZ1lbjCDuFTboP/Table1?filterByFormula= HTTP/1.1
+2017-10-24 17:41:15 DEBUG headers:136 - http-outgoing-0 >> Authorization: Bearer keyhnzkreYNlvMRjR
+2017-10-24 17:41:15 DEBUG headers:136 - http-outgoing-0 >> Host: api.airtable.com
+2017-10-24 17:41:15 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2017-10-24 17:41:15 DEBUG headers:136 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)
+2017-10-24 17:41:15 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2017-10-24 17:41:15 DEBUG wire:73 - http-outgoing-0 >> "GET /v0/appuZ1lbjCDuFTboP/Table1?filterByFormula= HTTP/1.1[\r][\n]"
+2017-10-24 17:41:15 DEBUG wire:73 - http-outgoing-0 >> "Authorization: Bearer keyhnzkreYNlvMRjR[\r][\n]"
+2017-10-24 17:41:15 DEBUG wire:73 - http-outgoing-0 >> "Host: api.airtable.com[\r][\n]"
+2017-10-24 17:41:15 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2017-10-24 17:41:15 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)[\r][\n]"
+2017-10-24 17:41:15 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2017-10-24 17:41:15 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2017-10-24 17:41:16 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2017-10-24 17:41:16 DEBUG wire:73 - http-outgoing-0 << "Date: Tue, 24 Oct 2017 14:41:16 GMT[\r][\n]"
+2017-10-24 17:41:16 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2017-10-24 17:41:16 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 14[\r][\n]"
+2017-10-24 17:41:16 DEBUG wire:73 - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2017-10-24 17:41:16 DEBUG wire:73 - http-outgoing-0 << "Set-Cookie: AWSALB=4WdcS9M9K5PLiLzexeQh6arE0JFUaMWXZyInLKx+K8jRChjfDDOvaUv+QuR275EO0pjVR8dryu4ZxhoKHkb2RKe22zLmW2+o2rrNyaZeaG4hdBXQfeYF7DeoJNEo; Expires=Tue, 31 Oct 2017 14:41:15 GMT; Path=/[\r][\n]"
+2017-10-24 17:41:16 DEBUG wire:73 - http-outgoing-0 << "Server: Tengine[\r][\n]"
+2017-10-24 17:41:16 DEBUG wire:73 - http-outgoing-0 << "access-control-allow-origin: *[\r][\n]"
+2017-10-24 17:41:16 DEBUG wire:73 - http-outgoing-0 << "access-control-allow-methods: GET,PUT,POST,PATCH,DELETE,OPTIONS[\r][\n]"
+2017-10-24 17:41:16 DEBUG wire:73 - http-outgoing-0 << "access-control-allow-headers: content-type, authorization, content-length, x-requested-with, x-api-version, x-airtable-application-id[\r][\n]"
+2017-10-24 17:41:16 DEBUG wire:73 - http-outgoing-0 << "ETag: W/"e-Ie9BMcnPw/lLTv0zffrNa5YPoAs"[\r][\n]"
+2017-10-24 17:41:16 DEBUG wire:73 - http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2017-10-24 17:41:16 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2017-10-24 17:41:16 DEBUG wire:87 - http-outgoing-0 << "{"records":[]}"
+2017-10-24 17:41:16 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 200 OK
+2017-10-24 17:41:16 DEBUG headers:125 - http-outgoing-0 << Date: Tue, 24 Oct 2017 14:41:16 GMT
+2017-10-24 17:41:16 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+2017-10-24 17:41:16 DEBUG headers:125 - http-outgoing-0 << Content-Length: 14
+2017-10-24 17:41:16 DEBUG headers:125 - http-outgoing-0 << Connection: keep-alive
+2017-10-24 17:41:16 DEBUG headers:125 - http-outgoing-0 << Set-Cookie: AWSALB=4WdcS9M9K5PLiLzexeQh6arE0JFUaMWXZyInLKx+K8jRChjfDDOvaUv+QuR275EO0pjVR8dryu4ZxhoKHkb2RKe22zLmW2+o2rrNyaZeaG4hdBXQfeYF7DeoJNEo; Expires=Tue, 31 Oct 2017 14:41:15 GMT; Path=/
+2017-10-24 17:41:16 DEBUG headers:125 - http-outgoing-0 << Server: Tengine
+2017-10-24 17:41:16 DEBUG headers:125 - http-outgoing-0 << access-control-allow-origin: *
+2017-10-24 17:41:16 DEBUG headers:125 - http-outgoing-0 << access-control-allow-methods: GET,PUT,POST,PATCH,DELETE,OPTIONS
+2017-10-24 17:41:16 DEBUG headers:125 - http-outgoing-0 << access-control-allow-headers: content-type, authorization, content-length, x-requested-with, x-api-version, x-airtable-application-id
+2017-10-24 17:41:16 DEBUG headers:125 - http-outgoing-0 << ETag: W/"e-Ie9BMcnPw/lLTv0zffrNa5YPoAs"
+2017-10-24 17:41:16 DEBUG headers:125 - http-outgoing-0 << Vary: Accept-Encoding
+2017-10-24 17:41:16 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2017-10-24 17:41:16 DEBUG PoolingHttpClientConnectionManager:320 - Connection [id: 0][route: {s}->https://api.airtable.com:443] can be kept alive indefinitely
+2017-10-24 17:41:16 DEBUG PoolingHttpClientConnectionManager:326 - Connection released: [id: 0][route: {s}->https://api.airtable.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2017-10-24 17:41:16 INFO  AirTableApi:105 - Got actions 0
+2017-10-24 17:41:16 DEBUG PoolingHttpClientConnectionManager:255 - Connection request: [route: {s}->https://api.airtable.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2017-10-24 17:41:16 DEBUG PoolingHttpClientConnectionManager:288 - Connection leased: [id: 0][route: {s}->https://api.airtable.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2017-10-24 17:41:16 DEBUG MainClientExec:256 - Executing request GET /v0/appJ3HPlhCQeDDQkN/Table1?filterByFormula= HTTP/1.1
+2017-10-24 17:41:16 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2017-10-24 17:41:16 DEBUG headers:133 - http-outgoing-0 >> GET /v0/appJ3HPlhCQeDDQkN/Table1?filterByFormula= HTTP/1.1
+2017-10-24 17:41:16 DEBUG headers:136 - http-outgoing-0 >> Authorization: Bearer keyhnzkreYNlvMRjR
+2017-10-24 17:41:16 DEBUG headers:136 - http-outgoing-0 >> Host: api.airtable.com
+2017-10-24 17:41:16 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2017-10-24 17:41:16 DEBUG headers:136 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)
+2017-10-24 17:41:16 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2017-10-24 17:41:16 DEBUG wire:73 - http-outgoing-0 >> "GET /v0/appJ3HPlhCQeDDQkN/Table1?filterByFormula= HTTP/1.1[\r][\n]"
+2017-10-24 17:41:16 DEBUG wire:73 - http-outgoing-0 >> "Authorization: Bearer keyhnzkreYNlvMRjR[\r][\n]"
+2017-10-24 17:41:16 DEBUG wire:73 - http-outgoing-0 >> "Host: api.airtable.com[\r][\n]"
+2017-10-24 17:41:16 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2017-10-24 17:41:16 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)[\r][\n]"
+2017-10-24 17:41:16 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2017-10-24 17:41:16 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2017-10-24 17:41:18 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2017-10-24 17:41:18 DEBUG wire:73 - http-outgoing-0 << "Date: Tue, 24 Oct 2017 14:41:17 GMT[\r][\n]"
+2017-10-24 17:41:18 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2017-10-24 17:41:18 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 650[\r][\n]"
+2017-10-24 17:41:18 DEBUG wire:73 - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2017-10-24 17:41:18 DEBUG wire:73 - http-outgoing-0 << "Set-Cookie: AWSALB=zmdm2nXnJoDdP16KujDrQLq37jRaIA80RW+md8bH7lRQ2mq3/zg5jlVunRepXugpfbZX/Ge5sNKnvmb6CvwjoJF8TfvKfaOLgX+mFcHsLMZTe7tpljS5RZWSlqxw; Expires=Tue, 31 Oct 2017 14:41:16 GMT; Path=/[\r][\n]"
+2017-10-24 17:41:18 DEBUG wire:73 - http-outgoing-0 << "Server: Tengine[\r][\n]"
+2017-10-24 17:41:18 DEBUG wire:73 - http-outgoing-0 << "access-control-allow-origin: *[\r][\n]"
+2017-10-24 17:41:18 DEBUG wire:73 - http-outgoing-0 << "access-control-allow-methods: GET,PUT,POST,PATCH,DELETE,OPTIONS[\r][\n]"
+2017-10-24 17:41:18 DEBUG wire:73 - http-outgoing-0 << "access-control-allow-headers: content-type, authorization, content-length, x-requested-with, x-api-version, x-airtable-application-id[\r][\n]"
+2017-10-24 17:41:18 DEBUG wire:73 - http-outgoing-0 << "ETag: W/"28a-j9wH9y54qnkvvSsAnizulijAKPQ"[\r][\n]"
+2017-10-24 17:41:18 DEBUG wire:73 - http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2017-10-24 17:41:18 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2017-10-24 17:41:18 DEBUG wire:87 - http-outgoing-0 << "{"records":[{"id":"recKaw3ocRtUU2Q9l","fields":{"Sub_id":"low1209","Description":"low","Name":"low","Price ranges":"30-75"},"createdTime":"2017-10-20T12:24:54.000Z"},{"id":"recRQdzw6sI1wPTsP","fields":{"Sub_id":"cheap1209","Description":"cheap","Name":"cheap","Price ranges":"0-30"},"createdTime":"2017-10-20T12:24:54.000Z"},{"id":"reccJnkjDBAz89fiV","fields":{"Sub_id":"high1209","Description":"high","Name":"high","Price ranges":"160-1500"},"createdTime":"2017-10-23T07:11:08.000Z"},{"id":"reccOqiTYeHwkh8qz","fields":{"Sub_id":"medium1209","Description":"medium","Name":"medium","Price ranges":"75-160"},"createdTime":"2017-10-20T12:24:54.000Z"}]}"
+2017-10-24 17:41:18 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 200 OK
+2017-10-24 17:41:18 DEBUG headers:125 - http-outgoing-0 << Date: Tue, 24 Oct 2017 14:41:17 GMT
+2017-10-24 17:41:18 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+2017-10-24 17:41:18 DEBUG headers:125 - http-outgoing-0 << Content-Length: 650
+2017-10-24 17:41:18 DEBUG headers:125 - http-outgoing-0 << Connection: keep-alive
+2017-10-24 17:41:18 DEBUG headers:125 - http-outgoing-0 << Set-Cookie: AWSALB=zmdm2nXnJoDdP16KujDrQLq37jRaIA80RW+md8bH7lRQ2mq3/zg5jlVunRepXugpfbZX/Ge5sNKnvmb6CvwjoJF8TfvKfaOLgX+mFcHsLMZTe7tpljS5RZWSlqxw; Expires=Tue, 31 Oct 2017 14:41:16 GMT; Path=/
+2017-10-24 17:41:18 DEBUG headers:125 - http-outgoing-0 << Server: Tengine
+2017-10-24 17:41:18 DEBUG headers:125 - http-outgoing-0 << access-control-allow-origin: *
+2017-10-24 17:41:18 DEBUG headers:125 - http-outgoing-0 << access-control-allow-methods: GET,PUT,POST,PATCH,DELETE,OPTIONS
+2017-10-24 17:41:18 DEBUG headers:125 - http-outgoing-0 << access-control-allow-headers: content-type, authorization, content-length, x-requested-with, x-api-version, x-airtable-application-id
+2017-10-24 17:41:18 DEBUG headers:125 - http-outgoing-0 << ETag: W/"28a-j9wH9y54qnkvvSsAnizulijAKPQ"
+2017-10-24 17:41:18 DEBUG headers:125 - http-outgoing-0 << Vary: Accept-Encoding
+2017-10-24 17:41:18 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2017-10-24 17:41:18 DEBUG PoolingHttpClientConnectionManager:320 - Connection [id: 0][route: {s}->https://api.airtable.com:443] can be kept alive indefinitely
+2017-10-24 17:41:18 DEBUG PoolingHttpClientConnectionManager:326 - Connection released: [id: 0][route: {s}->https://api.airtable.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2017-10-24 17:41:18 INFO  AirTableApi:131 - Got categories 4
+2017-10-24 17:41:18 DEBUG PoolingHttpClientConnectionManager:255 - Connection request: [route: {s}->https://api.airtable.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2017-10-24 17:41:18 DEBUG PoolingHttpClientConnectionManager:288 - Connection leased: [id: 0][route: {s}->https://api.airtable.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2017-10-24 17:41:18 DEBUG MainClientExec:256 - Executing request GET /v0/appQZmleBaXAK27A4/Table1?filterByFormula= HTTP/1.1
+2017-10-24 17:41:18 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2017-10-24 17:41:18 DEBUG headers:133 - http-outgoing-0 >> GET /v0/appQZmleBaXAK27A4/Table1?filterByFormula= HTTP/1.1
+2017-10-24 17:41:18 DEBUG headers:136 - http-outgoing-0 >> Authorization: Bearer keyhnzkreYNlvMRjR
+2017-10-24 17:41:18 DEBUG headers:136 - http-outgoing-0 >> Host: api.airtable.com
+2017-10-24 17:41:18 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2017-10-24 17:41:18 DEBUG headers:136 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)
+2017-10-24 17:41:18 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2017-10-24 17:41:18 DEBUG wire:73 - http-outgoing-0 >> "GET /v0/appQZmleBaXAK27A4/Table1?filterByFormula= HTTP/1.1[\r][\n]"
+2017-10-24 17:41:18 DEBUG wire:73 - http-outgoing-0 >> "Authorization: Bearer keyhnzkreYNlvMRjR[\r][\n]"
+2017-10-24 17:41:18 DEBUG wire:73 - http-outgoing-0 >> "Host: api.airtable.com[\r][\n]"
+2017-10-24 17:41:18 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2017-10-24 17:41:18 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)[\r][\n]"
+2017-10-24 17:41:18 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2017-10-24 17:41:18 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2017-10-24 17:41:19 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2017-10-24 17:41:19 DEBUG wire:73 - http-outgoing-0 << "Date: Tue, 24 Oct 2017 14:41:19 GMT[\r][\n]"
+2017-10-24 17:41:19 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2017-10-24 17:41:19 DEBUG wire:73 - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2017-10-24 17:41:19 DEBUG wire:73 - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2017-10-24 17:41:19 DEBUG wire:73 - http-outgoing-0 << "Set-Cookie: AWSALB=fSyrU76/ngrn5zDiqfoZwUR8u9j5NZFDMVnUaHqkNOFSuv5BljQb7KZc5BCWaECemj3G7cIlsHKXq7QSkAPZG4s/wNMQhwChyuzy2+Tb+1WtbRjpim51wWQv7R+I; Expires=Tue, 31 Oct 2017 14:41:18 GMT; Path=/[\r][\n]"
+2017-10-24 17:41:19 DEBUG wire:73 - http-outgoing-0 << "Server: Tengine[\r][\n]"
+2017-10-24 17:41:19 DEBUG wire:73 - http-outgoing-0 << "access-control-allow-origin: *[\r][\n]"
+2017-10-24 17:41:19 DEBUG wire:73 - http-outgoing-0 << "access-control-allow-methods: GET,PUT,POST,PATCH,DELETE,OPTIONS[\r][\n]"
+2017-10-24 17:41:19 DEBUG wire:73 - http-outgoing-0 << "access-control-allow-headers: content-type, authorization, content-length, x-requested-with, x-api-version, x-airtable-application-id[\r][\n]"
+2017-10-24 17:41:19 DEBUG wire:73 - http-outgoing-0 << "ETag: W/"527-0vg5Imcal6hwo6Zf2ODHgDYWlFs"[\r][\n]"
+2017-10-24 17:41:19 DEBUG wire:73 - http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2017-10-24 17:41:19 DEBUG wire:73 - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2017-10-24 17:41:19 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2017-10-24 17:41:19 DEBUG wire:73 - http-outgoing-0 << "1b4[\r][\n]"
+2017-10-24 17:41:19 DEBUG wire:73 - http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x9d][0x93]]o[0x9b]0[0x18][0x85][0xff][0xca][0xc4]u[[0xd9][0x18][0x1b][0xf0]][0xd3][0xf4]#[0x84]f[0x9b][0x1a]%S[0xa6]][0x18]0[0xc4])[0xd8][0xd4]8%i[0xd4][0xff]^[0x9a]i[0xda]$,[0x81]&q[0xe3][0xe3][0xd7][0xe8][0xd1]y[0xcf]99[0x9a][0xa7]Jg[0x8d]C[0x9e][0x1c][0x91]9[0xf4]Sp[0xaf][0xc9][0xee]6%Q[0xdc][0xe0][0x94]@[0xe7][0xc2][0xc9][0x5]/?gN[0xce][0x82]U[0xbc][0x1b]j[0xb6][0xaa][0xbe][0xaa]L[0xd3][0xdd][0xad][0xb8][0xcc][0x94][0xfe]r~[0xeb]#[0xe0][0xb9]A'[0xde][0xa8][0xaa]f[0xf2][0xf8][[0x85][0x8][0x3][0xe7][0xfd][0xc2]I5g[0x86]gKq[0xfe][0x85][0xb][0xa0][0x9][0xc1][0xa5][0xeb]-![0xa2][0xdd][0x87][0xc0][0x15][0x0]`[0xd3]M[0xfe]%[0x99][0xfc][0xb8][0x9b]U^[0xfc][0xfa]-[0x83][0x9a][0xdc][0xd9]HX)[0xf8][0xa1][0xd6][0xbc][0x19][0xc7]B [0xc4]C, [0xa4][0x1e][0xee][0xb3]D[0xcb][0xb0][0x8][0xb4][0xc8][0xc0]l[0xc2][0xbf]76[0x16][0xa3]*[0xa3][0xea]q[0x9e]x[0x83][0xa6][0xb8][0xd4][0xf5])[0xf0][0xfa] [0xf1]d[0x11][0xcf][0xda][0xfc][0x19]r[0xd9]NZ[0x1b][0xc8][0x1b][0xcb][0xf7][0xe5]8[0xe][0x8c]A0[0xb8][0x9c][0x8e][0x83][0xf4]9[0x1e][0xf7][0xf2][0x1a][0xce][0xfd]i[0xb1][0xbe]i[0xa7][0xa1][0x8d][0xa3][0xe0][0xfc]9[0xd9][0x1f][0x85],F[0xc2]x[0xc4][0xef][0xc4])oR-j#[0x94][0xec][0xd4][0xec][0x9f][0xd3][0x80]a[0xa0][^[0xd0][0x7]]$ 2[0xf7][0xf][0x1b][0xcc]V[0x9b][0x83]5E[0xa5]([0xb6]FH[0xb3][0xe5][0x89]:[0x8c]b[0xc5][0x4][0xc1]A[0xdf]\[0x8a],[0xbe][0xad]v[0xd1][0xd3][0xfc]%=[0xc6]a[0xcb][0x85]u[0x9][0x93]E[0xa1]T6[0xb2]^[0xc4]E[0x83]([0x84]BK[0xa6][0xd7]o[0x5][0xdb][0xdd][0x86][0xec]![0xda][0xcc][0xcb][0xaf][0xf6]([0xd5][0xac][0x1c][0xd9]sL[0xfc][0xc1]rAL=[0xd4][0x7]1[0xf7]k[0x99][0xcb]i[0x1][0x1f][0xcb]<[0xe1][0xf6],1[0x9d][0xf0][0xc6][0x8c][0xf4][0x4][0xc1][0xe0]?[0x93][0x4][0xce][0xd5]C[0x14][0xff][0xa9][0xde][0xaf][0xf7][0xf]:[0xf4][0x92][0x1]'[0x5][0x0][0x0][\r][\n]"
+2017-10-24 17:41:19 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 200 OK
+2017-10-24 17:41:19 DEBUG headers:125 - http-outgoing-0 << Date: Tue, 24 Oct 2017 14:41:19 GMT
+2017-10-24 17:41:19 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+2017-10-24 17:41:19 DEBUG headers:125 - http-outgoing-0 << Transfer-Encoding: chunked
+2017-10-24 17:41:19 DEBUG headers:125 - http-outgoing-0 << Connection: keep-alive
+2017-10-24 17:41:19 DEBUG headers:125 - http-outgoing-0 << Set-Cookie: AWSALB=fSyrU76/ngrn5zDiqfoZwUR8u9j5NZFDMVnUaHqkNOFSuv5BljQb7KZc5BCWaECemj3G7cIlsHKXq7QSkAPZG4s/wNMQhwChyuzy2+Tb+1WtbRjpim51wWQv7R+I; Expires=Tue, 31 Oct 2017 14:41:18 GMT; Path=/
+2017-10-24 17:41:19 DEBUG headers:125 - http-outgoing-0 << Server: Tengine
+2017-10-24 17:41:19 DEBUG headers:125 - http-outgoing-0 << access-control-allow-origin: *
+2017-10-24 17:41:19 DEBUG headers:125 - http-outgoing-0 << access-control-allow-methods: GET,PUT,POST,PATCH,DELETE,OPTIONS
+2017-10-24 17:41:19 DEBUG headers:125 - http-outgoing-0 << access-control-allow-headers: content-type, authorization, content-length, x-requested-with, x-api-version, x-airtable-application-id
+2017-10-24 17:41:19 DEBUG headers:125 - http-outgoing-0 << ETag: W/"527-0vg5Imcal6hwo6Zf2ODHgDYWlFs"
+2017-10-24 17:41:19 DEBUG headers:125 - http-outgoing-0 << Vary: Accept-Encoding
+2017-10-24 17:41:19 DEBUG headers:125 - http-outgoing-0 << Content-Encoding: gzip
+2017-10-24 17:41:19 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2017-10-24 17:41:19 INFO  AirTableApi:155 - Got shops 9
+2017-10-24 17:41:19 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2017-10-24 17:41:19 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2017-10-24 17:41:19 DEBUG PoolingHttpClientConnectionManager:255 - Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2017-10-24 17:41:19 DEBUG PoolingHttpClientConnectionManager:288 - Connection leased: [id: 1][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2017-10-24 17:41:19 DEBUG MainClientExec:235 - Opening connection {s}->https://api.telegram.org:443
+2017-10-24 17:41:19 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to api.telegram.org/149.154.167.199:443
+2017-10-24 17:41:19 DEBUG SSLConnectionSocketFactory:337 - Connecting socket to api.telegram.org/149.154.167.199:443 with timeout 0
+2017-10-24 17:41:19 DEBUG SSLConnectionSocketFactory:390 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2017-10-24 17:41:19 DEBUG SSLConnectionSocketFactory:391 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2017-10-24 17:41:19 DEBUG SSLConnectionSocketFactory:395 - Starting handshake
+2017-10-24 17:41:20 DEBUG SSLConnectionSocketFactory:425 - Secure session established
+2017-10-24 17:41:20 DEBUG SSLConnectionSocketFactory:426 -  negotiated protocol: TLSv1.2
+2017-10-24 17:41:20 DEBUG SSLConnectionSocketFactory:427 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+2017-10-24 17:41:20 DEBUG SSLConnectionSocketFactory:435 -  peer principal: CN=api.telegram.org, OU=Domain Control Validated
+2017-10-24 17:41:20 DEBUG SSLConnectionSocketFactory:444 -  peer alternative names: [api.telegram.org, www.api.telegram.org]
+2017-10-24 17:41:20 DEBUG SSLConnectionSocketFactory:448 -  issuer principal: CN=Go Daddy Secure Certificate Authority - G2, OU=http://certs.godaddy.com/repository/, O="GoDaddy.com, Inc.", L=Scottsdale, ST=Arizona, C=US
+2017-10-24 17:41:20 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 127.0.0.1:61325<->149.154.167.199:443
+2017-10-24 17:41:20 DEBUG MainClientExec:256 - Executing request GET /bot344549406:AAHh4oTg-qwNxfJ3FS8Gc1AT0h-okfzGYV8/setwebhook HTTP/1.1
+2017-10-24 17:41:20 DEBUG MainClientExec:261 - Target auth state: UNCHALLENGED
+2017-10-24 17:41:20 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2017-10-24 17:41:20 DEBUG headers:133 - http-outgoing-1 >> GET /bot344549406:AAHh4oTg-qwNxfJ3FS8Gc1AT0h-okfzGYV8/setwebhook HTTP/1.1
+2017-10-24 17:41:20 DEBUG headers:136 - http-outgoing-1 >> Host: api.telegram.org
+2017-10-24 17:41:20 DEBUG headers:136 - http-outgoing-1 >> Connection: Keep-Alive
+2017-10-24 17:41:20 DEBUG headers:136 - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)
+2017-10-24 17:41:20 DEBUG headers:136 - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-1 >> "GET /bot344549406:AAHh4oTg-qwNxfJ3FS8Gc1AT0h-okfzGYV8/setwebhook HTTP/1.1[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-1 >> "Host: api.telegram.org[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-1 >> "[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-1 << "Server: nginx/1.10.0[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-1 << "Date: Tue, 24 Oct 2017 14:41:19 GMT[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-1 << "Content-Type: application/json[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-1 << "Content-Length: 68[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Origin: *[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Methods: GET, POST, OPTIONS[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-1 << "Strict-Transport-Security: max-age=31536000; includeSubdomains[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:87 - http-outgoing-1 << "{"ok":true,"result":true,"description":"Webhook is already deleted"}"
+2017-10-24 17:41:20 DEBUG headers:122 - http-outgoing-1 << HTTP/1.1 200 OK
+2017-10-24 17:41:20 DEBUG headers:125 - http-outgoing-1 << Server: nginx/1.10.0
+2017-10-24 17:41:20 DEBUG headers:125 - http-outgoing-1 << Date: Tue, 24 Oct 2017 14:41:19 GMT
+2017-10-24 17:41:20 DEBUG headers:125 - http-outgoing-1 << Content-Type: application/json
+2017-10-24 17:41:20 DEBUG headers:125 - http-outgoing-1 << Content-Length: 68
+2017-10-24 17:41:20 DEBUG headers:125 - http-outgoing-1 << Connection: keep-alive
+2017-10-24 17:41:20 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Origin: *
+2017-10-24 17:41:20 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Methods: GET, POST, OPTIONS
+2017-10-24 17:41:20 DEBUG headers:125 - http-outgoing-1 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+2017-10-24 17:41:20 DEBUG headers:125 - http-outgoing-1 << Strict-Transport-Security: max-age=31536000; includeSubdomains
+2017-10-24 17:41:20 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2017-10-24 17:41:20 DEBUG PoolingHttpClientConnectionManager:320 - Connection [id: 1][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
+2017-10-24 17:41:20 DEBUG PoolingHttpClientConnectionManager:326 - Connection released: [id: 1][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2017-10-24 17:41:20 DEBUG PoolingHttpClientConnectionManager:394 - Connection manager is shutting down
+2017-10-24 17:41:20 DEBUG DefaultManagedHttpClientConnection:79 - http-outgoing-1: Close connection
+2017-10-24 17:41:20 DEBUG PoolingHttpClientConnectionManager:400 - Connection manager shut down
+2017-10-24 17:41:20 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2017-10-24 17:41:20 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2017-10-24 17:41:20 DEBUG PoolingHttpClientConnectionManager:255 - Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 100]
+2017-10-24 17:41:20 DEBUG PoolingHttpClientConnectionManager:288 - Connection leased: [id: 2][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
+2017-10-24 17:41:20 DEBUG MainClientExec:235 - Opening connection {s}->https://api.telegram.org:443
+2017-10-24 17:41:20 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to api.telegram.org/149.154.167.199:443
+2017-10-24 17:41:20 DEBUG SSLConnectionSocketFactory:337 - Connecting socket to api.telegram.org/149.154.167.199:443 with timeout 75000
+2017-10-24 17:41:20 DEBUG SSLConnectionSocketFactory:390 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2017-10-24 17:41:20 DEBUG SSLConnectionSocketFactory:391 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2017-10-24 17:41:20 DEBUG SSLConnectionSocketFactory:395 - Starting handshake
+2017-10-24 17:41:20 DEBUG SSLConnectionSocketFactory:425 - Secure session established
+2017-10-24 17:41:20 DEBUG SSLConnectionSocketFactory:426 -  negotiated protocol: TLSv1.2
+2017-10-24 17:41:20 DEBUG SSLConnectionSocketFactory:427 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+2017-10-24 17:41:20 DEBUG SSLConnectionSocketFactory:435 -  peer principal: CN=api.telegram.org, OU=Domain Control Validated
+2017-10-24 17:41:20 DEBUG SSLConnectionSocketFactory:444 -  peer alternative names: [api.telegram.org, www.api.telegram.org]
+2017-10-24 17:41:20 DEBUG SSLConnectionSocketFactory:448 -  issuer principal: CN=Go Daddy Secure Certificate Authority - G2, OU=http://certs.godaddy.com/repository/, O="GoDaddy.com, Inc.", L=Scottsdale, ST=Arizona, C=US
+2017-10-24 17:41:20 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 127.0.0.1:61328<->149.154.167.199:443
+2017-10-24 17:41:20 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-2: set socket timeout to 75000
+2017-10-24 17:41:20 DEBUG MainClientExec:256 - Executing request POST /bot344549406:AAHh4oTg-qwNxfJ3FS8Gc1AT0h-okfzGYV8/getupdates HTTP/1.1
+2017-10-24 17:41:20 DEBUG MainClientExec:261 - Target auth state: UNCHALLENGED
+2017-10-24 17:41:20 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2017-10-24 17:41:20 DEBUG headers:133 - http-outgoing-2 >> POST /bot344549406:AAHh4oTg-qwNxfJ3FS8Gc1AT0h-okfzGYV8/getupdates HTTP/1.1
+2017-10-24 17:41:20 DEBUG headers:136 - http-outgoing-2 >> charset: UTF-8
+2017-10-24 17:41:20 DEBUG headers:136 - http-outgoing-2 >> Content-Length: 59
+2017-10-24 17:41:20 DEBUG headers:136 - http-outgoing-2 >> Content-Type: application/json; charset=UTF-8
+2017-10-24 17:41:20 DEBUG headers:136 - http-outgoing-2 >> Host: api.telegram.org
+2017-10-24 17:41:20 DEBUG headers:136 - http-outgoing-2 >> Connection: Keep-Alive
+2017-10-24 17:41:20 DEBUG headers:136 - http-outgoing-2 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)
+2017-10-24 17:41:20 DEBUG headers:136 - http-outgoing-2 >> Accept-Encoding: gzip,deflate
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-2 >> "POST /bot344549406:AAHh4oTg-qwNxfJ3FS8Gc1AT0h-okfzGYV8/getupdates HTTP/1.1[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-2 >> "charset: UTF-8[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-2 >> "Content-Length: 59[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-2 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-2 >> "Host: api.telegram.org[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-2 >> "Connection: Keep-Alive[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-2 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-2 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:73 - http-outgoing-2 >> "[\r][\n]"
+2017-10-24 17:41:20 DEBUG wire:87 - http-outgoing-2 >> "{"offset":1,"limit":100,"timeout":50,"method":"getupdates"}"
+2017-10-24 17:41:29 INFO  MyTimer:83 - ActionUpdater
+2017-10-24 17:41:30 DEBUG PoolingHttpClientConnectionManager:255 - Connection request: [route: {s}->https://api.airtable.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2017-10-24 17:41:30 DEBUG PoolingHttpClientConnectionManager:288 - Connection leased: [id: 3][route: {s}->https://api.airtable.com:443][total kept alive: 0; route allocated: 2 of 2; total allocated: 2 of 20]
+2017-10-24 17:41:30 DEBUG MainClientExec:235 - Opening connection {s}->https://api.airtable.com:443
+2017-10-24 17:41:30 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to api.airtable.com/52.203.92.226:443
+2017-10-24 17:41:30 DEBUG SSLConnectionSocketFactory:337 - Connecting socket to api.airtable.com/52.203.92.226:443 with timeout 0
+2017-10-24 17:41:30 DEBUG SSLConnectionSocketFactory:390 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2017-10-24 17:41:30 DEBUG SSLConnectionSocketFactory:391 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2017-10-24 17:41:30 DEBUG SSLConnectionSocketFactory:395 - Starting handshake
+2017-10-24 17:41:30 DEBUG SSLConnectionSocketFactory:425 - Secure session established
+2017-10-24 17:41:30 DEBUG SSLConnectionSocketFactory:426 -  negotiated protocol: TLSv1.2
+2017-10-24 17:41:30 DEBUG SSLConnectionSocketFactory:427 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2017-10-24 17:41:30 DEBUG SSLConnectionSocketFactory:435 -  peer principal: CN=api.airtable.com
+2017-10-24 17:41:30 DEBUG SSLConnectionSocketFactory:444 -  peer alternative names: [api.airtable.com]
+2017-10-24 17:41:30 DEBUG SSLConnectionSocketFactory:448 -  issuer principal: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+2017-10-24 17:41:30 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 127.0.0.1:61336<->52.203.92.226:443
+2017-10-24 17:41:30 DEBUG MainClientExec:256 - Executing request GET /v0/appuZ1lbjCDuFTboP/Table1?filterByFormula= HTTP/1.1
+2017-10-24 17:41:30 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2017-10-24 17:41:30 DEBUG headers:133 - http-outgoing-3 >> GET /v0/appuZ1lbjCDuFTboP/Table1?filterByFormula= HTTP/1.1
+2017-10-24 17:41:30 DEBUG headers:136 - http-outgoing-3 >> Authorization: Bearer keyhnzkreYNlvMRjR
+2017-10-24 17:41:30 DEBUG headers:136 - http-outgoing-3 >> Host: api.airtable.com
+2017-10-24 17:41:30 DEBUG headers:136 - http-outgoing-3 >> Connection: Keep-Alive
+2017-10-24 17:41:30 DEBUG headers:136 - http-outgoing-3 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)
+2017-10-24 17:41:30 DEBUG headers:136 - http-outgoing-3 >> Accept-Encoding: gzip,deflate
+2017-10-24 17:41:30 DEBUG wire:73 - http-outgoing-3 >> "GET /v0/appuZ1lbjCDuFTboP/Table1?filterByFormula= HTTP/1.1[\r][\n]"
+2017-10-24 17:41:30 DEBUG wire:73 - http-outgoing-3 >> "Authorization: Bearer keyhnzkreYNlvMRjR[\r][\n]"
+2017-10-24 17:41:30 DEBUG wire:73 - http-outgoing-3 >> "Host: api.airtable.com[\r][\n]"
+2017-10-24 17:41:30 DEBUG wire:73 - http-outgoing-3 >> "Connection: Keep-Alive[\r][\n]"
+2017-10-24 17:41:30 DEBUG wire:73 - http-outgoing-3 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)[\r][\n]"
+2017-10-24 17:41:30 DEBUG wire:73 - http-outgoing-3 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2017-10-24 17:41:30 DEBUG wire:73 - http-outgoing-3 >> "[\r][\n]"
+2017-10-24 17:41:31 DEBUG wire:73 - http-outgoing-3 << "HTTP/1.1 200 OK[\r][\n]"
+2017-10-24 17:41:31 DEBUG wire:73 - http-outgoing-3 << "Date: Tue, 24 Oct 2017 14:41:31 GMT[\r][\n]"
+2017-10-24 17:41:31 DEBUG wire:73 - http-outgoing-3 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2017-10-24 17:41:31 DEBUG wire:73 - http-outgoing-3 << "Content-Length: 14[\r][\n]"
+2017-10-24 17:41:31 DEBUG wire:73 - http-outgoing-3 << "Connection: keep-alive[\r][\n]"
+2017-10-24 17:41:31 DEBUG wire:73 - http-outgoing-3 << "Set-Cookie: AWSALB=1P6Q0h80LvxA82d975krZwn60LXzrd4AYaQZywmXRHgz/GNg3moD1/keR3KBBilrY7JGg+Do6msTr0+j8xUk+6Cfx90X/+bClwISA5R7eMzun+233kPcbv5JgwD9; Expires=Tue, 31 Oct 2017 14:41:30 GMT; Path=/[\r][\n]"
+2017-10-24 17:41:31 DEBUG wire:73 - http-outgoing-3 << "Server: Tengine[\r][\n]"
+2017-10-24 17:41:31 DEBUG wire:73 - http-outgoing-3 << "access-control-allow-origin: *[\r][\n]"
+2017-10-24 17:41:31 DEBUG wire:73 - http-outgoing-3 << "access-control-allow-methods: GET,PUT,POST,PATCH,DELETE,OPTIONS[\r][\n]"
+2017-10-24 17:41:31 DEBUG wire:73 - http-outgoing-3 << "access-control-allow-headers: content-type, authorization, content-length, x-requested-with, x-api-version, x-airtable-application-id[\r][\n]"
+2017-10-24 17:41:31 DEBUG wire:73 - http-outgoing-3 << "ETag: W/"e-Ie9BMcnPw/lLTv0zffrNa5YPoAs"[\r][\n]"
+2017-10-24 17:41:31 DEBUG wire:73 - http-outgoing-3 << "Vary: Accept-Encoding[\r][\n]"
+2017-10-24 17:41:31 DEBUG wire:73 - http-outgoing-3 << "[\r][\n]"
+2017-10-24 17:41:31 DEBUG wire:87 - http-outgoing-3 << "{"records":[]}"
+2017-10-24 17:41:31 DEBUG headers:122 - http-outgoing-3 << HTTP/1.1 200 OK
+2017-10-24 17:41:31 DEBUG headers:125 - http-outgoing-3 << Date: Tue, 24 Oct 2017 14:41:31 GMT
+2017-10-24 17:41:31 DEBUG headers:125 - http-outgoing-3 << Content-Type: application/json; charset=utf-8
+2017-10-24 17:41:31 DEBUG headers:125 - http-outgoing-3 << Content-Length: 14
+2017-10-24 17:41:31 DEBUG headers:125 - http-outgoing-3 << Connection: keep-alive
+2017-10-24 17:41:31 DEBUG headers:125 - http-outgoing-3 << Set-Cookie: AWSALB=1P6Q0h80LvxA82d975krZwn60LXzrd4AYaQZywmXRHgz/GNg3moD1/keR3KBBilrY7JGg+Do6msTr0+j8xUk+6Cfx90X/+bClwISA5R7eMzun+233kPcbv5JgwD9; Expires=Tue, 31 Oct 2017 14:41:30 GMT; Path=/
+2017-10-24 17:41:31 DEBUG headers:125 - http-outgoing-3 << Server: Tengine
+2017-10-24 17:41:31 DEBUG headers:125 - http-outgoing-3 << access-control-allow-origin: *
+2017-10-24 17:41:31 DEBUG headers:125 - http-outgoing-3 << access-control-allow-methods: GET,PUT,POST,PATCH,DELETE,OPTIONS
+2017-10-24 17:41:31 DEBUG headers:125 - http-outgoing-3 << access-control-allow-headers: content-type, authorization, content-length, x-requested-with, x-api-version, x-airtable-application-id
+2017-10-24 17:41:31 DEBUG headers:125 - http-outgoing-3 << ETag: W/"e-Ie9BMcnPw/lLTv0zffrNa5YPoAs"
+2017-10-24 17:41:31 DEBUG headers:125 - http-outgoing-3 << Vary: Accept-Encoding
+2017-10-24 17:41:31 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2017-10-24 17:41:31 DEBUG PoolingHttpClientConnectionManager:320 - Connection [id: 3][route: {s}->https://api.airtable.com:443] can be kept alive indefinitely
+2017-10-24 17:41:31 DEBUG PoolingHttpClientConnectionManager:326 - Connection released: [id: 3][route: {s}->https://api.airtable.com:443][total kept alive: 1; route allocated: 2 of 2; total allocated: 2 of 20]
+2017-10-24 17:41:31 INFO  AirTableApi:105 - Got actions 0
+2017-10-24 17:41:31 INFO  MyTimer:99 - CategoryUpdater
+2017-10-24 17:41:32 DEBUG PoolingHttpClientConnectionManager:255 - Connection request: [route: {s}->https://api.airtable.com:443][total kept alive: 1; route allocated: 2 of 2; total allocated: 2 of 20]
+2017-10-24 17:41:32 DEBUG PoolingHttpClientConnectionManager:288 - Connection leased: [id: 3][route: {s}->https://api.airtable.com:443][total kept alive: 0; route allocated: 2 of 2; total allocated: 2 of 20]
+2017-10-24 17:41:32 DEBUG MainClientExec:256 - Executing request GET /v0/appJ3HPlhCQeDDQkN/Table1?filterByFormula= HTTP/1.1
+2017-10-24 17:41:32 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2017-10-24 17:41:32 DEBUG headers:133 - http-outgoing-3 >> GET /v0/appJ3HPlhCQeDDQkN/Table1?filterByFormula= HTTP/1.1
+2017-10-24 17:41:32 DEBUG headers:136 - http-outgoing-3 >> Authorization: Bearer keyhnzkreYNlvMRjR
+2017-10-24 17:41:32 DEBUG headers:136 - http-outgoing-3 >> Host: api.airtable.com
+2017-10-24 17:41:32 DEBUG headers:136 - http-outgoing-3 >> Connection: Keep-Alive
+2017-10-24 17:41:32 DEBUG headers:136 - http-outgoing-3 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)
+2017-10-24 17:41:32 DEBUG headers:136 - http-outgoing-3 >> Accept-Encoding: gzip,deflate
+2017-10-24 17:41:32 DEBUG wire:73 - http-outgoing-3 >> "GET /v0/appJ3HPlhCQeDDQkN/Table1?filterByFormula= HTTP/1.1[\r][\n]"
+2017-10-24 17:41:32 DEBUG wire:73 - http-outgoing-3 >> "Authorization: Bearer keyhnzkreYNlvMRjR[\r][\n]"
+2017-10-24 17:41:32 DEBUG wire:73 - http-outgoing-3 >> "Host: api.airtable.com[\r][\n]"
+2017-10-24 17:41:32 DEBUG wire:73 - http-outgoing-3 >> "Connection: Keep-Alive[\r][\n]"
+2017-10-24 17:41:32 DEBUG wire:73 - http-outgoing-3 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)[\r][\n]"
+2017-10-24 17:41:32 DEBUG wire:73 - http-outgoing-3 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2017-10-24 17:41:32 DEBUG wire:73 - http-outgoing-3 >> "[\r][\n]"
+2017-10-24 17:41:33 DEBUG wire:73 - http-outgoing-3 << "HTTP/1.1 200 OK[\r][\n]"
+2017-10-24 17:41:33 DEBUG wire:73 - http-outgoing-3 << "Date: Tue, 24 Oct 2017 14:41:33 GMT[\r][\n]"
+2017-10-24 17:41:33 DEBUG wire:73 - http-outgoing-3 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2017-10-24 17:41:33 DEBUG wire:73 - http-outgoing-3 << "Content-Length: 650[\r][\n]"
+2017-10-24 17:41:33 DEBUG wire:73 - http-outgoing-3 << "Connection: keep-alive[\r][\n]"
+2017-10-24 17:41:33 DEBUG wire:73 - http-outgoing-3 << "Set-Cookie: AWSALB=eIQJkj1HTMlER9S8kl9pzQmRaeoVPxA7fzTSFpTdWqfn1VZ5uU+XGMuWcOBW0GRv3hem93Jmg4pN0jVS8YQuC2Z8fzDsXgDxA/Ll+empZWugUnOfXoKjIDN8eHv3; Expires=Tue, 31 Oct 2017 14:41:32 GMT; Path=/[\r][\n]"
+2017-10-24 17:41:33 DEBUG wire:73 - http-outgoing-3 << "Server: Tengine[\r][\n]"
+2017-10-24 17:41:33 DEBUG wire:73 - http-outgoing-3 << "access-control-allow-origin: *[\r][\n]"
+2017-10-24 17:41:33 DEBUG wire:73 - http-outgoing-3 << "access-control-allow-methods: GET,PUT,POST,PATCH,DELETE,OPTIONS[\r][\n]"
+2017-10-24 17:41:33 DEBUG wire:73 - http-outgoing-3 << "access-control-allow-headers: content-type, authorization, content-length, x-requested-with, x-api-version, x-airtable-application-id[\r][\n]"
+2017-10-24 17:41:33 DEBUG wire:73 - http-outgoing-3 << "ETag: W/"28a-j9wH9y54qnkvvSsAnizulijAKPQ"[\r][\n]"
+2017-10-24 17:41:33 DEBUG wire:73 - http-outgoing-3 << "Vary: Accept-Encoding[\r][\n]"
+2017-10-24 17:41:33 DEBUG wire:73 - http-outgoing-3 << "[\r][\n]"
+2017-10-24 17:41:33 DEBUG wire:87 - http-outgoing-3 << "{"records":[{"id":"recKaw3ocRtUU2Q9l","fields":{"Sub_id":"low1209","Description":"low","Name":"low","Price ranges":"30-75"},"createdTime":"2017-10-20T12:24:54.000Z"},{"id":"recRQdzw6sI1wPTsP","fields":{"Sub_id":"cheap1209","Description":"cheap","Name":"cheap","Price ranges":"0-30"},"createdTime":"2017-10-20T12:24:54.000Z"},{"id":"reccJnkjDBAz89fiV","fields":{"Sub_id":"high1209","Description":"high","Name":"high","Price ranges":"160-1500"},"createdTime":"2017-10-23T07:11:08.000Z"},{"id":"reccOqiTYeHwkh8qz","fields":{"Sub_id":"medium1209","Description":"medium","Name":"medium","Price ranges":"75-160"},"createdTime":"2017-10-20T12:24:54.000Z"}]}"
+2017-10-24 17:41:33 DEBUG headers:122 - http-outgoing-3 << HTTP/1.1 200 OK
+2017-10-24 17:41:33 DEBUG headers:125 - http-outgoing-3 << Date: Tue, 24 Oct 2017 14:41:33 GMT
+2017-10-24 17:41:33 DEBUG headers:125 - http-outgoing-3 << Content-Type: application/json; charset=utf-8
+2017-10-24 17:41:33 DEBUG headers:125 - http-outgoing-3 << Content-Length: 650
+2017-10-24 17:41:33 DEBUG headers:125 - http-outgoing-3 << Connection: keep-alive
+2017-10-24 17:41:33 DEBUG headers:125 - http-outgoing-3 << Set-Cookie: AWSALB=eIQJkj1HTMlER9S8kl9pzQmRaeoVPxA7fzTSFpTdWqfn1VZ5uU+XGMuWcOBW0GRv3hem93Jmg4pN0jVS8YQuC2Z8fzDsXgDxA/Ll+empZWugUnOfXoKjIDN8eHv3; Expires=Tue, 31 Oct 2017 14:41:32 GMT; Path=/
+2017-10-24 17:41:33 DEBUG headers:125 - http-outgoing-3 << Server: Tengine
+2017-10-24 17:41:33 DEBUG headers:125 - http-outgoing-3 << access-control-allow-origin: *
+2017-10-24 17:41:33 DEBUG headers:125 - http-outgoing-3 << access-control-allow-methods: GET,PUT,POST,PATCH,DELETE,OPTIONS
+2017-10-24 17:41:33 DEBUG headers:125 - http-outgoing-3 << access-control-allow-headers: content-type, authorization, content-length, x-requested-with, x-api-version, x-airtable-application-id
+2017-10-24 17:41:33 DEBUG headers:125 - http-outgoing-3 << ETag: W/"28a-j9wH9y54qnkvvSsAnizulijAKPQ"
+2017-10-24 17:41:33 DEBUG headers:125 - http-outgoing-3 << Vary: Accept-Encoding
+2017-10-24 17:41:33 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2017-10-24 17:41:33 DEBUG PoolingHttpClientConnectionManager:320 - Connection [id: 3][route: {s}->https://api.airtable.com:443] can be kept alive indefinitely
+2017-10-24 17:41:33 DEBUG PoolingHttpClientConnectionManager:326 - Connection released: [id: 3][route: {s}->https://api.airtable.com:443][total kept alive: 1; route allocated: 2 of 2; total allocated: 2 of 20]
+2017-10-24 17:41:33 INFO  AirTableApi:131 - Got categories 4
+2017-10-24 17:41:33 INFO  MyTimer:109 - ShopUpdater
+2017-10-24 17:41:33 DEBUG PoolingHttpClientConnectionManager:255 - Connection request: [route: {s}->https://api.airtable.com:443][total kept alive: 1; route allocated: 2 of 2; total allocated: 2 of 20]
+2017-10-24 17:41:33 DEBUG PoolingHttpClientConnectionManager:288 - Connection leased: [id: 3][route: {s}->https://api.airtable.com:443][total kept alive: 0; route allocated: 2 of 2; total allocated: 2 of 20]
+2017-10-24 17:41:33 DEBUG MainClientExec:256 - Executing request GET /v0/appQZmleBaXAK27A4/Table1?filterByFormula= HTTP/1.1
+2017-10-24 17:41:33 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2017-10-24 17:41:33 DEBUG headers:133 - http-outgoing-3 >> GET /v0/appQZmleBaXAK27A4/Table1?filterByFormula= HTTP/1.1
+2017-10-24 17:41:33 DEBUG headers:136 - http-outgoing-3 >> Authorization: Bearer keyhnzkreYNlvMRjR
+2017-10-24 17:41:33 DEBUG headers:136 - http-outgoing-3 >> Host: api.airtable.com
+2017-10-24 17:41:33 DEBUG headers:136 - http-outgoing-3 >> Connection: Keep-Alive
+2017-10-24 17:41:33 DEBUG headers:136 - http-outgoing-3 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)
+2017-10-24 17:41:33 DEBUG headers:136 - http-outgoing-3 >> Accept-Encoding: gzip,deflate
+2017-10-24 17:41:33 DEBUG wire:73 - http-outgoing-3 >> "GET /v0/appQZmleBaXAK27A4/Table1?filterByFormula= HTTP/1.1[\r][\n]"
+2017-10-24 17:41:33 DEBUG wire:73 - http-outgoing-3 >> "Authorization: Bearer keyhnzkreYNlvMRjR[\r][\n]"
+2017-10-24 17:41:33 DEBUG wire:73 - http-outgoing-3 >> "Host: api.airtable.com[\r][\n]"
+2017-10-24 17:41:33 DEBUG wire:73 - http-outgoing-3 >> "Connection: Keep-Alive[\r][\n]"
+2017-10-24 17:41:33 DEBUG wire:73 - http-outgoing-3 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)[\r][\n]"
+2017-10-24 17:41:33 DEBUG wire:73 - http-outgoing-3 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2017-10-24 17:41:33 DEBUG wire:73 - http-outgoing-3 >> "[\r][\n]"
+2017-10-24 17:41:34 DEBUG wire:73 - http-outgoing-3 << "HTTP/1.1 200 OK[\r][\n]"
+2017-10-24 17:41:34 DEBUG wire:73 - http-outgoing-3 << "Date: Tue, 24 Oct 2017 14:41:34 GMT[\r][\n]"
+2017-10-24 17:41:34 DEBUG wire:73 - http-outgoing-3 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2017-10-24 17:41:34 DEBUG wire:73 - http-outgoing-3 << "Transfer-Encoding: chunked[\r][\n]"
+2017-10-24 17:41:34 DEBUG wire:73 - http-outgoing-3 << "Connection: keep-alive[\r][\n]"
+2017-10-24 17:41:34 DEBUG wire:73 - http-outgoing-3 << "Set-Cookie: AWSALB=XL/9cYzy80lL4GFVUzDMDYhK0UEnpHDVY8rEvMvpOip1I+Hl9amqtAiqI3pQHTb8AkvVjfEhi3NfJmvDoby1pdNdmsDCoDQ5GcZ2LwtDQStgAqFPf1WN0jXPBQXW; Expires=Tue, 31 Oct 2017 14:41:33 GMT; Path=/[\r][\n]"
+2017-10-24 17:41:34 DEBUG wire:73 - http-outgoing-3 << "Server: Tengine[\r][\n]"
+2017-10-24 17:41:34 DEBUG wire:73 - http-outgoing-3 << "access-control-allow-origin: *[\r][\n]"
+2017-10-24 17:41:34 DEBUG wire:73 - http-outgoing-3 << "access-control-allow-methods: GET,PUT,POST,PATCH,DELETE,OPTIONS[\r][\n]"
+2017-10-24 17:41:34 DEBUG wire:73 - http-outgoing-3 << "access-control-allow-headers: content-type, authorization, content-length, x-requested-with, x-api-version, x-airtable-application-id[\r][\n]"
+2017-10-24 17:41:34 DEBUG wire:73 - http-outgoing-3 << "ETag: W/"527-0vg5Imcal6hwo6Zf2ODHgDYWlFs"[\r][\n]"
+2017-10-24 17:41:34 DEBUG wire:73 - http-outgoing-3 << "Vary: Accept-Encoding[\r][\n]"
+2017-10-24 17:41:34 DEBUG wire:73 - http-outgoing-3 << "Content-Encoding: gzip[\r][\n]"
+2017-10-24 17:41:34 DEBUG wire:73 - http-outgoing-3 << "[\r][\n]"
+2017-10-24 17:41:34 DEBUG wire:73 - http-outgoing-3 << "1b4[\r][\n]"
+2017-10-24 17:41:34 DEBUG wire:73 - http-outgoing-3 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x9d][0x93]]o[0x9b]0[0x18][0x85][0xff][0xca][0xc4]u[[0xd9][0x18][0x1b][0xf0]][0xd3][0xf4]#[0x84]f[0x9b][0x1a]%S[0xa6]][0x18]0[0xc4])[0xd8][0xd4]8%i[0xd4][0xff]^[0x9a]i[0xda]$,[0x81]&q[0xe3][0xe3][0xd7][0xe8][0xd1]y[0xcf]99[0x9a][0xa7]Jg[0x8d]C[0x9e][0x1c][0x91]9[0xf4]Sp[0xaf][0xc9][0xee]6%Q[0xdc][0xe0][0x94]@[0xe7][0xc2][0xc9][0x5]/?gN[0xce][0x82]U[0xbc][0x1b]j[0xb6][0xaa][0xbe][0xaa]L[0xd3][0xdd][0xad][0xb8][0xcc][0x94][0xfe]r~[0xeb]#[0xe0][0xb9]A'[0xde][0xa8][0xaa]f[0xf2][0xf8][[0x85][0x8][0x3][0xe7][0xfd][0xc2]I5g[0x86]gKq[0xfe][0x85][0xb][0xa0][0x9][0xc1][0xa5][0xeb]-![0xa2][0xdd][0x87][0xc0][0x15][0x0]`[0xd3]M[0xfe]%[0x99][0xfc][0xb8][0x9b]U^[0xfc][0xfa]-[0x83][0x9a][0xdc][0xd9]HX)[0xf8][0xa1][0xd6][0xbc][0x19][0xc7]B [0xc4]C, [0xa4][0x1e][0xee][0xb3]D[0xcb][0xb0][0x8][0xb4][0xc8][0xc0]l[0xc2][0xbf]76[0x16][0xa3]*[0xa3][0xea]q[0x9e]x[0x83][0xa6][0xb8][0xd4][0xf5])[0xf0][0xfa] [0xf1]d[0x11][0xcf][0xda][0xfc][0x19]r[0xd9]NZ[0x1b][0xc8][0x1b][0xcb][0xf7][0xe5]8[0xe][0x8c]A0[0xb8][0x9c][0x8e][0x83][0xf4]9[0x1e][0xf7][0xf2][0x1a][0xce][0xfd]i[0xb1][0xbe]i[0xa7][0xa1][0x8d][0xa3][0xe0][0xfc]9[0xd9][0x1f][0x85],F[0xc2]x[0xc4][0xef][0xc4])oR-j#[0x94][0xec][0xd4][0xec][0x9f][0xd3][0x80]a[0xa0][^[0xd0][0x7]]$ 2[0xf7][0xf][0x1b][0xcc]V[0x9b][0x83]5E[0xa5]([0xb6]FH[0xb3][0xe5][0x89]:[0x8c]b[0xc5][0x4][0xc1]A[0xdf]\[0x8a],[0xbe][0xad]v[0xd1][0xd3][0xfc]%=[0xc6]a[0xcb][0x85]u[0x9][0x93]E[0xa1]T6[0xb2]^[0xc4]E[0x83]([0x84]BK[0xa6][0xd7]o[0x5][0xdb][0xdd][0x86][0xec]![0xda][0xcc][0xcb][0xaf][0xf6]([0xd5][0xac][0x1c][0xd9]sL[0xfc][0xc1]rAL=[0xd4][0x7]1[0xf7]k[0x99][0xcb]i[0x1][0x1f][0xcb]<[0xe1][0xf6],1[0x9d][0xf0][0xc6][0x8c][0xf4][0x4][0xc1][0xe0]?[0x93][0x4][0xce][0xd5]C[0x14][0xff][0xa9][0xde][0xaf][0xf7][0xf]:[0xf4][0x92][0x1]'[0x5][0x0][0x0][\r][\n]"
+2017-10-24 17:41:34 DEBUG headers:122 - http-outgoing-3 << HTTP/1.1 200 OK
+2017-10-24 17:41:34 DEBUG headers:125 - http-outgoing-3 << Date: Tue, 24 Oct 2017 14:41:34 GMT
+2017-10-24 17:41:34 DEBUG headers:125 - http-outgoing-3 << Content-Type: application/json; charset=utf-8
+2017-10-24 17:41:34 DEBUG headers:125 - http-outgoing-3 << Transfer-Encoding: chunked
+2017-10-24 17:41:34 DEBUG headers:125 - http-outgoing-3 << Connection: keep-alive
+2017-10-24 17:41:34 DEBUG headers:125 - http-outgoing-3 << Set-Cookie: AWSALB=XL/9cYzy80lL4GFVUzDMDYhK0UEnpHDVY8rEvMvpOip1I+Hl9amqtAiqI3pQHTb8AkvVjfEhi3NfJmvDoby1pdNdmsDCoDQ5GcZ2LwtDQStgAqFPf1WN0jXPBQXW; Expires=Tue, 31 Oct 2017 14:41:33 GMT; Path=/
+2017-10-24 17:41:34 DEBUG headers:125 - http-outgoing-3 << Server: Tengine
+2017-10-24 17:41:34 DEBUG headers:125 - http-outgoing-3 << access-control-allow-origin: *
+2017-10-24 17:41:34 DEBUG headers:125 - http-outgoing-3 << access-control-allow-methods: GET,PUT,POST,PATCH,DELETE,OPTIONS
+2017-10-24 17:41:34 DEBUG headers:125 - http-outgoing-3 << access-control-allow-headers: content-type, authorization, content-length, x-requested-with, x-api-version, x-airtable-application-id
+2017-10-24 17:41:34 DEBUG headers:125 - http-outgoing-3 << ETag: W/"527-0vg5Imcal6hwo6Zf2ODHgDYWlFs"
+2017-10-24 17:41:34 DEBUG headers:125 - http-outgoing-3 << Vary: Accept-Encoding
+2017-10-24 17:41:34 DEBUG headers:125 - http-outgoing-3 << Content-Encoding: gzip
+2017-10-24 17:41:34 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2017-10-24 17:41:34 INFO  AirTableApi:155 - Got shops 9
+2017-10-24 17:41:39 INFO  MyTimer:83 - ActionUpdater
+2017-10-24 17:41:40 DEBUG PoolingHttpClientConnectionManager:255 - Connection request: [route: {s}->https://api.airtable.com:443][total kept alive: 0; route allocated: 2 of 2; total allocated: 2 of 20]
+2017-10-24 17:42:10 DEBUG wire:73 - http-outgoing-2 << "HTTP/1.1 200 OK[\r][\n]"
+2017-10-24 17:42:10 DEBUG wire:73 - http-outgoing-2 << "Server: nginx/1.10.0[\r][\n]"
+2017-10-24 17:42:10 DEBUG wire:73 - http-outgoing-2 << "Date: Tue, 24 Oct 2017 14:42:10 GMT[\r][\n]"
+2017-10-24 17:42:10 DEBUG wire:73 - http-outgoing-2 << "Content-Type: application/json[\r][\n]"
+2017-10-24 17:42:10 DEBUG wire:73 - http-outgoing-2 << "Content-Length: 23[\r][\n]"
+2017-10-24 17:42:10 DEBUG wire:73 - http-outgoing-2 << "Connection: keep-alive[\r][\n]"
+2017-10-24 17:42:10 DEBUG wire:73 - http-outgoing-2 << "Access-Control-Allow-Origin: *[\r][\n]"
+2017-10-24 17:42:10 DEBUG wire:73 - http-outgoing-2 << "Access-Control-Allow-Methods: GET, POST, OPTIONS[\r][\n]"
+2017-10-24 17:42:10 DEBUG wire:73 - http-outgoing-2 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
+2017-10-24 17:42:10 DEBUG wire:73 - http-outgoing-2 << "Strict-Transport-Security: max-age=31536000; includeSubdomains[\r][\n]"
+2017-10-24 17:42:10 DEBUG wire:73 - http-outgoing-2 << "[\r][\n]"
+2017-10-24 17:42:10 DEBUG wire:87 - http-outgoing-2 << "{"ok":true,"result":[]}"
+2017-10-24 17:42:10 DEBUG headers:122 - http-outgoing-2 << HTTP/1.1 200 OK
+2017-10-24 17:42:10 DEBUG headers:125 - http-outgoing-2 << Server: nginx/1.10.0
+2017-10-24 17:42:10 DEBUG headers:125 - http-outgoing-2 << Date: Tue, 24 Oct 2017 14:42:10 GMT
+2017-10-24 17:42:10 DEBUG headers:125 - http-outgoing-2 << Content-Type: application/json
+2017-10-24 17:42:10 DEBUG headers:125 - http-outgoing-2 << Content-Length: 23
+2017-10-24 17:42:10 DEBUG headers:125 - http-outgoing-2 << Connection: keep-alive
+2017-10-24 17:42:10 DEBUG headers:125 - http-outgoing-2 << Access-Control-Allow-Origin: *
+2017-10-24 17:42:10 DEBUG headers:125 - http-outgoing-2 << Access-Control-Allow-Methods: GET, POST, OPTIONS
+2017-10-24 17:42:10 DEBUG headers:125 - http-outgoing-2 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+2017-10-24 17:42:10 DEBUG headers:125 - http-outgoing-2 << Strict-Transport-Security: max-age=31536000; includeSubdomains
+2017-10-24 17:42:10 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2017-10-24 17:42:10 DEBUG PoolingHttpClientConnectionManager:320 - Connection [id: 2][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
+2017-10-24 17:42:10 DEBUG PoolingHttpClientConnectionManager:326 - Connection released: [id: 2][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
+2017-10-24 17:42:11 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2017-10-24 17:42:11 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2017-10-24 17:42:11 DEBUG PoolingHttpClientConnectionManager:255 - Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
+2017-10-24 17:42:11 DEBUG PoolingHttpClientConnectionManager:288 - Connection leased: [id: 2][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
+2017-10-24 17:42:11 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-2: set socket timeout to 75000
+2017-10-24 17:42:11 DEBUG MainClientExec:256 - Executing request POST /bot344549406:AAHh4oTg-qwNxfJ3FS8Gc1AT0h-okfzGYV8/getupdates HTTP/1.1
+2017-10-24 17:42:11 DEBUG MainClientExec:261 - Target auth state: UNCHALLENGED
+2017-10-24 17:42:11 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2017-10-24 17:42:11 DEBUG headers:133 - http-outgoing-2 >> POST /bot344549406:AAHh4oTg-qwNxfJ3FS8Gc1AT0h-okfzGYV8/getupdates HTTP/1.1
+2017-10-24 17:42:11 DEBUG headers:136 - http-outgoing-2 >> charset: UTF-8
+2017-10-24 17:42:11 DEBUG headers:136 - http-outgoing-2 >> Content-Length: 59
+2017-10-24 17:42:11 DEBUG headers:136 - http-outgoing-2 >> Content-Type: application/json; charset=UTF-8
+2017-10-24 17:42:11 DEBUG headers:136 - http-outgoing-2 >> Host: api.telegram.org
+2017-10-24 17:42:11 DEBUG headers:136 - http-outgoing-2 >> Connection: Keep-Alive
+2017-10-24 17:42:11 DEBUG headers:136 - http-outgoing-2 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)
+2017-10-24 17:42:11 DEBUG headers:136 - http-outgoing-2 >> Accept-Encoding: gzip,deflate
+2017-10-24 17:42:11 DEBUG wire:73 - http-outgoing-2 >> "POST /bot344549406:AAHh4oTg-qwNxfJ3FS8Gc1AT0h-okfzGYV8/getupdates HTTP/1.1[\r][\n]"
+2017-10-24 17:42:11 DEBUG wire:73 - http-outgoing-2 >> "charset: UTF-8[\r][\n]"
+2017-10-24 17:42:11 DEBUG wire:73 - http-outgoing-2 >> "Content-Length: 59[\r][\n]"
+2017-10-24 17:42:11 DEBUG wire:73 - http-outgoing-2 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2017-10-24 17:42:11 DEBUG wire:73 - http-outgoing-2 >> "Host: api.telegram.org[\r][\n]"
+2017-10-24 17:42:11 DEBUG wire:73 - http-outgoing-2 >> "Connection: Keep-Alive[\r][\n]"
+2017-10-24 17:42:11 DEBUG wire:73 - http-outgoing-2 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)[\r][\n]"
+2017-10-24 17:42:11 DEBUG wire:73 - http-outgoing-2 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2017-10-24 17:42:11 DEBUG wire:73 - http-outgoing-2 >> "[\r][\n]"
+2017-10-24 17:42:11 DEBUG wire:87 - http-outgoing-2 >> "{"offset":1,"limit":100,"timeout":50,"method":"getupdates"}"
+2017-10-24 17:43:01 DEBUG wire:73 - http-outgoing-2 << "HTTP/1.1 200 OK[\r][\n]"
+2017-10-24 17:43:01 DEBUG wire:73 - http-outgoing-2 << "Server: nginx/1.10.0[\r][\n]"
+2017-10-24 17:43:01 DEBUG wire:73 - http-outgoing-2 << "Date: Tue, 24 Oct 2017 14:43:00 GMT[\r][\n]"
+2017-10-24 17:43:01 DEBUG wire:73 - http-outgoing-2 << "Content-Type: application/json[\r][\n]"
+2017-10-24 17:43:01 DEBUG wire:73 - http-outgoing-2 << "Content-Length: 23[\r][\n]"
+2017-10-24 17:43:01 DEBUG wire:73 - http-outgoing-2 << "Connection: keep-alive[\r][\n]"
+2017-10-24 17:43:01 DEBUG wire:73 - http-outgoing-2 << "Access-Control-Allow-Origin: *[\r][\n]"
+2017-10-24 17:43:01 DEBUG wire:73 - http-outgoing-2 << "Access-Control-Allow-Methods: GET, POST, OPTIONS[\r][\n]"
+2017-10-24 17:43:01 DEBUG wire:73 - http-outgoing-2 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
+2017-10-24 17:43:01 DEBUG wire:73 - http-outgoing-2 << "Strict-Transport-Security: max-age=31536000; includeSubdomains[\r][\n]"
+2017-10-24 17:43:01 DEBUG wire:73 - http-outgoing-2 << "[\r][\n]"
+2017-10-24 17:43:01 DEBUG wire:87 - http-outgoing-2 << "{"ok":true,"result":[]}"
+2017-10-24 17:43:01 DEBUG headers:122 - http-outgoing-2 << HTTP/1.1 200 OK
+2017-10-24 17:43:01 DEBUG headers:125 - http-outgoing-2 << Server: nginx/1.10.0
+2017-10-24 17:43:01 DEBUG headers:125 - http-outgoing-2 << Date: Tue, 24 Oct 2017 14:43:00 GMT
+2017-10-24 17:43:01 DEBUG headers:125 - http-outgoing-2 << Content-Type: application/json
+2017-10-24 17:43:01 DEBUG headers:125 - http-outgoing-2 << Content-Length: 23
+2017-10-24 17:43:01 DEBUG headers:125 - http-outgoing-2 << Connection: keep-alive
+2017-10-24 17:43:01 DEBUG headers:125 - http-outgoing-2 << Access-Control-Allow-Origin: *
+2017-10-24 17:43:01 DEBUG headers:125 - http-outgoing-2 << Access-Control-Allow-Methods: GET, POST, OPTIONS
+2017-10-24 17:43:01 DEBUG headers:125 - http-outgoing-2 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+2017-10-24 17:43:01 DEBUG headers:125 - http-outgoing-2 << Strict-Transport-Security: max-age=31536000; includeSubdomains
+2017-10-24 17:43:01 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2017-10-24 17:43:01 DEBUG PoolingHttpClientConnectionManager:320 - Connection [id: 2][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
+2017-10-24 17:43:01 DEBUG PoolingHttpClientConnectionManager:326 - Connection released: [id: 2][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
+2017-10-24 17:43:01 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2017-10-24 17:43:01 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2017-10-24 17:43:01 DEBUG PoolingHttpClientConnectionManager:255 - Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
+2017-10-24 17:43:01 DEBUG CPool:82 - Connection [id:2][route:{s}->https://api.telegram.org:443][state:null] expired @ Tue Oct 24 17:42:30 MSK 2017
+2017-10-24 17:43:01 DEBUG DefaultManagedHttpClientConnection:79 - http-outgoing-2: Close connection
+2017-10-24 17:43:01 DEBUG PoolingHttpClientConnectionManager:288 - Connection leased: [id: 4][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
+2017-10-24 17:43:01 DEBUG MainClientExec:235 - Opening connection {s}->https://api.telegram.org:443
+2017-10-24 17:43:01 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to api.telegram.org/149.154.167.199:443
+2017-10-24 17:43:01 DEBUG SSLConnectionSocketFactory:337 - Connecting socket to api.telegram.org/149.154.167.199:443 with timeout 75000
+2017-10-24 17:43:01 DEBUG SSLConnectionSocketFactory:390 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2017-10-24 17:43:01 DEBUG SSLConnectionSocketFactory:391 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2017-10-24 17:43:01 DEBUG SSLConnectionSocketFactory:395 - Starting handshake
+2017-10-24 17:43:02 DEBUG SSLConnectionSocketFactory:425 - Secure session established
+2017-10-24 17:43:02 DEBUG SSLConnectionSocketFactory:426 -  negotiated protocol: TLSv1.2
+2017-10-24 17:43:02 DEBUG SSLConnectionSocketFactory:427 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+2017-10-24 17:43:02 DEBUG SSLConnectionSocketFactory:435 -  peer principal: CN=api.telegram.org, OU=Domain Control Validated
+2017-10-24 17:43:02 DEBUG SSLConnectionSocketFactory:444 -  peer alternative names: [api.telegram.org, www.api.telegram.org]
+2017-10-24 17:43:02 DEBUG SSLConnectionSocketFactory:448 -  issuer principal: CN=Go Daddy Secure Certificate Authority - G2, OU=http://certs.godaddy.com/repository/, O="GoDaddy.com, Inc.", L=Scottsdale, ST=Arizona, C=US
+2017-10-24 17:43:02 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 127.0.0.1:61387<->149.154.167.199:443
+2017-10-24 17:43:02 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-4: set socket timeout to 75000
+2017-10-24 17:43:02 DEBUG MainClientExec:256 - Executing request POST /bot344549406:AAHh4oTg-qwNxfJ3FS8Gc1AT0h-okfzGYV8/getupdates HTTP/1.1
+2017-10-24 17:43:02 DEBUG MainClientExec:261 - Target auth state: UNCHALLENGED
+2017-10-24 17:43:02 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2017-10-24 17:43:02 DEBUG headers:133 - http-outgoing-4 >> POST /bot344549406:AAHh4oTg-qwNxfJ3FS8Gc1AT0h-okfzGYV8/getupdates HTTP/1.1
+2017-10-24 17:43:02 DEBUG headers:136 - http-outgoing-4 >> charset: UTF-8
+2017-10-24 17:43:02 DEBUG headers:136 - http-outgoing-4 >> Content-Length: 59
+2017-10-24 17:43:02 DEBUG headers:136 - http-outgoing-4 >> Content-Type: application/json; charset=UTF-8
+2017-10-24 17:43:02 DEBUG headers:136 - http-outgoing-4 >> Host: api.telegram.org
+2017-10-24 17:43:02 DEBUG headers:136 - http-outgoing-4 >> Connection: Keep-Alive
+2017-10-24 17:43:02 DEBUG headers:136 - http-outgoing-4 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)
+2017-10-24 17:43:02 DEBUG headers:136 - http-outgoing-4 >> Accept-Encoding: gzip,deflate
+2017-10-24 17:43:02 DEBUG wire:73 - http-outgoing-4 >> "POST /bot344549406:AAHh4oTg-qwNxfJ3FS8Gc1AT0h-okfzGYV8/getupdates HTTP/1.1[\r][\n]"
+2017-10-24 17:43:02 DEBUG wire:73 - http-outgoing-4 >> "charset: UTF-8[\r][\n]"
+2017-10-24 17:43:02 DEBUG wire:73 - http-outgoing-4 >> "Content-Length: 59[\r][\n]"
+2017-10-24 17:43:02 DEBUG wire:73 - http-outgoing-4 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2017-10-24 17:43:02 DEBUG wire:73 - http-outgoing-4 >> "Host: api.telegram.org[\r][\n]"
+2017-10-24 17:43:02 DEBUG wire:73 - http-outgoing-4 >> "Connection: Keep-Alive[\r][\n]"
+2017-10-24 17:43:02 DEBUG wire:73 - http-outgoing-4 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)[\r][\n]"
+2017-10-24 17:43:02 DEBUG wire:73 - http-outgoing-4 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2017-10-24 17:43:02 DEBUG wire:73 - http-outgoing-4 >> "[\r][\n]"
+2017-10-24 17:43:02 DEBUG wire:87 - http-outgoing-4 >> "{"offset":1,"limit":100,"timeout":50,"method":"getupdates"}"
+2017-10-24 17:43:52 DEBUG wire:73 - http-outgoing-4 << "HTTP/1.1 200 OK[\r][\n]"
+2017-10-24 17:43:52 DEBUG wire:73 - http-outgoing-4 << "Server: nginx/1.10.0[\r][\n]"
+2017-10-24 17:43:52 DEBUG wire:73 - http-outgoing-4 << "Date: Tue, 24 Oct 2017 14:43:51 GMT[\r][\n]"
+2017-10-24 17:43:52 DEBUG wire:73 - http-outgoing-4 << "Content-Type: application/json[\r][\n]"
+2017-10-24 17:43:52 DEBUG wire:73 - http-outgoing-4 << "Content-Length: 23[\r][\n]"
+2017-10-24 17:43:52 DEBUG wire:73 - http-outgoing-4 << "Connection: keep-alive[\r][\n]"
+2017-10-24 17:43:52 DEBUG wire:73 - http-outgoing-4 << "Access-Control-Allow-Origin: *[\r][\n]"
+2017-10-24 17:43:52 DEBUG wire:73 - http-outgoing-4 << "Access-Control-Allow-Methods: GET, POST, OPTIONS[\r][\n]"
+2017-10-24 17:43:52 DEBUG wire:73 - http-outgoing-4 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
+2017-10-24 17:43:52 DEBUG wire:73 - http-outgoing-4 << "Strict-Transport-Security: max-age=31536000; includeSubdomains[\r][\n]"
+2017-10-24 17:43:52 DEBUG wire:73 - http-outgoing-4 << "[\r][\n]"
+2017-10-24 17:43:52 DEBUG wire:87 - http-outgoing-4 << "{"ok":true,"result":[]}"
+2017-10-24 17:43:52 DEBUG headers:122 - http-outgoing-4 << HTTP/1.1 200 OK
+2017-10-24 17:43:52 DEBUG headers:125 - http-outgoing-4 << Server: nginx/1.10.0
+2017-10-24 17:43:52 DEBUG headers:125 - http-outgoing-4 << Date: Tue, 24 Oct 2017 14:43:51 GMT
+2017-10-24 17:43:52 DEBUG headers:125 - http-outgoing-4 << Content-Type: application/json
+2017-10-24 17:43:52 DEBUG headers:125 - http-outgoing-4 << Content-Length: 23
+2017-10-24 17:43:52 DEBUG headers:125 - http-outgoing-4 << Connection: keep-alive
+2017-10-24 17:43:52 DEBUG headers:125 - http-outgoing-4 << Access-Control-Allow-Origin: *
+2017-10-24 17:43:52 DEBUG headers:125 - http-outgoing-4 << Access-Control-Allow-Methods: GET, POST, OPTIONS
+2017-10-24 17:43:52 DEBUG headers:125 - http-outgoing-4 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+2017-10-24 17:43:52 DEBUG headers:125 - http-outgoing-4 << Strict-Transport-Security: max-age=31536000; includeSubdomains
+2017-10-24 17:43:52 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2017-10-24 17:43:52 DEBUG PoolingHttpClientConnectionManager:320 - Connection [id: 4][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
+2017-10-24 17:43:52 DEBUG PoolingHttpClientConnectionManager:326 - Connection released: [id: 4][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
+2017-10-24 17:43:52 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2017-10-24 17:43:52 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2017-10-24 17:43:52 DEBUG PoolingHttpClientConnectionManager:255 - Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
+2017-10-24 17:43:52 DEBUG PoolingHttpClientConnectionManager:288 - Connection leased: [id: 4][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
+2017-10-24 17:43:52 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-4: set socket timeout to 75000
+2017-10-24 17:43:52 DEBUG MainClientExec:256 - Executing request POST /bot344549406:AAHh4oTg-qwNxfJ3FS8Gc1AT0h-okfzGYV8/getupdates HTTP/1.1
+2017-10-24 17:43:52 DEBUG MainClientExec:261 - Target auth state: UNCHALLENGED
+2017-10-24 17:43:52 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2017-10-24 17:43:52 DEBUG headers:133 - http-outgoing-4 >> POST /bot344549406:AAHh4oTg-qwNxfJ3FS8Gc1AT0h-okfzGYV8/getupdates HTTP/1.1
+2017-10-24 17:43:52 DEBUG headers:136 - http-outgoing-4 >> charset: UTF-8
+2017-10-24 17:43:52 DEBUG headers:136 - http-outgoing-4 >> Content-Length: 59
+2017-10-24 17:43:52 DEBUG headers:136 - http-outgoing-4 >> Content-Type: application/json; charset=UTF-8
+2017-10-24 17:43:52 DEBUG headers:136 - http-outgoing-4 >> Host: api.telegram.org
+2017-10-24 17:43:52 DEBUG headers:136 - http-outgoing-4 >> Connection: Keep-Alive
+2017-10-24 17:43:52 DEBUG headers:136 - http-outgoing-4 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)
+2017-10-24 17:43:52 DEBUG headers:136 - http-outgoing-4 >> Accept-Encoding: gzip,deflate
+2017-10-24 17:43:52 DEBUG wire:73 - http-outgoing-4 >> "POST /bot344549406:AAHh4oTg-qwNxfJ3FS8Gc1AT0h-okfzGYV8/getupdates HTTP/1.1[\r][\n]"
+2017-10-24 17:43:52 DEBUG wire:73 - http-outgoing-4 >> "charset: UTF-8[\r][\n]"
+2017-10-24 17:43:52 DEBUG wire:73 - http-outgoing-4 >> "Content-Length: 59[\r][\n]"
+2017-10-24 17:43:52 DEBUG wire:73 - http-outgoing-4 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2017-10-24 17:43:52 DEBUG wire:73 - http-outgoing-4 >> "Host: api.telegram.org[\r][\n]"
+2017-10-24 17:43:52 DEBUG wire:73 - http-outgoing-4 >> "Connection: Keep-Alive[\r][\n]"
+2017-10-24 17:43:52 DEBUG wire:73 - http-outgoing-4 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)[\r][\n]"
+2017-10-24 17:43:52 DEBUG wire:73 - http-outgoing-4 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2017-10-24 17:43:52 DEBUG wire:73 - http-outgoing-4 >> "[\r][\n]"
+2017-10-24 17:43:52 DEBUG wire:87 - http-outgoing-4 >> "{"offset":1,"limit":100,"timeout":50,"method":"getupdates"}"
+2017-10-24 17:44:44 DEBUG wire:73 - http-outgoing-4 << "HTTP/1.1 200 OK[\r][\n]"
+2017-10-24 17:44:44 DEBUG wire:73 - http-outgoing-4 << "Server: nginx/1.10.0[\r][\n]"
+2017-10-24 17:44:44 DEBUG wire:73 - http-outgoing-4 << "Date: Tue, 24 Oct 2017 14:44:43 GMT[\r][\n]"
+2017-10-24 17:44:44 DEBUG wire:73 - http-outgoing-4 << "Content-Type: application/json[\r][\n]"
+2017-10-24 17:44:44 DEBUG wire:73 - http-outgoing-4 << "Content-Length: 23[\r][\n]"
+2017-10-24 17:44:44 DEBUG wire:73 - http-outgoing-4 << "Connection: keep-alive[\r][\n]"
+2017-10-24 17:44:44 DEBUG wire:73 - http-outgoing-4 << "Access-Control-Allow-Origin: *[\r][\n]"
+2017-10-24 17:44:44 DEBUG wire:73 - http-outgoing-4 << "Access-Control-Allow-Methods: GET, POST, OPTIONS[\r][\n]"
+2017-10-24 17:44:44 DEBUG wire:73 - http-outgoing-4 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
+2017-10-24 17:44:44 DEBUG wire:73 - http-outgoing-4 << "Strict-Transport-Security: max-age=31536000; includeSubdomains[\r][\n]"
+2017-10-24 17:44:44 DEBUG wire:73 - http-outgoing-4 << "[\r][\n]"
+2017-10-24 17:44:44 DEBUG wire:87 - http-outgoing-4 << "{"ok":true,"result":[]}"
+2017-10-24 17:44:44 DEBUG headers:122 - http-outgoing-4 << HTTP/1.1 200 OK
+2017-10-24 17:44:44 DEBUG headers:125 - http-outgoing-4 << Server: nginx/1.10.0
+2017-10-24 17:44:44 DEBUG headers:125 - http-outgoing-4 << Date: Tue, 24 Oct 2017 14:44:43 GMT
+2017-10-24 17:44:44 DEBUG headers:125 - http-outgoing-4 << Content-Type: application/json
+2017-10-24 17:44:44 DEBUG headers:125 - http-outgoing-4 << Content-Length: 23
+2017-10-24 17:44:44 DEBUG headers:125 - http-outgoing-4 << Connection: keep-alive
+2017-10-24 17:44:44 DEBUG headers:125 - http-outgoing-4 << Access-Control-Allow-Origin: *
+2017-10-24 17:44:44 DEBUG headers:125 - http-outgoing-4 << Access-Control-Allow-Methods: GET, POST, OPTIONS
+2017-10-24 17:44:44 DEBUG headers:125 - http-outgoing-4 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+2017-10-24 17:44:44 DEBUG headers:125 - http-outgoing-4 << Strict-Transport-Security: max-age=31536000; includeSubdomains
+2017-10-24 17:44:44 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2017-10-24 17:44:44 DEBUG PoolingHttpClientConnectionManager:320 - Connection [id: 4][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
+2017-10-24 17:44:44 DEBUG PoolingHttpClientConnectionManager:326 - Connection released: [id: 4][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
+2017-10-24 17:44:44 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2017-10-24 17:44:44 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2017-10-24 17:44:44 DEBUG PoolingHttpClientConnectionManager:255 - Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
+2017-10-24 17:44:44 DEBUG CPool:82 - Connection [id:4][route:{s}->https://api.telegram.org:443][state:null] expired @ Tue Oct 24 17:44:11 MSK 2017
+2017-10-24 17:44:44 DEBUG DefaultManagedHttpClientConnection:79 - http-outgoing-4: Close connection
+2017-10-24 17:44:44 DEBUG PoolingHttpClientConnectionManager:288 - Connection leased: [id: 5][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
+2017-10-24 17:44:44 DEBUG MainClientExec:235 - Opening connection {s}->https://api.telegram.org:443
+2017-10-24 17:44:44 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to api.telegram.org/149.154.167.199:443
+2017-10-24 17:44:44 DEBUG SSLConnectionSocketFactory:337 - Connecting socket to api.telegram.org/149.154.167.199:443 with timeout 75000
+2017-10-24 17:44:44 DEBUG SSLConnectionSocketFactory:390 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2017-10-24 17:44:44 DEBUG SSLConnectionSocketFactory:391 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2017-10-24 17:44:44 DEBUG SSLConnectionSocketFactory:395 - Starting handshake
+2017-10-24 17:44:44 DEBUG SSLConnectionSocketFactory:425 - Secure session established
+2017-10-24 17:44:44 DEBUG SSLConnectionSocketFactory:426 -  negotiated protocol: TLSv1.2
+2017-10-24 17:44:44 DEBUG SSLConnectionSocketFactory:427 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+2017-10-24 17:44:44 DEBUG SSLConnectionSocketFactory:435 -  peer principal: CN=api.telegram.org, OU=Domain Control Validated
+2017-10-24 17:44:44 DEBUG SSLConnectionSocketFactory:444 -  peer alternative names: [api.telegram.org, www.api.telegram.org]
+2017-10-24 17:44:44 DEBUG SSLConnectionSocketFactory:448 -  issuer principal: CN=Go Daddy Secure Certificate Authority - G2, OU=http://certs.godaddy.com/repository/, O="GoDaddy.com, Inc.", L=Scottsdale, ST=Arizona, C=US
+2017-10-24 17:44:44 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 127.0.0.1:61471<->149.154.167.199:443
+2017-10-24 17:44:44 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-5: set socket timeout to 75000
+2017-10-24 17:44:44 DEBUG MainClientExec:256 - Executing request POST /bot344549406:AAHh4oTg-qwNxfJ3FS8Gc1AT0h-okfzGYV8/getupdates HTTP/1.1
+2017-10-24 17:44:44 DEBUG MainClientExec:261 - Target auth state: UNCHALLENGED
+2017-10-24 17:44:44 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2017-10-24 17:44:44 DEBUG headers:133 - http-outgoing-5 >> POST /bot344549406:AAHh4oTg-qwNxfJ3FS8Gc1AT0h-okfzGYV8/getupdates HTTP/1.1
+2017-10-24 17:44:44 DEBUG headers:136 - http-outgoing-5 >> charset: UTF-8
+2017-10-24 17:44:44 DEBUG headers:136 - http-outgoing-5 >> Content-Length: 59
+2017-10-24 17:44:44 DEBUG headers:136 - http-outgoing-5 >> Content-Type: application/json; charset=UTF-8
+2017-10-24 17:44:44 DEBUG headers:136 - http-outgoing-5 >> Host: api.telegram.org
+2017-10-24 17:44:44 DEBUG headers:136 - http-outgoing-5 >> Connection: Keep-Alive
+2017-10-24 17:44:44 DEBUG headers:136 - http-outgoing-5 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)
+2017-10-24 17:44:44 DEBUG headers:136 - http-outgoing-5 >> Accept-Encoding: gzip,deflate
+2017-10-24 17:44:44 DEBUG wire:73 - http-outgoing-5 >> "POST /bot344549406:AAHh4oTg-qwNxfJ3FS8Gc1AT0h-okfzGYV8/getupdates HTTP/1.1[\r][\n]"
+2017-10-24 17:44:44 DEBUG wire:73 - http-outgoing-5 >> "charset: UTF-8[\r][\n]"
+2017-10-24 17:44:44 DEBUG wire:73 - http-outgoing-5 >> "Content-Length: 59[\r][\n]"
+2017-10-24 17:44:44 DEBUG wire:73 - http-outgoing-5 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2017-10-24 17:44:44 DEBUG wire:73 - http-outgoing-5 >> "Host: api.telegram.org[\r][\n]"
+2017-10-24 17:44:44 DEBUG wire:73 - http-outgoing-5 >> "Connection: Keep-Alive[\r][\n]"
+2017-10-24 17:44:44 DEBUG wire:73 - http-outgoing-5 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)[\r][\n]"
+2017-10-24 17:44:44 DEBUG wire:73 - http-outgoing-5 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2017-10-24 17:44:44 DEBUG wire:73 - http-outgoing-5 >> "[\r][\n]"
+2017-10-24 17:44:44 DEBUG wire:87 - http-outgoing-5 >> "{"offset":1,"limit":100,"timeout":50,"method":"getupdates"}"
+2017-10-24 17:45:38 DEBUG PoolingHttpClientConnectionManager:255 - Connection request: [route: {s}->https://api.airtable.com:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2017-10-24 17:45:38 DEBUG PoolingHttpClientConnectionManager:288 - Connection leased: [id: 0][route: {s}->https://api.airtable.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2017-10-24 17:45:38 DEBUG MainClientExec:235 - Opening connection {s}->https://api.airtable.com:443
+2017-10-24 17:45:38 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to api.airtable.com/52.203.92.226:443
+2017-10-24 17:45:38 DEBUG SSLConnectionSocketFactory:337 - Connecting socket to api.airtable.com/52.203.92.226:443 with timeout 0
+2017-10-24 17:45:38 DEBUG SSLConnectionSocketFactory:390 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2017-10-24 17:45:38 DEBUG SSLConnectionSocketFactory:391 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2017-10-24 17:45:38 DEBUG SSLConnectionSocketFactory:395 - Starting handshake
+2017-10-24 17:45:39 DEBUG SSLConnectionSocketFactory:425 - Secure session established
+2017-10-24 17:45:39 DEBUG SSLConnectionSocketFactory:426 -  negotiated protocol: TLSv1.2
+2017-10-24 17:45:39 DEBUG SSLConnectionSocketFactory:427 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2017-10-24 17:45:39 DEBUG SSLConnectionSocketFactory:435 -  peer principal: CN=api.airtable.com
+2017-10-24 17:45:39 DEBUG SSLConnectionSocketFactory:444 -  peer alternative names: [api.airtable.com]
+2017-10-24 17:45:39 DEBUG SSLConnectionSocketFactory:448 -  issuer principal: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+2017-10-24 17:45:39 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 127.0.0.1:61509<->52.203.92.226:443
+2017-10-24 17:45:39 DEBUG MainClientExec:256 - Executing request GET /v0/appuZ1lbjCDuFTboP/Table1?filterByFormula= HTTP/1.1
+2017-10-24 17:45:39 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2017-10-24 17:45:39 DEBUG headers:133 - http-outgoing-0 >> GET /v0/appuZ1lbjCDuFTboP/Table1?filterByFormula= HTTP/1.1
+2017-10-24 17:45:39 DEBUG headers:136 - http-outgoing-0 >> Authorization: Bearer keyhnzkreYNlvMRjR
+2017-10-24 17:45:39 DEBUG headers:136 - http-outgoing-0 >> Host: api.airtable.com
+2017-10-24 17:45:39 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2017-10-24 17:45:39 DEBUG headers:136 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)
+2017-10-24 17:45:39 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2017-10-24 17:45:39 DEBUG wire:73 - http-outgoing-0 >> "GET /v0/appuZ1lbjCDuFTboP/Table1?filterByFormula= HTTP/1.1[\r][\n]"
+2017-10-24 17:45:39 DEBUG wire:73 - http-outgoing-0 >> "Authorization: Bearer keyhnzkreYNlvMRjR[\r][\n]"
+2017-10-24 17:45:39 DEBUG wire:73 - http-outgoing-0 >> "Host: api.airtable.com[\r][\n]"
+2017-10-24 17:45:39 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2017-10-24 17:45:39 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)[\r][\n]"
+2017-10-24 17:45:39 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2017-10-24 17:45:39 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2017-10-24 17:45:40 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2017-10-24 17:45:40 DEBUG wire:73 - http-outgoing-0 << "Date: Tue, 24 Oct 2017 14:45:40 GMT[\r][\n]"
+2017-10-24 17:45:40 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2017-10-24 17:45:40 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 14[\r][\n]"
+2017-10-24 17:45:40 DEBUG wire:73 - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2017-10-24 17:45:40 DEBUG wire:73 - http-outgoing-0 << "Set-Cookie: AWSALB=qTEiiXQx1VzijPPGeYFzmzs0e4KxwevXri9PYBgI0FSPvd+68UGbNw47NqerkyfNlIOhPs82N+LeHWrO5YRzczbd3AweH6RnR8qNXKbzP+ypSkLC6jZJ+4RlOUzE; Expires=Tue, 31 Oct 2017 14:45:39 GMT; Path=/[\r][\n]"
+2017-10-24 17:45:40 DEBUG wire:73 - http-outgoing-0 << "Server: Tengine[\r][\n]"
+2017-10-24 17:45:40 DEBUG wire:73 - http-outgoing-0 << "access-control-allow-origin: *[\r][\n]"
+2017-10-24 17:45:40 DEBUG wire:73 - http-outgoing-0 << "access-control-allow-methods: GET,PUT,POST,PATCH,DELETE,OPTIONS[\r][\n]"
+2017-10-24 17:45:40 DEBUG wire:73 - http-outgoing-0 << "access-control-allow-headers: content-type, authorization, content-length, x-requested-with, x-api-version, x-airtable-application-id[\r][\n]"
+2017-10-24 17:45:40 DEBUG wire:73 - http-outgoing-0 << "ETag: W/"e-Ie9BMcnPw/lLTv0zffrNa5YPoAs"[\r][\n]"
+2017-10-24 17:45:40 DEBUG wire:73 - http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2017-10-24 17:45:40 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2017-10-24 17:45:40 DEBUG wire:87 - http-outgoing-0 << "{"records":[]}"
+2017-10-24 17:45:40 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 200 OK
+2017-10-24 17:45:40 DEBUG headers:125 - http-outgoing-0 << Date: Tue, 24 Oct 2017 14:45:40 GMT
+2017-10-24 17:45:40 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+2017-10-24 17:45:40 DEBUG headers:125 - http-outgoing-0 << Content-Length: 14
+2017-10-24 17:45:40 DEBUG headers:125 - http-outgoing-0 << Connection: keep-alive
+2017-10-24 17:45:40 DEBUG headers:125 - http-outgoing-0 << Set-Cookie: AWSALB=qTEiiXQx1VzijPPGeYFzmzs0e4KxwevXri9PYBgI0FSPvd+68UGbNw47NqerkyfNlIOhPs82N+LeHWrO5YRzczbd3AweH6RnR8qNXKbzP+ypSkLC6jZJ+4RlOUzE; Expires=Tue, 31 Oct 2017 14:45:39 GMT; Path=/
+2017-10-24 17:45:40 DEBUG headers:125 - http-outgoing-0 << Server: Tengine
+2017-10-24 17:45:40 DEBUG headers:125 - http-outgoing-0 << access-control-allow-origin: *
+2017-10-24 17:45:40 DEBUG headers:125 - http-outgoing-0 << access-control-allow-methods: GET,PUT,POST,PATCH,DELETE,OPTIONS
+2017-10-24 17:45:40 DEBUG headers:125 - http-outgoing-0 << access-control-allow-headers: content-type, authorization, content-length, x-requested-with, x-api-version, x-airtable-application-id
+2017-10-24 17:45:40 DEBUG headers:125 - http-outgoing-0 << ETag: W/"e-Ie9BMcnPw/lLTv0zffrNa5YPoAs"
+2017-10-24 17:45:40 DEBUG headers:125 - http-outgoing-0 << Vary: Accept-Encoding
+2017-10-24 17:45:40 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2017-10-24 17:45:40 DEBUG PoolingHttpClientConnectionManager:320 - Connection [id: 0][route: {s}->https://api.airtable.com:443] can be kept alive indefinitely
+2017-10-24 17:45:40 DEBUG PoolingHttpClientConnectionManager:326 - Connection released: [id: 0][route: {s}->https://api.airtable.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2017-10-24 17:45:40 INFO  AirTableApi:105 - Got actions 0
+2017-10-24 17:45:41 DEBUG PoolingHttpClientConnectionManager:255 - Connection request: [route: {s}->https://api.airtable.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2017-10-24 17:45:41 DEBUG PoolingHttpClientConnectionManager:288 - Connection leased: [id: 0][route: {s}->https://api.airtable.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2017-10-24 17:45:41 DEBUG MainClientExec:256 - Executing request GET /v0/appJ3HPlhCQeDDQkN/Table1?filterByFormula= HTTP/1.1
+2017-10-24 17:45:41 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2017-10-24 17:45:41 DEBUG headers:133 - http-outgoing-0 >> GET /v0/appJ3HPlhCQeDDQkN/Table1?filterByFormula= HTTP/1.1
+2017-10-24 17:45:41 DEBUG headers:136 - http-outgoing-0 >> Authorization: Bearer keyhnzkreYNlvMRjR
+2017-10-24 17:45:41 DEBUG headers:136 - http-outgoing-0 >> Host: api.airtable.com
+2017-10-24 17:45:41 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2017-10-24 17:45:41 DEBUG headers:136 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)
+2017-10-24 17:45:41 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2017-10-24 17:45:41 DEBUG wire:73 - http-outgoing-0 >> "GET /v0/appJ3HPlhCQeDDQkN/Table1?filterByFormula= HTTP/1.1[\r][\n]"
+2017-10-24 17:45:41 DEBUG wire:73 - http-outgoing-0 >> "Authorization: Bearer keyhnzkreYNlvMRjR[\r][\n]"
+2017-10-24 17:45:41 DEBUG wire:73 - http-outgoing-0 >> "Host: api.airtable.com[\r][\n]"
+2017-10-24 17:45:41 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2017-10-24 17:45:41 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)[\r][\n]"
+2017-10-24 17:45:41 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2017-10-24 17:45:41 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2017-10-24 17:45:49 INFO  AirTableApi:105 - Got actions 0
+2017-10-24 17:45:50 INFO  AirTableApi:131 - Got categories 4
+2017-10-24 17:45:51 INFO  AirTableApi:155 - Got shops 9
+2017-10-24 17:46:01 INFO  MyTimer:83 - ActionUpdater
+2017-10-24 17:46:03 INFO  AirTableApi:105 - Got actions 0
+2017-10-24 17:46:03 INFO  MyTimer:99 - CategoryUpdater
+2017-10-24 17:46:04 INFO  AirTableApi:131 - Got categories 4
+2017-10-24 17:46:04 INFO  MyTimer:109 - ShopUpdater
+2017-10-24 17:46:06 INFO  AirTableApi:155 - Got shops 9
+2017-10-24 17:46:11 INFO  MyTimer:83 - ActionUpdater

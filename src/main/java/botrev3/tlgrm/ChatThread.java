@@ -161,11 +161,8 @@ public class ChatThread{
                 if ((index = text.indexOf('.'))>-1){
                     textInt = Integer.parseInt(text.substring(0, index));
                 }
-                try{
-                    action.setPriceAsString(text);
-                } catch (NumberFormatException e){
-                    log.warn("Wrong price format at bot add Action task");
-                }
+                action.setPriceAsString(text);
+
                 action.setLink(proc.changeLink(action.getLink(), textInt));
                 String id = thr.airTableApi.addAction(action);
                 action.setId(id);

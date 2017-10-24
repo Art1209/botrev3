@@ -3,6 +3,7 @@ package botrev3.domens;
 import botrev3.tlgrm.ChatThread;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.extern.log4j.Log4j;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -13,6 +14,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
+
+@Log4j
 public class Action{
 
     public static SimpleDateFormat format = new SimpleDateFormat("yyyy MM "+ ChatThread.TIME_FORMAT);
@@ -95,7 +98,11 @@ public class Action{
         return getId().toString();
     }
 
-    public void setPriceAsString(String priceAsString) throws NumberFormatException {
-       priceX100 = 100*(int)(Double.parseDouble((priceAsString)));
+    public void setPriceAsString(String priceAsString) {
+        try{
+            priceX100 = 100*(int)(Double.parseDouble((priceAsString)));
+        } catch (NumberFormatException e){
+            log.warn("Wrong price format at bot add Action task");
+        }
     }
 }

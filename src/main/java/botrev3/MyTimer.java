@@ -71,8 +71,8 @@ public class MyTimer {
 
         @Override
         public void run() {
-            updater.initUpdate();
             lifeCycleTimer.schedule(new LocalTask(this), delay);
+            updater.initUpdate();
         }
     }
 
@@ -82,7 +82,7 @@ public class MyTimer {
             void initUpdate() {
                 log.info("ActionUpdater");
                 List<Action> updatedActions = api.getAllActions();
-                if (!listsEquals(updatedActions,actionMemory)){
+                if (needUpdate(updatedActions,actionMemory)){
                     Action.actions = (actionMemory = updatedActions);
                     tasktimer.cancel();
                     tasktimer = new Timer();
@@ -98,7 +98,7 @@ public class MyTimer {
             void initUpdate() {
                 log.info("CategoryUpdater");
                 List<Category> updatedCategories = api.getAllCategories();
-                if (!listsEquals(updatedCategories,categoryMemory)){
+                if (needUpdate(updatedCategories,categoryMemory)){
                     Category.categories = (categoryMemory = updatedCategories);
                 }
             }
@@ -108,7 +108,7 @@ public class MyTimer {
             void initUpdate() {
                 log.info("ShopUpdater");
                 List<Shop> updatedShops = api.getAllShops();
-                if (!listsEquals(updatedShops,shopsMemory)){
+                if (needUpdate(updatedShops,shopsMemory)){
                     Shop.shops = (shopsMemory = updatedShops);
                 }
             }
@@ -118,13 +118,13 @@ public class MyTimer {
         private static List<Action> actionMemory = null;
         private static List<Shop> shopsMemory = null;
         private static List<Category> categoryMemory = null;
-        static  <T extends Object> boolean listsEquals(List<T>list1, List<T>list2){
-            if (list1==null||list2==null)return false;
-            if (list1.size()!=list2.size())return false;
-            for (T t:list1){
-                if (!list2.contains(t))return false;
-            }
-            return true;
+        static  <T extends Object> boolean needUpdate(List<T>memory, List<T>update){
+            if (update==null)return false;
+            if (memory==null)return true;
+            if (memory.size()!=update.size())return true;
+            for (T t:memory){
+                if (!update.contains(t))return true;
+            }return  false;
         }
     }
 
