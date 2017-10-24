@@ -5,6 +5,7 @@ import botrev3.tlgrm.ChatThread;
 
 import java.io.IOException;
 import java.security.GeneralSecurityException;
+import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -13,8 +14,24 @@ import java.util.regex.Pattern;
  */
 public class tester {
     public static void main(String args[]) throws IOException, GeneralSecurityException {
-        textProcTest();
+        dateFormatterTest();
     }
+
+    public static void dateFormatterTest(){
+        System.out.println(new Date());
+        Action action = Action.getActionForId("1");
+        action.setTime("01 12:24");
+        System.out.println(action.getTimeAsDate());
+        action.setTime("31 12:24");
+        System.out.println(action.getTimeAsDate());
+        action.setTime("23 12:24");
+        System.out.println(action.getTimeAsDate());
+        action.setTime("25 12:24");
+        System.out.println(action.getTimeAsDate());
+        action.setTime("24 09:00");
+        System.out.println(action.getTimeAsDate());
+    }
+
     public static void addActionTest(){
         Action act = Action.getActionForId(null);
         act.setImage("dsfgsdg");

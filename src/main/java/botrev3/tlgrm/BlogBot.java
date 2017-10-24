@@ -9,10 +9,6 @@ import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 @Log4j
 public class BlogBot extends TelegramLongPollingBot {
@@ -29,10 +25,8 @@ public class BlogBot extends TelegramLongPollingBot {
             long chat_id = message.getChatId();
             log.debug(message.getText());
             if (chat_id==ADMIN_CHAT_ID){
-
                 ChatThread chat = ChatThread.getChatThread(this);
                 chat.handle(message);
-
             }
         }
     }

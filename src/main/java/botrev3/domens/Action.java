@@ -6,14 +6,16 @@ import lombok.Setter;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Month;
 import java.time.Year;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
 public class Action{
 
-    public static SimpleDateFormat format = new SimpleDateFormat("yyyy "+ ChatThread.TIME_FORMAT);
+    public static SimpleDateFormat format = new SimpleDateFormat("yyyy MM "+ ChatThread.TIME_FORMAT);
     public static List<Action> actions = new ArrayList<>();
 
     public static Action getActionForId(String givenId){
@@ -57,13 +59,23 @@ public class Action{
     public Date getTimeAsDate(){
         Date timeToStart = null;
         Date today = new Date();
+        int month = Calendar.getInstance().get(Calendar.MONTH)+1;
+        int year = Year.now().getValue();
         try {
-            timeToStart = format.parse(Year.now().getValue()+" "+getTime());
-            if (today.getTime()-timeToStart.getTime()>3600000) {
-                timeToStart = format.parse((Year.now().getValue())+" "+getTime());
+            timeToStart = format.parse(year+" "+monthToString(month) +" " +getTime());
+            if ((long)today.getTime()-timeToStart.getTime()>432000000l) {
+                if (month==12){
+                    timeToStart = format.parse((year+1)+" 01 "+getTime());
+                } else {
+                    timeToStart = format.parse(year+" "+monthToString(month+1)+" "+getTime());
+                }
             }
         } catch (ParseException e) {}
         return timeToStart;
+    }
+
+    private static String monthToString(int month){
+        return (month/10+""+month%10);
     }
 
     @Override
@@ -79,5 +91,9 @@ public class Action{
     @Override
     public String toString() {
         return getId().toString();
+    }
+
+    public void setPriceAsString(String priceAsString) {
+       priceX100 = 100*(int)(Double.parseDouble((priceAsString)));
     }
 }

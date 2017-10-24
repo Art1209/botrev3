@@ -10,7 +10,10 @@ import java.io.InputStream;
 
 public class HttpEx {
 
-    private static HttpClient client = HttpClientBuilder.create().build();
+    private static HttpClient client = HttpClientBuilder.create()
+            .disableAuthCaching()
+            .disableCookieManagement()
+            .build();
 
     public static  InputStream execute(HttpUriRequest request){
         try {

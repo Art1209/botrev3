@@ -20,7 +20,7 @@ import java.util.regex.Pattern;
 @Log4j
 public class ChatThread{
 
-    public static final String TIME_FORMAT = "dd MM HH mm";
+    public static final String TIME_FORMAT = "dd HH:mm";
     public static final String TIME_REGEX = "[0-3]?[0-9]\\s{0,3}[0-1]?[0-9]\\s{0,3}[0-2]?[0-9]\\s{0,3}[0-6][0-9]";
 
 //    public static final String PRICE_PATTERN = "[0-9]{1,}" ;
@@ -148,7 +148,7 @@ public class ChatThread{
                     text = msg.getText().trim();
                 }
                 text = msg.getText().trim();
-                action.setPriceX100((int)(Double.parseDouble(text)*100));
+                action.setPriceAsString(text);
                 action.setLink(proc.changeLink(action.getLink(), Integer.parseInt(text)));
                 String id = thr.airTableApi.addAction(action);
                 action.setId(id);

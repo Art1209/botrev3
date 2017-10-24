@@ -89,7 +89,7 @@ public class AirTableApi {
             Action action = Action.getActionForId(id);
             JSONObject fields = (JSONObject)jsonObj.get("fields");
             String image = null;
-            int price = 0;
+            String price = null;
             String link = null;
             String time = null;
             String description = null;
@@ -100,7 +100,7 @@ public class AirTableApi {
                 continue; // check for valid time at every udate
             }
             action.setImage(image = (String)fields.get("Image"));
-            action.setPriceX100(price = 100*(int)(Double.parseDouble((String)fields.get("Price"))));
+            action.setPriceAsString((String)fields.get("Price"));
             action.setLink(link = (String)fields.get("Link"));
             action.setDescription(description = (String)fields.get("Description"));
             res.add(action);
