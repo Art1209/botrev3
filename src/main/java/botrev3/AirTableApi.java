@@ -70,7 +70,7 @@ public class AirTableApi {
         post.setEntity(new StringEntity(obj.toJSONString(), ContentType.APPLICATION_JSON ));
         InputStream in = HttpEx.execute(post);
         String id = parser.jsonFindByKey("id",in);
-        log.debug("Added new action "+id);
+        log.info("Added new action "+id);
         return id;
     }
 
@@ -102,7 +102,7 @@ public class AirTableApi {
             action.setDescription(description = (String)fields.get("Description"));
             res.add(action);
         }
-        log.debug("Got actions "+res.size());
+        log.info("Got actions "+res.size());
         return res;
     }
 
@@ -128,7 +128,7 @@ public class AirTableApi {
             if (priceRanges!=null)category.renewRange();
             res.add(category);
         }
-        log.debug("Got categories "+res.size());
+        log.info("Got categories "+res.size());
         return res;
     }
 
@@ -152,7 +152,7 @@ public class AirTableApi {
             shop.setDescription(description = (String)fields.get("Description"));
             res.add(shop);
         }
-        log.debug("Got shops "+res.size());
+        log.info("Got shops "+res.size());
         return res;
     }
     public String[] getCredentials(){

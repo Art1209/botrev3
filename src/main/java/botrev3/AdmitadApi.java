@@ -92,7 +92,7 @@ public class AdmitadApi {
             expires = System.currentTimeMillis()+(((Long) obj.get("expires_in"))*1000);
             refreshToken = (String) obj.get("refresh_token");
         }
-        log.debug("Retrieved new token");
+        log.info("Retrieved new token");
     }
 
     public String admitize(String pureUrl, String vendor_id, String company_id, String sub_id) {

@@ -37,7 +37,7 @@ public class MyPostWriter extends TimerTask {
     @Override
     public void run() {
         String text = panda+" " +action.getDescription()+action.getLink();
-        log.debug(text);
+        log.info("posting right now: "+text);
         if (action.getImage()!=null||action.getImage().trim()!=""){
             bot.sendPhotoTextToChannel(text,action.getImage());
         } else {

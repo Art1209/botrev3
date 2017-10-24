@@ -23,7 +23,7 @@ public class BlogBot extends TelegramLongPollingBot {
         if (update.hasMessage()){
             Message message = update.getMessage();
             long chat_id = message.getChatId();
-            log.debug(message.getText());
+            log.info(message.getText());
             if (chat_id==ADMIN_CHAT_ID){
                 ChatThread chat = ChatThread.getChatThread(this);
                 chat.handle(message);

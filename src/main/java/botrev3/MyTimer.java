@@ -80,7 +80,7 @@ public class MyTimer {
         ActionUpdater {
             @Override
             void initUpdate() {
-                log.debug("ActionUpdater");
+                log.info("ActionUpdater");
                 List<Action> updatedActions = api.getAllActions();
                 if (!updatedActions.equals(actionMemory)){
                     Action.actions = (actionMemory = updatedActions);
@@ -96,7 +96,7 @@ public class MyTimer {
         CategoryUpdater{
             @Override
             void initUpdate() {
-                log.debug("CategoryUpdater");
+                log.info("CategoryUpdater");
                 List<Category> updatedCategories = api.getAllCategories();
                 if (!updatedCategories.equals(categoryMemory)){
                     Category.categories = (categoryMemory = updatedCategories);
@@ -106,7 +106,7 @@ public class MyTimer {
         ShopUpdater{
             @Override
             void initUpdate() {
-                log.debug("ShopUpdater");
+                log.info("ShopUpdater");
                 List<Shop> updatedShops = api.getAllShops();
                 if (!updatedShops.equals(shopsMemory)){
                     Shop.shops = (shopsMemory = updatedShops);

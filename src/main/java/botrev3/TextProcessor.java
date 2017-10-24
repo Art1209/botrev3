@@ -58,7 +58,7 @@ public class TextProcessor {
             errorCounter++;
         }
         if (errorCounter==5)throw new ApiException("changeLink failed");
-        log.debug(res);
+        log.info(res);
         return res;
     }
 
