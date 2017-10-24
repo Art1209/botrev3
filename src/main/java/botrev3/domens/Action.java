@@ -95,7 +95,7 @@ public class Action{
         return getId().toString();
     }
 
-    public void setPriceAsString(String priceAsString) {
+    public void setPriceAsString(String priceAsString) throws NumberFormatException {
        priceX100 = 100*(int)(Double.parseDouble((priceAsString)));
     }
 }
