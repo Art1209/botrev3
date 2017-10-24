@@ -82,7 +82,7 @@ public class MyTimer {
             void initUpdate() {
                 log.info("ActionUpdater");
                 List<Action> updatedActions = api.getAllActions();
-                if (!updatedActions.equals(actionMemory)){
+                if (!listsEquals(updatedActions,actionMemory)){
                     Action.actions = (actionMemory = updatedActions);
                     tasktimer.cancel();
                     tasktimer = new Timer();
@@ -98,7 +98,7 @@ public class MyTimer {
             void initUpdate() {
                 log.info("CategoryUpdater");
                 List<Category> updatedCategories = api.getAllCategories();
-                if (!updatedCategories.equals(categoryMemory)){
+                if (!listsEquals(updatedCategories,categoryMemory)){
                     Category.categories = (categoryMemory = updatedCategories);
                 }
             }
@@ -108,7 +108,7 @@ public class MyTimer {
             void initUpdate() {
                 log.info("ShopUpdater");
                 List<Shop> updatedShops = api.getAllShops();
-                if (!updatedShops.equals(shopsMemory)){
+                if (!listsEquals(updatedShops,shopsMemory)){
                     Shop.shops = (shopsMemory = updatedShops);
                 }
             }
@@ -118,6 +118,14 @@ public class MyTimer {
         private static List<Action> actionMemory = null;
         private static List<Shop> shopsMemory = null;
         private static List<Category> categoryMemory = null;
+        static  <T extends Object> boolean listsEquals(List<T>list1, List<T>list2){
+            if (list1==null||list2==null)return false;
+            if (list1.size()!=list2.size())return false;
+            for (T t:list1){
+                if (!list2.contains(t))return false;
+            }
+            return true;
+        }
     }
 
 }
