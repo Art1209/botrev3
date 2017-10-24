@@ -70,9 +70,9 @@ public class Action{
                     timeToStart = format.parse(year+" "+monthToString(month+1)+" "+getTime());
                 }
             }
+            long changeTimeZoneHours = ChatThread.TARGET_TIME_ZONE-ChatThread.TIME_ZONE;
+            timeToStart = new Date(timeToStart.getTime()-(changeTimeZoneHours*3600000l)); // 1 our in mlsec
         } catch (ParseException e) {}
-        long changeTimeZoneHours = ChatThread.TARGET_TIME_ZONE-ChatThread.TIME_ZONE;
-        timeToStart = new Date(timeToStart.getTime()-(changeTimeZoneHours*3600000l)); // 1 our in mlsec
         return timeToStart;
     }
 
