@@ -97,7 +97,7 @@ public class Action{
 
 
     public void saveOld() {
-
+        if (old == null) old = new ActionOld();
         old.oldDescription = description;
         old.oldImage = image;
         old.oldLink = link;
