@@ -51,7 +51,7 @@ public class tester {
 
     public static void linkMatcherTest() {
         String text = "dsf asfd asdfasdf asdfsadf sadffdsa asdf. asdff4asdf.df/3fs sdfs";
-        Pattern linkp = Pattern.compile(ChatThread.LINK_PATTERN);
+        Pattern linkp = ChatThread.LINK_PATTERN;
         Matcher linkm = linkp.matcher(text);
         System.out.println(linkm.find());
         System.out.println(linkm.group());
