@@ -125,7 +125,7 @@ public static final Pattern LINK_PATTERN = Pattern.compile(
                     Matcher linkm = LINK_PATTERN.matcher(text);
                     if (linkm.find()){
                         String regexLink = linkm.group();
-                        act.setLink(regexLink);
+                        act.setLink(regexLink.trim());
                         act.setDescription(text.replace(regexLink,""));
                         log.info("regex " + regexLink);
                         log.info(text.replace(regexLink, ""));
