@@ -97,7 +97,7 @@ public class Action{
 
 
     public void saveOld() {
-        if (old == null) old = new ActionOld();
+
         old.oldDescription = description;
         old.oldImage = image;
         old.oldLink = link;
@@ -106,6 +106,7 @@ public class Action{
     }
 
     public boolean saveReturnChanged() { //if changed "from A to B" or "from null to B"
+        if (old == null) old = new ActionOld();
         boolean ch = false;
         if (old.oldTime == null ? time != null : !old.oldTime.equals(time)) {
             ch = true;
