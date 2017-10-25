@@ -10209,3 +10209,63 @@ Time: 23 10 20 01
 2017-10-25 09:45:24 INFO  MyTimer:83 - ActionUpdater
 2017-10-25 09:45:24 INFO  AirTableApi:102 - Got actions 0
 2017-10-25 09:45:25 INFO  MyTimer:109 - ShopUpdater
+2017-10-25 10:52:32 INFO  AirTableApi:102 - Got actions 0
+2017-10-25 10:52:36 INFO  AirTableApi:128 - Got categories 4
+2017-10-25 10:52:37 INFO  AirTableApi:152 - Got shops 9
+2017-10-25 10:52:47 INFO  MyTimer:83 - ActionUpdater
+2017-10-25 10:52:47 INFO  AirTableApi:102 - Got actions 0
+2017-10-25 10:52:47 INFO  MyTimer:100 - CategoryUpdater
+2017-10-25 10:52:48 INFO  AirTableApi:128 - Got categories 4
+2017-10-25 10:52:48 INFO  MyTimer:111 - ShopUpdater
+2017-10-25 10:52:49 INFO  AirTableApi:152 - Got shops 9
+2017-10-25 10:52:57 INFO  MyTimer:83 - ActionUpdater
+2017-10-25 10:52:57 INFO  AirTableApi:102 - Got actions 0
+2017-10-25 10:53:07 INFO  MyTimer:83 - ActionUpdater
+2017-10-25 10:53:07 INFO  AirTableApi:102 - Got actions 0
+2017-10-25 10:53:17 INFO  MyTimer:83 - ActionUpdater
+2017-10-25 10:53:17 INFO  AirTableApi:102 - Got actions 0
+2017-10-25 10:53:18 INFO  MyTimer:111 - ShopUpdater
+2017-10-25 10:53:19 INFO  AirTableApi:152 - Got shops 9
+2017-10-25 10:53:37 INFO  AirTableApi:102 - Got actions 0
+2017-10-25 10:53:37 INFO  AirTableApi:128 - Got categories 4
+2017-10-25 10:53:38 INFO  AirTableApi:152 - Got shops 9
+2017-10-25 10:53:48 INFO  MyTimer:83 - ActionUpdater
+2017-10-25 10:53:50 INFO  AirTableApi:102 - Got actions 0
+2017-10-25 10:53:50 INFO  MyTimer:100 - CategoryUpdater
+2017-10-25 10:53:50 INFO  AirTableApi:128 - Got categories 4
+2017-10-25 10:53:53 INFO  MyTimer:111 - ShopUpdater
+2017-10-25 10:53:54 INFO  AirTableApi:152 - Got shops 9
+2017-10-25 10:53:58 INFO  MyTimer:83 - ActionUpdater
+2017-10-25 10:54:00 INFO  AirTableApi:102 - Got actions 0
+2017-10-25 10:54:08 INFO  MyTimer:83 - ActionUpdater
+2017-10-25 10:54:10 INFO  AirTableApi:102 - Got actions 0
+2017-10-25 10:54:18 INFO  MyTimer:83 - ActionUpdater
+2017-10-25 10:54:20 INFO  AirTableApi:102 - Got actions 0
+2017-10-25 10:59:44 INFO  MyTimer:111 - ShopUpdater
+2017-10-25 10:59:58 INFO  AirTableApi:102 - Got actions 0
+2017-10-25 10:59:59 INFO  AirTableApi:128 - Got categories 4
+2017-10-25 11:00:00 INFO  AirTableApi:152 - Got shops 9
+2017-10-25 11:01:40 INFO  AirTableApi:102 - Got actions 0
+2017-10-25 11:01:41 INFO  AirTableApi:128 - Got categories 4
+2017-10-25 11:01:41 INFO  AirTableApi:152 - Got shops 9
+2017-10-25 11:01:51 INFO  MyTimer:83 - ActionUpdater
+2017-10-25 11:01:52 INFO  AirTableApi:102 - Got actions 0
+2017-10-25 11:01:52 INFO  MyTimer:86 - ActionUpdater updating memory
+2017-10-25 11:01:52 INFO  MyTimer:100 - CategoryUpdater
+2017-10-25 11:01:53 INFO  AirTableApi:128 - Got categories 4
+2017-10-25 11:01:53 INFO  MyTimer:103 - CategoryUpdater updating memory
+2017-10-25 11:01:53 INFO  MyTimer:111 - ShopUpdater
+2017-10-25 11:01:53 INFO  AirTableApi:152 - Got shops 9
+2017-10-25 11:01:53 INFO  MyTimer:114 - ShopUpdater updating memory
+2017-10-25 11:02:01 INFO  MyTimer:83 - ActionUpdater
+2017-10-25 11:02:02 INFO  AirTableApi:102 - Got actions 0
+2017-10-25 11:02:19 INFO  AirTableApi:102 - Got actions 0
+2017-10-25 11:02:20 INFO  AirTableApi:128 - Got categories 4
+2017-10-25 11:02:21 INFO  AirTableApi:152 - Got shops 9
+2017-10-25 11:02:31 INFO  MyTimer:83 - ActionUpdater
+2017-10-25 11:02:32 INFO  AirTableApi:102 - Got actions 0
+2017-10-25 11:02:32 INFO  MyTimer:86 - ActionUpdater updating memory
+2017-10-25 11:02:32 INFO  MyTimer:100 - CategoryUpdater
+2017-10-25 11:02:32 INFO  AirTableApi:128 - Got categories 4
+2017-10-25 11:02:32 INFO  MyTimer:103 - CategoryUpdater updating memory
+2017-10-25 11:03:27 INFO  MyTimer:111 - ShopUpdater

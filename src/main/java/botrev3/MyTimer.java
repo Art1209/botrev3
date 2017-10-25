@@ -82,7 +82,8 @@ public class MyTimer {
             void initUpdate() {
                 log.info("ActionUpdater");
                 List<Action> updatedActions = api.getAllActions();
-                if (needUpdate(updatedActions,actionMemory)){
+                if (needUpdate(actionMemory, updatedActions)) {
+                    log.info("ActionUpdater updating memory");
                     Action.actions = (actionMemory = updatedActions);
                     tasktimer.cancel();
                     tasktimer = new Timer();
@@ -98,7 +99,8 @@ public class MyTimer {
             void initUpdate() {
                 log.info("CategoryUpdater");
                 List<Category> updatedCategories = api.getAllCategories();
-                if (needUpdate(updatedCategories,categoryMemory)){
+                if (needUpdate(categoryMemory, updatedCategories)) {
+                    log.info("CategoryUpdater updating memory");
                     Category.categories = (categoryMemory = updatedCategories);
                 }
             }
@@ -108,7 +110,8 @@ public class MyTimer {
             void initUpdate() {
                 log.info("ShopUpdater");
                 List<Shop> updatedShops = api.getAllShops();
-                if (needUpdate(updatedShops,shopsMemory)){
+                if (needUpdate(shopsMemory, updatedShops)) {
+                    log.info("ShopUpdater updating memory");
                     Shop.shops = (shopsMemory = updatedShops);
                 }
             }
