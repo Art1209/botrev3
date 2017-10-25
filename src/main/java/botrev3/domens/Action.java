@@ -98,7 +98,6 @@ public class Action{
 
     public void saveOld() {
         if (old == null) old = new ActionOld();
-        old.oldId = id;
         old.oldDescription = description;
         old.oldImage = image;
         old.oldLink = link;
@@ -156,12 +155,11 @@ public class Action{
         return getId() + " " + getDescription() + " " + getTime();
     }
 
-    private static class ActionOld {
-        private String oldId;
-        private String oldLink;
-        private String oldDescription;
-        private String oldImage;
-        private String oldTime;
+    public static class ActionOld {
+        String oldLink;
+        String oldDescription;
+        String oldImage;
+        String oldTime;
     }
 
 }
