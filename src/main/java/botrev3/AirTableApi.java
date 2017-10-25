@@ -89,9 +89,9 @@ public class AirTableApi {
             String description = null;
             action.setTime(time = (String)fields.get("Time"));
             Date parsedDate = action.getTimeAsDate();
-            if (parsedDate != null && (new Date()).after(parsedDate)) {
+            if (parsedDate != null && ((new Date()).getTime() - parsedDate.getTime()) > 60000) {
                 deleteAction(action);
-                continue; // check for valid time at every udate
+                continue; // check for valid time at every update
             }
             action.setImage(image = (String)fields.get("Image"));
             action.setPriceAsString((String)fields.get("Price"));
