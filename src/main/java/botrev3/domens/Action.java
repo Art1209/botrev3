@@ -67,7 +67,7 @@ public class Action{
         try {
             priceX100 = 100 * (int) (Double.parseDouble((priceAsString)));
         } catch (NumberFormatException e) {
-            log.warn("Wrong price format at bot add Action task");
+            log.warn("Wrong price format add Action task");
         }
     }
 
@@ -90,6 +90,13 @@ public class Action{
         } catch (ParseException e) {}
         return timeToStart;
     }
+
+//    public void setTime(String newTime){
+//        if (time!=null?!time.equals(newTime):newTime!=null){ //if time changed "from A to B" or "from null to B"
+//            setChanged(true);
+//        } else setChanged(false);
+//        this.time = newTime;
+//    }
 
     private static String monthToString(int month){
         return (month/10+""+month%10);

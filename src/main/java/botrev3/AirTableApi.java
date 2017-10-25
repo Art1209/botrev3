@@ -79,25 +79,28 @@ public class AirTableApi {
         List<Object> objs = parser.jsonParseArray("records",in);
         for (Object obj:objs){
             JSONObject jsonObj = (JSONObject)obj;
-            String id = (String) jsonObj.get("id");
-            Action action = Action.getActionForId(id);
             JSONObject fields = (JSONObject)jsonObj.get("fields");
+            String id;
             String image = null;
             String price = null;
             String link = null;
             String time = null;
             String description = null;
-            action.setTime(time = (String)fields.get("Time"));
-            Date parsedDate = action.getTimeAsDate();
+            id = (String) jsonObj.get("id");
+            Action oldAction = Action.getActionForId(id);
+            Action newAction = Action.getActionForId("nullAction");
+            newAction.setTime(time = (String) fields.get("Time"));
+            Date parsedDate = newAction.getTimeAsDate();
             if (parsedDate != null && ((new Date()).getTime() - parsedDate.getTime()) > 60000) {
-                deleteAction(action);
+                deleteAction(oldAction);
                 continue; // check for valid time at every update
             }
-            action.setImage(image = (String)fields.get("Image"));
-            action.setPriceAsString((String)fields.get("Price"));
-            action.setLink(link = (String)fields.get("Link"));
-            action.setDescription(description = (String)fields.get("Description"));
-            res.add(action);
+            newAction.setId(id);
+            newAction.setImage(image = (String) fields.get("Image"));
+            newAction.setPriceAsString((String) fields.get("Price"));
+            newAction.setLink(link = (String) fields.get("Link"));
+            newAction.setDescription(description = (String) fields.get("Description"));
+            res.add(newAction.equals(oldAction) ? oldAction : newAction);
         }
         log.info("Got actions "+res.size());
         return res;
@@ -176,6 +179,7 @@ public class AirTableApi {
     }
 
     public void deleteAction(Action action){
+        if (action.getId() == null) return;
         HttpDelete delete = auth(new HttpDelete(String.format(API_BASE_LINK, ACTION_TABLE_ID)+"/"+action.getId()));
         int status = HttpEx.returnStatus(delete);
         if (status!=200){

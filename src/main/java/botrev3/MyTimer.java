@@ -26,7 +26,7 @@ public class MyTimer {
 
     private static AirTableApi airTableApi = AirTableApi.getApi();
     {
-        airTableApi.init();
+//        airTableApi.init();
         lifeCycleTimer.schedule(new LocalTask(Updater.ActionUpdater, 10000),10000);
         lifeCycleTimer.schedule(new LocalTask(Updater.ShopUpdater, 30000),10000);
         lifeCycleTimer.schedule(new LocalTask(Updater.CategoryUpdater, 100000),10000);
@@ -82,17 +82,26 @@ public class MyTimer {
             void initUpdate() {
                 log.info("ActionUpdater");
                 List<Action> updatedActions = api.getAllActions();
-                if (needUpdate(actionMemory, updatedActions)) {
+                boolean importantUpdate = false;
+                if (updatedActions == null) return;
+                if (actionMemory == null) importantUpdate = true;
+                if (actionMemory != null) {
+                    for (Action action : updatedActions) {
+                        if (!actionMemory.contains(action)) {
+                            importantUpdate = true;
+                        }
+                    }
+                }
+                if (importantUpdate) {
                     log.info("ActionUpdater updating memory");
                     Action.actions = (actionMemory = updatedActions);
                     tasktimer.cancel();
                     tasktimer = new Timer();
                     for (Action action:Action.actions){
-                        if (action.getTimeAsDate() != null) {
-                            scheduleTask(new MyPostWriter(action, bot));
-                        }
+                        scheduleTask(new MyPostWriter(action, bot));
                     }
                 }
+
 
             }
         },
@@ -127,9 +136,10 @@ public class MyTimer {
             if (update==null)return false;
             if (memory==null)return true;
             if (memory.size()!=update.size())return true;
-            for (T t:memory){
-                if (!update.contains(t))return true;
-            }return  false;
+//            for (T t : update){
+//                if (!memory.contains(t))return true;
+//            }
+            return false;
         }
     }
 
