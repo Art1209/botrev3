@@ -87,20 +87,32 @@ public class AirTableApi {
             String time = null;
             String description = null;
             id = (String) jsonObj.get("id");
-            Action oldAction = Action.getActionForId(id);
-            Action newAction = Action.getActionForId("nullAction");
-            newAction.setTime(time = (String) fields.get("Time"));
-            Date parsedDate = newAction.getTimeAsDate();
-            if (parsedDate != null && ((new Date()).getTime() - parsedDate.getTime()) > 60000) {
-                deleteAction(oldAction);
+            Action action = Action.getActionForId(id);
+            action.setTime(time = (String) fields.get("Time"));
+            Date parsedDate = action.getTimeAsDate();
+            if (parsedDate != null && ((new Date()).getTime() - parsedDate.getTime()) > 9000) {
+                deleteAction(action);
                 continue; // check for valid time at every update
             }
-            newAction.setId(id);
-            newAction.setImage(image = (String) fields.get("Image"));
-            newAction.setPriceAsString((String) fields.get("Price"));
-            newAction.setLink(link = (String) fields.get("Link"));
-            newAction.setDescription(description = (String) fields.get("Description"));
-            res.add(newAction.equals(oldAction) ? oldAction : newAction);
+            action.setImage(image = (String) fields.get("Image"));
+            action.setPriceAsString((String) fields.get("Price"));
+            action.setLink(link = (String) fields.get("Link"));
+            action.setDescription(description = (String) fields.get("Description"));
+            res.add(action);
+//            Action oldAction = Action.getActionForId(id);
+//            Action newAction = Action.getActionForId("nullAction");
+//            newAction.setTime(time = (String) fields.get("Time"));
+//            Date parsedDate = newAction.getTimeAsDate();
+//            if (parsedDate != null && ((new Date()).getTime() - parsedDate.getTime()) > 9000) {
+//                deleteAction(oldAction);
+//                continue; // check for valid time at every update
+//            }
+//            newAction.setId(id);
+//            newAction.setImage(image = (String) fields.get("Image"));
+//            newAction.setPriceAsString((String) fields.get("Price"));
+//            newAction.setLink(link = (String) fields.get("Link"));
+//            newAction.setDescription(description = (String) fields.get("Description"));
+//            res.add(newAction.equals(oldAction) ? oldAction : newAction);
         }
         log.info("Got actions "+res.size());
         return res;

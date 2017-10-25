@@ -55,6 +55,8 @@ public class Action{
     @Getter @Setter
     private int priceX100;
 
+    private ActionOld old;
+
     public String getPriceAsString(){
         return (getPriceX100()/100)+"."+(getPriceX100()%100);
     }
@@ -91,12 +93,34 @@ public class Action{
         return timeToStart;
     }
 
-//    public void setTime(String newTime){
-//        if (time!=null?!time.equals(newTime):newTime!=null){ //if time changed "from A to B" or "from null to B"
-//            setChanged(true);
-//        } else setChanged(false);
-//        this.time = newTime;
-//    }
+
+    public void saveOld() {
+        if (old == null) old = new ActionOld();
+        old.oldId = id;
+        old.oldDescription = description;
+        old.oldImage = image;
+        old.oldLink = link;
+        old.oldTime = time;
+
+    }
+
+    public boolean saveReturnChanged() { //if changed "from A to B" or "from null to B"
+        boolean ch = false;
+        if (old.oldTime == null ? time != null : !old.oldTime.equals(time)) {
+            ch = true;
+        }
+        if (old.oldLink == null ? link != null : !old.oldLink.equals(link)) {
+            ch = true;
+        }
+        if (old.oldImage == null ? image != null : !old.oldImage.equals(image)) {
+            ch = true;
+        }
+        if (old.oldDescription == null ? description != null : !old.oldDescription.equals(description)) {
+            ch = true;
+        }
+        saveOld();
+        return ch;
+    }
 
     private static String monthToString(int month){
         return (month/10+""+month%10);
@@ -130,5 +154,12 @@ public class Action{
         return getId() + " " + getDescription() + " " + getTime();
     }
 
+    private static class ActionOld {
+        private String oldId;
+        private String oldLink;
+        private String oldDescription;
+        private String oldImage;
+        private String oldTime;
+    }
 
 }

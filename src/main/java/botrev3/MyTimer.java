@@ -83,26 +83,41 @@ public class MyTimer {
                 log.info("ActionUpdater");
                 List<Action> updatedActions = api.getAllActions();
                 boolean importantUpdate = false;
-                if (updatedActions == null) return;
-                if (actionMemory == null) importantUpdate = true;
-                if (actionMemory != null) {
-                    for (Action action : updatedActions) {
-                        if (!actionMemory.contains(action)) {
-                            importantUpdate = true;
-                        }
+                if (needUpdate(actionMemory, updatedActions)) {
+                    log.info("ActionUpdater updating memory");
+                    Action.actions = (actionMemory = updatedActions);
+                }
+                for (Action action : Action.actions) {
+                    if (action.saveReturnChanged()) {
+                        importantUpdate = true;
                     }
                 }
                 if (importantUpdate) {
-                    log.info("ActionUpdater updating memory");
-                    Action.actions = (actionMemory = updatedActions);
                     tasktimer.cancel();
                     tasktimer = new Timer();
-                    for (Action action:Action.actions){
+                    for (Action action : Action.actions) {
                         scheduleTask(new MyPostWriter(action, bot));
                     }
                 }
 
-
+//                if (updatedActions == null) return;
+//                if (actionMemory == null) importantUpdate = true;
+//                if (actionMemory != null) {
+//                    for (Action action : updatedActions) {
+//                        if (!actionMemory.contains(action)) {
+//                            importantUpdate = true;
+//                        }
+//                    }
+//                }
+//                if (importantUpdate) {
+//                    log.info("ActionUpdater updating memory");
+//                    Action.actions = (actionMemory = updatedActions);
+//                    tasktimer.cancel();
+//                    tasktimer = new Timer();
+//                    for (Action action:Action.actions){
+//                        scheduleTask(new MyPostWriter(action, bot));
+//                    }
+//                }
             }
         },
         CategoryUpdater{
