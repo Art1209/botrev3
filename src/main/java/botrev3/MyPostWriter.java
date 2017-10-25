@@ -20,11 +20,12 @@ public class MyPostWriter extends TimerTask {
     private static String panda;
 
     static {
-        try {
-            panda = URLEncoder.encode("\\xF0\\x9F\\x90\\xBC", "UTF-8");
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
+//        try {
+        panda = "U+1F43C";
+//                    URLEncoder.encode("\\xF0\\x9F\\x90\\xBC", "UTF-8");
+//        } catch (UnsupportedEncodingException e) {
+//            e.printStackTrace();
+//        }
     }
 
     @Getter @Setter
