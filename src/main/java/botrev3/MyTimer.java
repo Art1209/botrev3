@@ -88,7 +88,9 @@ public class MyTimer {
                     tasktimer.cancel();
                     tasktimer = new Timer();
                     for (Action action:Action.actions){
-                        scheduleTask(new MyPostWriter(action,bot));
+                        if (action.getTimeAsDate() != null) {
+                            scheduleTask(new MyPostWriter(action, bot));
+                        }
                     }
                 }
 
