@@ -23,6 +23,8 @@ public class Action{
 
     public static Action getActionForId(String givenId){
         for (Action action:actions){
+            if (action.getId() == null && givenId == null) return action;
+            if (action.getId() == null) continue;
             if (action.getId().equals(givenId))return action;
         }
         Action newAction = new Action(givenId);

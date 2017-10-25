@@ -29,7 +29,7 @@ public class Category{
 
     public static Category getCategoryForPrice(int price){
         for (Category cat:categories){
-            if (price>cat.getLowLevelRange()&&price<=cat.getHighLevelRange())return cat;
+            if (price >= cat.getLowLevelRange() && price < cat.getHighLevelRange()) return cat;
         }
         return null;
 
