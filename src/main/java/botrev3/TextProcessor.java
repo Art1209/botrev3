@@ -38,26 +38,38 @@ public class TextProcessor {
     private BlogBot bot;
 
     public String changeLink(String dirtyLink, int price ){
-        int errorCounter =0;
+        if (dirtyLink == null) {
+            log.warn("Empty dirty link, returned unchanged");
+        }
+        int attempts = 0;
         Shop shop;
         String longUrl=null;
         String cleanUrl=null;
         String admitedUrl=null;
         String res = null;
 
-        while ((longUrl==null||cleanUrl==null||admitedUrl==null)&&errorCounter<6){
-            longUrl = unShrink(dirtyLink);
+        while ((longUrl == null || cleanUrl == null || admitedUrl == null) && attempts < 6) {
+            attempts++;
 
+            longUrl = unShrink(dirtyLink);
             if ((shop = Shop.getShopForLink(longUrl))==null){
                 log.warn("No shop found for link "+longUrl);
                 bot.sendTextToAdmin("No shop found for link "+longUrl);
             }
+
             cleanUrl = clearLink(longUrl, shop);
-            admitedUrl = admitadApi.admitize(cleanUrl, shop.getVendor_id(), shop.getCompany_id(), Category.getCategoryForPrice(price).getSub_id());
+            String vendor = shop.getVendor_id();
+            String company = shop.getCompany_id();
+            String subid = Category.getCategoryForPrice(price).getSub_id();
+            if (cleanUrl == null || vendor == null || company == null || subid == null) {
+                log.warn("NPE before admitize - null parameters");
+            }
+
+            admitedUrl = admitadApi.admitize(cleanUrl, vendor, company, subid);
+
             res  = shrink(admitedUrl);
-            errorCounter++;
         }
-        if (errorCounter==5)throw new ApiException("changeLink failed");
+        if (attempts == 5) throw new ApiException("changeLink failed");
         log.info(res);
         return res;
     }
@@ -107,6 +119,10 @@ public class TextProcessor {
 
 
     private String clearLink(String dirtyLink, Shop shop) {
+        if (dirtyLink == null || shop == null) {
+            log.warn("NPE from clealink - null parameters");
+            return dirtyLink;
+        }
         try {
             dirtyLink = URLDecoder.decode(dirtyLink, "UTF-8");
         } catch (UnsupportedEncodingException e) {
