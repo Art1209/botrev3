@@ -26,7 +26,12 @@ public class ChatThread{
     public static final String TIME_FORMAT = "dd HH:mm";
 
 //    public static final String PRICE_PATTERN = "[0-9]{1,}" ;
-    public static final String LINK_PATTERN = "(http|https).{0,3}[a-zA-Z0-9]{3,}\\.[a-zA-Z0-9/]{2,}";
+public static final Pattern LINK_PATTERN = Pattern.compile(
+        "(?:^|[\\W])((ht|f)tp(s?):\\/\\/|www\\.)"
+                + "(([\\w\\-]+\\.){1,}?([\\w\\-.~]+\\/?)*"
+                + "[\\p{Alnum}.,%_=?&#\\-+()\\[\\]\\*$~@!:/{};']*)",
+        Pattern.CASE_INSENSITIVE | Pattern.MULTILINE | Pattern.DOTALL);
+    //"(http://|https://).{0,4}[a-zA-Z0-9]{3,}\\.[a-zA-Z0-9/]{2,}";
 
     public static final String API_FILE_PATH = "file_path";
     public static final String API_GET_FILE_PATH_LINK = "https://api.telegram.org/bot%s/getFile?file_id=%s";
@@ -117,16 +122,14 @@ public class ChatThread{
                 if (msg.hasText()){
                     String text = msg.getText();
                     //Pattern pricep = Pattern.compile(PRICE_PATTERN);
-                    Pattern linkp = Pattern.compile(LINK_PATTERN);
-                    Matcher linkm = linkp.matcher(text);
+                    Matcher linkm = LINK_PATTERN.matcher(text);
                     if (linkm.find()){
                         String regexLink = linkm.group();
                         act.setLink(regexLink);
                         act.setDescription(text.replace(regexLink,""));
-                        System.out.println(regexLink);
-                        System.out.println(text.replace(regexLink,""));
+                        log.info("regex " + regexLink);
+                        log.info(text.replace(regexLink, ""));
                     }
-
                 }
             }
         },

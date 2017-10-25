@@ -35,7 +35,7 @@ public class TextProcessor {
 
     private JsonRecoursiveParser parser = JsonRecoursiveParser.getParser();
     private AdmitadApi admitadApi = new AdmitadApi();
-    private BlogBot bot;
+//    private BlogBot bot;
 
     public String changeLink(String dirtyLink, int price ){
         if (dirtyLink == null) {
@@ -54,7 +54,6 @@ public class TextProcessor {
             longUrl = unShrink(dirtyLink);
             if ((shop = Shop.getShopForLink(longUrl))==null){
                 log.warn("No shop found for link "+longUrl);
-                bot.sendTextToAdmin("No shop found for link "+longUrl);
             }
 
             cleanUrl = clearLink(longUrl, shop);
