@@ -59,6 +59,18 @@ public class Action{
         return (getPriceX100()/100)+"."+(getPriceX100()%100);
     }
 
+    public void setPriceAsString(String priceAsString) {
+        if (priceAsString == null) {
+            priceX100 = 100;
+            return;
+        }
+        try {
+            priceX100 = 100 * (int) (Double.parseDouble((priceAsString)));
+        } catch (NumberFormatException e) {
+            log.warn("Wrong price format at bot add Action task");
+        }
+    }
+
     public Date getTimeAsDate(){
         Date timeToStart = null;
         Date today = new Date();
@@ -90,19 +102,26 @@ public class Action{
 
     @Override
     public boolean equals(Object obj) {
-        return getId().equals(obj);
+        if (obj instanceof Action) {
+            Action act2 = (Action) obj;
+            String id2 = act2.getId();
+            String link2 = act2.getLink();
+            String description2 = act2.getDescription();
+            String image2 = act2.getImage();
+            String time2 = act2.getTime();
+            if ((id != null ? id.equals(id2) : id == id2) &&
+                    (link != null ? link.equals(link2) : link == link2) &&
+                    (description != null ? description.equals(description2) : description == description2) &&
+                    (image != null ? image.equals(image2) : image == image2) &&
+                    (time != null ? time.equals(time2) : time == time2)) return true;
+        }
+        return false;
     }
 
     @Override
     public String toString() {
-        return getId().toString();
+        return getId() + " " + getDescription() + " " + getTime();
     }
 
-    public void setPriceAsString(String priceAsString) {
-        try{
-            priceX100 = 100*(int)(Double.parseDouble((priceAsString)));
-        } catch (NumberFormatException e){
-            log.warn("Wrong price format at bot add Action task");
-        }
-    }
+
 }

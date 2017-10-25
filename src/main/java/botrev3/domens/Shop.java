@@ -55,9 +55,19 @@ public class Shop {
 
     @Override
     public boolean equals(Object obj) {
-        return getId().equals(obj);
+        if (obj instanceof Shop) {
+            Shop shop2 = (Shop) obj;
+            String id2 = shop2.getId();
+            String name2 = shop2.getName();
+            String company_id2 = shop2.getCompany_id();
+            String vendor_id2 = shop2.getVendor_id();
+            if ((id != null ? id.equals(id2) : id == id2) &&
+                    (name != null ? name.equals(name2) : name == name2) &&
+                    (company_id != null ? company_id.equals(company_id2) : company_id == company_id2) &&
+                    (vendor_id != null ? vendor_id.equals(vendor_id2) : vendor_id == vendor_id2)) return true;
+        }
+        return false;
     }
-
     @Override
     public String toString() {
         return getId().toString();

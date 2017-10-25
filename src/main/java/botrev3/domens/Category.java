@@ -58,7 +58,16 @@ public class Category{
 
     @Override
     public boolean equals(Object obj) {
-        return getId().equals(obj);
+        if (obj instanceof Category) {
+            Category cat2 = (Category) obj;
+            String id2 = cat2.getId();
+            String subid2 = cat2.getSub_id();
+            String range2 = cat2.getRange();
+            if ((id != null ? id.equals(id2) : id == id2) &&
+                    (sub_id != null ? sub_id.equals(subid2) : sub_id == subid2) &&
+                    (range != null ? range.equals(range2) : range == range2)) return true;
+        }
+        return false;
     }
 
     @Override
