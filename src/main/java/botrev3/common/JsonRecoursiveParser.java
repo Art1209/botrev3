@@ -32,6 +32,12 @@ public class JsonRecoursiveParser {
             e.printStackTrace();
         } catch (ParseException e) {
             e.printStackTrace();
+        } finally {
+            try {
+                is.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         return jsonObj;
 
@@ -49,6 +55,12 @@ public class JsonRecoursiveParser {
             e.printStackTrace();
         } catch (ParseException e) {
             e.printStackTrace();
+        } finally {
+            try {
+                is.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         return result;
     }
@@ -69,10 +81,17 @@ public class JsonRecoursiveParser {
             e.printStackTrace();
         } catch (ParseException e) {
             e.printStackTrace();
+        } finally {
+            try {
+                is.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         if (array!=null){
             for (Object obj:array)result.add(obj);
         }
+
         return result;
     }
 
@@ -91,6 +110,12 @@ public class JsonRecoursiveParser {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            try {
+                is.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         int a = responseStrBuilder.indexOf("[")+1;
         int b = responseStrBuilder.lastIndexOf("]");
@@ -153,6 +178,13 @@ public class JsonRecoursiveParser {
 //        } catch (ParseException e) {
 //            e.printStackTrace();
 //        }
+//    finally {
+//        try {
+//            is.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
 //        return result;
 //    }
 

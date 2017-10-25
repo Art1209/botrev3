@@ -7,7 +7,6 @@ import botrev3.domens.Category;
 import botrev3.domens.Shop;
 import lombok.extern.log4j.Log4j;
 import org.apache.http.HttpHeaders;
-import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpDelete;
 import org.apache.http.client.methods.HttpGet;
@@ -20,8 +19,6 @@ import org.json.simple.JSONObject;
 
 import javax.ws.rs.core.MediaType;
 import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -180,7 +177,7 @@ public class AirTableApi {
 
     public void deleteAction(Action action){
         HttpDelete delete = auth(new HttpDelete(String.format(API_BASE_LINK, ACTION_TABLE_ID)+"/"+action.getId()));
-        int status = HttpEx.rawExecute(delete).getStatusLine().getStatusCode();
+        int status = HttpEx.returnStatus(delete);
         if (status!=200){
             log.warn("Delete action return "+status);
         }

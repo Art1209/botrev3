@@ -76,11 +76,8 @@ public class TextProcessor {
         if (res==null){
             if (!url.contains("http"))url = "http://"+url;
             HttpHead head = new HttpHead(url);
-            response = HttpEx.rawExecute(head);
-            if (response.getStatusLine().getStatusCode()/100==3) {
-                Header location = response.getFirstHeader("Location");
-                if (location != null) res = location.getValue();
-            }
+            Header location = HttpEx.returnHeaderOrNull(head, "Location");
+            if (location != null) res = location.getValue();
         }
         if (res==null){
             log.warn("Unshrinker return NULL");
