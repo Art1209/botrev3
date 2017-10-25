@@ -139,9 +139,9 @@ public class ChatThread{
                     try {
                         format.parse("2017 10 "+text);
                     } catch (ParseException e) {
-                        throw new UnsupportedOperationException("wrong time temlate");
+                        throw new UnsupportedOperationException("wrong time template");
                     }
-
+                    action.setTime(text);
                 }
             }
         },
