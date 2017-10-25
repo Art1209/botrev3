@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.log4j.Log4j;
 
+import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.TimerTask;
 
@@ -16,7 +17,15 @@ import java.util.TimerTask;
 @Log4j
 public class MyPostWriter extends TimerTask {
 
-    private static String panda = "\\xF0\\x9F\\x90\\xBC";
+    private static String panda;
+
+    static {
+        try {
+            panda = URLEncoder.encode("\\xF0\\x9F\\x90\\xBC", "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+    }
 
     @Getter @Setter
     private Action action;
@@ -36,7 +45,7 @@ public class MyPostWriter extends TimerTask {
 
     @Override
     public void run() {
-        String text = panda+" " +action.getDescription()+action.getLink();
+        String text = panda + " " + action.getDescription() + " " + action.getLink();
         log.info("posting right now: "+text);
         if (action.getImage()!=null&&action.getImage().trim()!=""){
             bot.sendPhotoTextToChannel(text,action.getImage());

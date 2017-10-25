@@ -48,21 +48,20 @@ public class HttpEx {
         try {
             Thread.sleep(350l);
             resp =  client.execute(request);
-
+            return resp.getStatusLine().getStatusCode();
         } catch (IOException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
             e.printStackTrace();
+        } finally {
+            if (resp != null) {
+                try {
+                    resp.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         }
-//        finally {
-//            if (resp!=null) {
-//                try {
-//                    resp.close();
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        }
         return HttpStatus.SC_EXPECTATION_FAILED;
     }
 
