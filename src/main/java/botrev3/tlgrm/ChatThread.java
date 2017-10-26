@@ -14,13 +14,12 @@ import org.telegram.telegrambots.api.objects.Update;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.List;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 @Log4j
-public class ChatThread{
+public class ChatThread implements Callable<Boolean> {
     public static final int TIME_ZONE = 1;
     public static final int TARGET_TIME_ZONE = 4;
     public static final String TIME_FORMAT = "dd HH:mm";
@@ -47,6 +46,8 @@ public static final Pattern LINK_PATTERN = Pattern.compile(
     private BlockingQueue<Update> queue= new ArrayBlockingQueue<>(10);
     private JsonRecoursiveParser parser = JsonRecoursiveParser.getParser();
     private AirTableApi airTableApi = AirTableApi.getApi();
+    private LifeCycle currentState = LifeCycle.Dead;
+    private Message msg;
 
 
     static ChatThread instance = new ChatThread();
@@ -57,35 +58,49 @@ public static final Pattern LINK_PATTERN = Pattern.compile(
         return instance;
     }
 
-
+    void setMsg(Message message) {
+        this.msg = message;
+    }
     void setMode(Mode mode) {
         this.mode = mode;
     }
 
-    public void handle(Message message) {
-        if (mode == Mode.Dead && message.hasText()) {
-            if (message.getText().trim().equalsIgnoreCase("new")) {
+    void setCurrentState(LifeCycle state) {
+        if (this.currentState == LifeCycle.Work && state == LifeCycle.Dead) setMode(Mode.Dead);
+        this.currentState = state;
+    }
+
+
+    @Override
+    public Boolean call() throws Exception {
+        work();
+        return true;
+    }
+
+    private void work() {
+        if (mode == Mode.Dead && msg.hasText()) {
+            if (msg.getText().trim().equalsIgnoreCase("new")) {
                 bot.sendTextToAdmin("Input post");
                 setMode(Mode.WaitPost);
-            } else mode.doSomeWork(this, message);
+            } else mode.doSomeWork(this, msg);
             return;
         }
-        if (mode != Mode.Dead && message.hasText()) {
-            if (message.getText().trim().equalsIgnoreCase("cancel")) {
+        if (mode != Mode.Dead && msg.hasText()) {
+            if (msg.getText().trim().equalsIgnoreCase("cancel")) {
                 bot.sendTextToAdmin("task was cancelled");
                 setMode(Mode.Dead);
                 return;
             }
         }
         if (mode == Mode.WaitPost) {
-            mode.doSomeWork(this, message);
+            mode.doSomeWork(this, msg);
             bot.sendTextToAdmin("Input datetime "+TIME_FORMAT);
             setMode(mode.WaitTime);
             return;
         }
         if (mode == Mode.WaitTime) {
             try {
-                mode.doSomeWork(this, message);
+                mode.doSomeWork(this, msg);
                 bot.sendTextToAdmin("Input price in usd (для метрики)");
                 setMode(Mode.WaitPrice);
             } catch (UnsupportedOperationException e) {
@@ -94,7 +109,7 @@ public static final Pattern LINK_PATTERN = Pattern.compile(
             return;
         }
         if (mode == Mode.WaitPrice) {
-            mode.doSomeWork(this, message);
+            mode.doSomeWork(this, msg);
             bot.sendTextToAdmin("Ok");
             setMode(Mode.Dead);
             return;
@@ -185,6 +200,10 @@ public static final Pattern LINK_PATTERN = Pattern.compile(
         void doSomeWork(ChatThread thr, Message msg){
             thr.bot.sendTextToAdmin("ECHO: "+msg.getText());
         }
+    }
+
+    private enum LifeCycle {
+        Dead, Work;
     }
 }
 

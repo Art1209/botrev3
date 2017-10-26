@@ -9,6 +9,8 @@ import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
 
+import java.util.concurrent.*;
+
 
 @Log4j
 public class BlogBot extends TelegramLongPollingBot {
@@ -18,6 +20,7 @@ public class BlogBot extends TelegramLongPollingBot {
     public static final long CHANNEL_CHAT_ID = -1001140251814l;
 
     MyTimer timer = MyTimer.getTimer(this);
+    private ExecutorService exec = Executors.newFixedThreadPool(5);
 
     public void onUpdateReceived(Update update) {
         if (update.hasMessage()){
@@ -26,7 +29,23 @@ public class BlogBot extends TelegramLongPollingBot {
             log.info(message.getText());
             if (chat_id==ADMIN_CHAT_ID){
                 ChatThread chat = ChatThread.getChatThread(this);
-                chat.handle(message);
+                chat.setMsg(message);
+                Boolean success = false;
+                int attempts = 0;
+                while (success != true && attempts < 6) {
+                    try {
+                        Future<Boolean> fut = exec.submit(chat);
+                        success = fut.get(10000, TimeUnit.MILLISECONDS);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        attempts++;
+                    }
+                }
+                if (attempts > 4) {
+                    exec.shutdown();
+                    exec = Executors.newFixedThreadPool(5);
+                    sendTextToAdmin("Ошибка обработки, проверьте параметры и повторите попытку");
+                }
             }
         }
     }
